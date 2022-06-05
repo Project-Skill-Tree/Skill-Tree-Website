@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/Images/Background/Logo_Background.png");
+}
