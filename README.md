@@ -1,4 +1,7 @@
 ﻿# Skill Tree Landing Page
 
-The landing page for Skill Tree
+The main website for the Skill Tree application / discord bot.
+<br>
 Version: 0.10
+
+# Documentation 
