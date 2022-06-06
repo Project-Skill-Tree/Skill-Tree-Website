@@ -2,71 +2,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-image: url("../Images/Background/Logo_Background.png");
+  background-image: url('../Images/Background/Logo_Background.png');
 }
 
 /* Main Section */
 
 .logo {
-	text-align: center;
-	padding: 12% 0% 0% 0%;
-	overflow-x: hidden;
-	position: fixed;
-	height: 100%;
-	width: 50%;
-	z-index: 1;
-	left: 0;
+  text-align: center;
+  padding: 12% 0% 0% 0%;
+  overflow-x: hidden;
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  left: 0;
 }
 
 .User-Interface {
-	text-align: center;
-	padding: 15% 0% 0% 0%;
-	overflow-x: hidden;
-	position: fixed;
-	height: 100%;
-	width: 50%;
-	z-index: 1;
-	right: 0;
+  text-align: center;
+  padding: 15% 0% 0% 0%;
+  overflow-x: hidden;
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  right: 0;
 }
 
-.Main-Text { 
-	color: #FFCE00;
-	text-transform: uppercase;
-	font-weight: 800;
-	font-family: 'Ubuntu', sans-serif;
+.Main-Text {
+  color: #ffce00;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #Main-Text-title {
-	font-size: 57px;
+  font-size: 57px;
 }
 
 #Main-Text-Subtitle {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 .Main-Invite-Button {
-	margin: 40px 0px 0px 0px;
-	font-family: "Roboto", sans-serif;
+  margin: 40px 0px 0px 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #Invite_button {
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	background: #5C68EE;
-	border-radius: 8px;
-	padding: 14px 60px 14px 60px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	transition: 0.5s;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: #5c68ee;
+  border-radius: 8px;
+  padding: 14px 60px 14px 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.5s;
 }
-  
+
 #Invite_button:hover {
-	background: #4b57d2;
-	transition: 0.5s;
+  background: #4b57d2;
+  transition: 0.5s;
 }
