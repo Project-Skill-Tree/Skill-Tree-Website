@@ -1,72 +1,208 @@
+/*Color pallete
+    #FEDC222 - Light yellow
+    #FFCE00  - Yellow
+    #FFBA00  - Darker yellow
+    #610DA9  - Purple
+    #2D0352  - Dark purple
+*/
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-image: url('../Images/Background/Logo_Background.png');
+	background-image: url("../Images/Background/Logo_Background.png");
 }
 
-/* Main Section */
-
+/* Header Section */
 .logo {
-  text-align: center;
-  padding: 12% 0% 0% 0%;
-  overflow-x: hidden;
-  position: fixed;
-  height: 100%;
-  width: 50%;
-  z-index: 1;
-  left: 0;
+	text-align: center;
+	margin: 11% 0% 0% 7%;
+	overflow-x: hidden;
+	position: fixed;
+	height: 100%;
+	width: 50%;
+	z-index: 1;
+	left: 0;
+}
+
+.Text-Logo {
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	font-weight: 600;
+	font-size: 50px;
 }
 
 .User-Interface {
-  text-align: center;
-  padding: 15% 0% 0% 0%;
-  overflow-x: hidden;
-  position: fixed;
-  height: 100%;
-  width: 50%;
-  z-index: 1;
-  right: 0;
+	text-align: center;
+	margin: 17% 7% 0% 0%;
+	overflow-x: hidden;
+	position: fixed;
+	height: 100%;
+	width: 50%;
+	z-index: 1;
+	right: 0;
 }
 
-.Main-Text {
-  color: #ffce00;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: 'Ubuntu', sans-serif;
+.Header-Text { 
+	color: #FFCE00;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: 'Archivo Black', sans-serif;
 }
 
-#Main-Text-title {
-  font-size: 57px;
+#Header-Text-Title {
+	font-family: 'Akira Expanded', sans-serif;
+	font-size: 47px;
 }
 
-#Main-Text-Subtitle {
-  font-size: 40px;
+#Header-Text-Subtitle {
+	font-size: 40px;
 }
 
-.Main-Invite-Button {
-  margin: 40px 0px 0px 0px;
-  font-family: 'Roboto', sans-serif;
+.Header-Invite-Button {
+	margin: 40px 0px 0px 0px;
+	font-family: "Roboto", sans-serif;
 }
 
 #Invite_button {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  background: #5c68ee;
-  border-radius: 8px;
-  padding: 14px 60px 14px 60px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  transition: 0.5s;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	background: #5C68EE;
+	border-radius: 8px;
+	padding: 14px 60px 14px 60px;
+
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	transition: 0.5s;
+}
+  
+#Invite_button:hover {
+	background: #4b57d2;
+	transition: 0.5s;
 }
 
-#Invite_button:hover {
-  background: #4b57d2;
-  transition: 0.5s;
+.Socials {
+	margin-top: 40px;
+}
+
+.Socials li {
+	display: inline-block;
+	position: relative;
+}
+
+.Socials a {
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+/* Discord Icon */
+.Discord-Icon {
+	width: 50px;
+	height: 40px;
+	background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png") no-repeat;
+	background-size: 50px 40px;
+	display: inline-block;
+	
+	transition: 0.25s;
+}
+
+.Discord-Icon:hover {
+	background: url("../Images/Social_Logos/Colored/Discord_Icon.png") no-repeat;
+	background-size: 50px 40px;
+	transform: scale(1.10);
+	transition: 0.25s;
+}
+
+/* Instagram Icon */
+.Instagram-Icon {
+	width: 40px;
+	height: 40px;
+	background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	display: inline-block;
+	
+	transition: 0.25s;
+}
+
+.Instagram-Icon:hover {
+	background: url("../Images/Social_Logos/Colored/Instagram_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	transform: scale(1.10);
+	transition: 0.25s;
+}
+
+
+/* Youtube Icon */
+.Youtube-Icon {
+	width: 40px;
+	height: 40px;
+	background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	display: inline-block;
+	
+	transition: 0.25s;
+}
+
+.Youtube-Icon:hover {
+	background: url("../Images/Social_Logos/Colored/YouTube_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	transform: scale(1.10);
+	transition: 0.25s;
+}
+
+/* Twitter Icon */
+.Twitter-Icon {
+	width: 40px;
+	height: 40px;
+	background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	display: inline-block;
+	
+	transition: 0.25s;
+}
+.Twitter-Icon:hover {
+	background: url("../Images/Social_Logos/Colored/Twitter_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	transform: scale(1.10);
+	transition: 0.25s;
+}
+
+/* Github Icon*/
+.Github-Icon {
+	width: 40px;
+	height: 40px;
+	background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	display: inline-block;
+	transition: 0.25s;	
+}
+
+.Github-Icon:hover {
+	background: url("../Images/Social_Logos/Colored/GitHub_Icon.png") no-repeat;
+	background-size: 40px 40px;
+	transform: scale(1.10);
+	transition: 0.25s;
+}
+
+/*Media Rules*/
+@media only screen and (min-width: 2000px) {
+
+	/* Header */
+	.logo {
+		margin: 14% 0% 0% 15%;
+	}
+	
+	.User-Interface {
+		margin: 18% 15% 0% 0%;
+	}
+
 }
