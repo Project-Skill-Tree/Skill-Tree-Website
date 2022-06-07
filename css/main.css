@@ -276,9 +276,6 @@ header {
 	flex-wrap: wrap;
 }
 
-.project-image {
-
-}
 							/* RoadMap */
 
 
@@ -291,16 +288,80 @@ header {
 	align-items: center;
 }
 
+.roadmap h2 {
+	margin: 1rem 0 5rem;
+}
+
 .roadmap-cards-container {
 	margin: 1rem 2rem;
 	width: 100%;
 	display: flex;
 	justify-content:center;
+	max-width: 1000px;
 }
 
 .roadmap-group {
-	margin: 0 3rem;
+	margin: 0 1rem;
+	width: 30%;
+	min-width: 15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.roadmap-group h3 {
+	margin: 1rem 0;
+}
+
+.roadmap-group p {
+	color: white;
+	font-family: 'Ubuntu',sans-serif;
+}
+
+.roadmap-item {
+	background-color: #202020;
+	border: #6A6A6A .25rem solid;
+	box-shadow: rgb(17, 17, 17) 0 .5rem .5rem;
+	border-radius: 1.55rem;
+	padding: .25rem .25rem;
+	width: 100%;
+	margin-top: .75rem;
+}
+
+
+.item-header {
+	display: flex;
+	align-items: center;
+}
+
+.item-header p {
+	color: #FFCE00;
+	font-size: 1.1rem;
+	margin: 0 0 0 0.5rem;
+}
+
+.item-header:hover{
+	cursor: pointer;
+}
+
+.item-icon {
+	width: 2.25rem;
+}
+.item-goal {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.item-content {
+	max-height: 0;
+  	overflow: hidden;
+  	transition: all .25s ease;
+}
+
+.item-description{
+	margin: .5rem 1rem .5rem .5rem;
+}
+
 
 							/* Contribute */
 
@@ -310,11 +371,11 @@ header {
 	width: 100%;
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+
+	/* temporary */
+	min-height: 70vh;
 }
-
-
 
 
 							/* SkillTree Lead Team */
@@ -431,3 +492,19 @@ footer {
 	}
 
 }
+
+@media only screen and (max-width: 800px) {
+
+/* RoadMap */
+
+.roadmap-cards-container {
+	flex-wrap: wrap;
+}
+
+.roadmap-group {
+	margin: 0 0 5rem 2rem;
+}
+
+
+}
+
