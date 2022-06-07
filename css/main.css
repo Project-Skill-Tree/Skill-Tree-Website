@@ -26,7 +26,7 @@ body {
 
 h1,h2,h3,h4,h5 {
 	color:#ffab00;
-	font-family: 'Akira Expanded','Ubuntu',sans-serif;
+	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
 }
 
 h1 {
@@ -48,34 +48,37 @@ p{
 
 
 /* Header Section */
+
+header {
+	min-height: 100vh;
+}
+
 .logo {
 	text-align: center;
-	margin: 11% 0% 0% 7%;
+	margin: 13% 0% 0% 8%;
 	overflow-x: hidden;
-	position: fixed;
-	height: 100%;
+	/* position: fixed; delete this and replace it with position: absolute*/
+	position: absolute;
 	width: 50%;
 	z-index: 1;
 	left: 0;
+ }
+.User-Interface {
+	text-align: center;
+	margin: 17% 8% 0% 0%;
+	overflow-x: hidden;
+	/* position: fixed; delete this and replace it with position: absolute*/
+	position: absolute;
+	width: 50%;
+	z-index: 1;
+	right: 0;
 }
-
 .Text-Logo {
 	color: white;
 	text-transform: uppercase;
 	font-family: 'Archivo Black', sans-serif;
 	font-weight: 600;
 	font-size: 50px;
-}
-
-.User-Interface {
-	text-align: center;
-	margin: 17% 7% 0% 0%;
-	overflow-x: hidden;
-	position: fixed;
-	height: 100%;
-	width: 50%;
-	z-index: 1;
-	right: 0;
 }
 
 .Header-Text { 
@@ -248,9 +251,47 @@ p{
 }
 
 
+							/* RoadMap */
+
+
+.roadmap {
+	position: relative;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.roadmap-cards-container {
+	margin: 1rem 2rem;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+}
+
+.roadmap-group {
+	margin: 0 3rem;
+}
+
+							/* Contribute */
+
+
+.contribute {
+	position: relative;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
 							/* SkillTree Lead Team */
 
-.skilltree-lead-team {
+.skilltree-contributor {
 	position: relative;
 	width: 100%;
 	margin: 5rem 0;
@@ -260,13 +301,13 @@ p{
 	align-items: center;
 }
 
-.skilltree-lead-team h2 span {
+.skilltree-contributor h2 span {
 	text-transform: uppercase;
 
 }
 
 /* Overseer*/
-.lead-team-overseer {
+.contributor-overseer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -274,16 +315,17 @@ p{
 	margin: 3rem;
 }
 
-.lead-team-overseer p b {
-	font-size: 1.75rem;
+.contributor-overseer p b {
+	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
+	font-size: 1.25rem;
 	color: #FFCE00;
 }
 
-.lead-team-overseer .image,p {
+.contributor-overseer .image,p {
 	margin: .25rem;
 }
 
-.lead-team-overseer .image{
+.contributor-overseer .image{
 	position: relative;
 	width: 7.5rem;
 	height: 7.5rem;
@@ -292,7 +334,7 @@ p{
 	overflow: hidden;
 }
 
-.lead-team-overseer img {
+.contributor-overseer img {
 	position: relative;
 	background-position: center;
 	max-width: 100%;
@@ -300,28 +342,28 @@ p{
 }
 
 /*  other people under onverseer*/
-.lead-team-container {
+.contributor-container {
 	display: flex;
 }
 
-.lead-team-card .image,p {
-	margin: .25rem;
+.contributor-card .image,p {
+	margin-top: .25rem;
 }
 
-.lead-team-card p b {
-	font-size: 1.25rem;
+.contributor-card p b {
+	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
 	color: greenyellow;
 }
 
-.lead-team-card {
+.contributor-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: 1.5rem;
+	margin: .5rem;
 }
 
-.lead-team-card .image{
+.contributor-card .image{
 	position: relative;
 	width: 5rem;
 	height: 5rem;
@@ -330,7 +372,7 @@ p{
 	overflow: hidden;
 }
 
-.lead-team-card img {
+.contributor-card img {
 	position: relative;
 	background-position: center;
 	max-width: 100%;
@@ -346,6 +388,7 @@ footer {
 	margin-top: 5rem;
 	background-color: #151515;
 }
+
 /*Media Rules*/
 @media only screen and (min-width: 2000px) {
 
