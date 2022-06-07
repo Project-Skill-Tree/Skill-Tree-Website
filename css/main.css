@@ -72,33 +72,38 @@ h3 {
 }
 
 .logo {
-  font-family: "Archivo Black", sans-serif;
-  margin-right: 10%;
-  text-align: center;
-}
-
+	text-align: center;
+	margin: 13% 0% 0% 8%;
+	overflow-x: hidden;
+	/* position: fixed; delete this and replace it with position: absolute*/
+	position: absolute;
+	width: 50%;
+	z-index: 1;
+	left: 0;
+ }
 .User-Interface {
-  font-family: "Archivo Black", sans-serif;
-  text-align: center;
+	text-align: center;
+	margin: 17% 8% 0% 0%;
+	overflow-x: hidden;
+	/* position: fixed; delete this and replace it with position: absolute*/
+	position: absolute;
+	width: 50%;
+	z-index: 1;
+	right: 0;
 }
-
-#Purple-Logo {
-  width: 300px;
-  height: 300px;
-}
-
 .Text-Logo {
-  color: white;
-  font-weight: 600;
-  font-size: 40px;
-  text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Akira Expanded', sans-serif;
+	font-weight: 600;
+	font-size: 50px;
 }
 
-.Header-Text {
-  text-shadow: 1px 6px 0px #423604;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #ffce00;
+.Header-Text { 
+	color: #FFCE00;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: 'Akira Expanded', sans-serif;
 }
 
 #Header-Text-Title {
@@ -305,20 +310,19 @@ h3 {
 }
 
 .roadmap-cards-container {
-  margin: 1rem 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  max-width: 1000px;
+	margin: 1rem 2rem;
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
+	max-width: 1000px;
 }
 
 .roadmap-group {
-  margin: 0 1rem;
-  width: 30%;
-  min-width: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 30%;
+	min-width: 17rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .roadmap-group h3 {
@@ -341,8 +345,16 @@ h3 {
 }
 
 .item-header {
-  display: flex;
-  align-items: center;
+	position:relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-header span {
+	display: flex;
+	align-items: center;
 }
 
 .item-header p {
@@ -351,8 +363,16 @@ h3 {
   margin: 0 0 0 0.5rem;
 }
 
-.item-header:hover {
-  cursor: pointer;
+.item-date {
+	position: relative;
+	color: #FFCE00;
+	font-size: .75rem	!important;
+	right: .5rem;
+	font-style: italic;
+}
+
+.item-header:hover{
+	cursor: pointer;
 }
 
 .item-icon {
@@ -495,7 +515,14 @@ footer {
     flex-wrap: wrap;
   }
 
-  .roadmap-group {
-    margin: 0 0 5rem 2rem;
-  }
+.roadmap-cards-container {
+	flex-wrap: wrap;
+
 }
+.roadmap-group {
+	margin: 0 1rem 5rem 1rem;
+}
+
+
+}
+
