@@ -7,504 +7,491 @@
 */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("http://fonts.cdnfonts.com/css/akira-expanded");
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-image: url("../Images/Background/Logo_Background.png");
+  background-image: url("../Images/Background/Logo_Background.png");
 }
 
 /* Common styles */
 /* Lets have a discussion on these later */
 
-h1,h2,h3,h4,h5 {
-	color:#ffab00;
-	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffab00;
+  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
 }
 
 h1 {
-	font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
+/* Page Header */
+.Header-Wapper {
+  display: grid;
+  margin: 0 auto;
+  width: 900px;
 
+  /*Height Changes with Users screen resolution*/
+  height: 650px;
+}
 
+.Header-Container {
+  justify-self: center;
+  align-self: center;
+}
 
-/* Header Section */
-
-header {
-	min-height: 100vh;
+.Header-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  align-items: center;
 }
 
 .logo {
-	text-align: center;
-	margin: 13% 0% 0% 8%;
-	overflow-x: hidden;
-	/* position: fixed; delete this and replace it with position: absolute*/
-	position: absolute;
-	width: 50%;
-	z-index: 1;
-	left: 0;
- }
-.User-Interface {
-	text-align: center;
-	margin: 17% 8% 0% 0%;
-	overflow-x: hidden;
-	/* position: fixed; delete this and replace it with position: absolute*/
-	position: absolute;
-	width: 50%;
-	z-index: 1;
-	right: 0;
-}
-.Text-Logo {
-	color: white;
-	text-transform: uppercase;
-	font-family: 'Archivo Black', sans-serif;
-	font-weight: 600;
-	font-size: 50px;
+  font-family: "Archivo Black", sans-serif;
+  margin-right: 10%;
+  text-align: center;
 }
 
-.Header-Text { 
-	color: #FFCE00;
-	text-transform: uppercase;
-	font-weight: 800;
-	font-family: 'Archivo Black', sans-serif;
+.User-Interface {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+}
+
+#Purple-Logo {
+  width: 300px;
+  height: 300px;
+}
+
+.Text-Logo {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.Header-Text {
+  text-shadow: 1px 6px 0px #423604;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffce00;
 }
 
 #Header-Text-Title {
-	font-family: 'Akira Expanded', sans-serif;
-	font-size: 47px;
+  font-size: 50.5px;
+  height: 49px;
 }
 
 #Header-Text-Subtitle {
-	font-size: 40px;
+  font-size: 35px;
 }
 
 .Header-Invite-Button {
-	margin: 40px 0px 0px 0px;
-	font-family: "Roboto", sans-serif;
+  padding-top: 20px;
 }
-
 #Invite_button {
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	background: #5C68EE;
-	border-radius: 8px;
-	padding: 14px 60px 14px 60px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: #5c68ee;
+  border-radius: 5px;
+  padding: 14px 60px 14px 60px;
 
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.5s;
 }
-  
+
 #Invite_button:hover {
-	background: #4b57d2;
-	transition: 0.5s;
+  background: #4b57d2;
+  transition: 0.5s;
 }
 
 .Socials {
-	margin-top: 40px;
+  padding-top: 30px;
 }
 
 .Socials li {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
 }
 
 .Socials a {
-	text-decoration: none;
-	margin-left: 10px;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 /* Discord Icon */
 .Discord-Icon {
-	width: 50px;
-	height: 40px;
-	background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png") no-repeat;
-	background-size: 50px 40px;
-	display: inline-block;
-	
-	transition: 0.25s;
+  width: 50px;
+  height: 40px;
+  background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png")
+    no-repeat;
+  background-size: 50px 40px;
+  display: inline-block;
+
+  transition: 0.3s;
 }
 
 .Discord-Icon:hover {
-	background: url("../Images/Social_Logos/Colored/Discord_Icon.png") no-repeat;
-	background-size: 50px 40px;
-	transform: scale(1.10);
-	transition: 0.25s;
+  background: url("../Images/Social_Logos/Colored/Discord_Icon.png") no-repeat;
+  background-size: 50px 40px;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 /* Instagram Icon */
 .Instagram-Icon {
-	width: 40px;
-	height: 40px;
-	background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	display: inline-block;
-	
-	transition: 0.25s;
+  width: 40px;
+  height: 40px;
+  background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png")
+    no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+
+  transition: 0.3s;
 }
 
 .Instagram-Icon:hover {
-	background: url("../Images/Social_Logos/Colored/Instagram_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	transform: scale(1.10);
-	transition: 0.25s;
+  background: url("../Images/Social_Logos/Colored/Instagram_Icon.png") no-repeat;
+  background-size: 40px 40px;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
-
 
 /* Youtube Icon */
 .Youtube-Icon {
-	width: 40px;
-	height: 40px;
-	background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	display: inline-block;
-	
-	transition: 0.25s;
+  width: 40px;
+  height: 40px;
+  background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png")
+    no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+
+  transition: 0.3s;
 }
 
 .Youtube-Icon:hover {
-	background: url("../Images/Social_Logos/Colored/YouTube_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	transform: scale(1.10);
-	transition: 0.25s;
+  background: url("../Images/Social_Logos/Colored/YouTube_Icon.png") no-repeat;
+  background-size: 40px 40px;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 /* Twitter Icon */
 .Twitter-Icon {
-	width: 40px;
-	height: 40px;
-	background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	display: inline-block;
-	
-	transition: 0.25s;
+  width: 40px;
+  height: 40px;
+  background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png")
+    no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+
+  transition: 0.3s;
 }
 .Twitter-Icon:hover {
-	background: url("../Images/Social_Logos/Colored/Twitter_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	transform: scale(1.10);
-	transition: 0.25s;
+  background: url("../Images/Social_Logos/Colored/Twitter_Icon.png") no-repeat;
+  background-size: 40px 40px;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 /* Github Icon*/
 .Github-Icon {
-	width: 40px;
-	height: 40px;
-	background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	display: inline-block;
-	transition: 0.25s;	
+  width: 40px;
+  height: 40px;
+  background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png")
+    no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .Github-Icon:hover {
-	background: url("../Images/Social_Logos/Colored/GitHub_Icon.png") no-repeat;
-	background-size: 40px 40px;
-	transform: scale(1.10);
-	transition: 0.25s;
+  background: url("../Images/Social_Logos/Colored/GitHub_Icon.png") no-repeat;
+  background-size: 40px 40px;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
-
-
-
-							/* Dividers */
+/* Dividers */
 
 .divider {
-    position: relative;
-    height: 3rem;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    margin: 5rem 0 3rem 0;
+  position: relative;
+  height: 3rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 5rem 0 3rem 0;
 }
 
 .divider img {
-    height: 3rem;
-    position: relative;
-    margin: 0 2rem;
+  height: 3rem;
+  position: relative;
+  margin: 0 2rem;
 }
 
 .divider span {
-    width: 100%;
-    height: .15rem;
-    background-color: #ffce00;
+  width: 100%;
+  height: 0.15rem;
+  background-color: #ffce00;
 }
 
-
-							/* Vision/Projects */
+/* Vision/Projects */
 .vision {
-	position: relative;
-	width: 100%;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .vision p {
-	color: #fff;
-	font-family: "Ubuntu";
-	max-width: 900px;
-	text-align: center;
-	margin: 10px 0;
+  color: #fff;
+  font-family: "Ubuntu";
+  max-width: 900px;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .projects-title {
-	font-family: "Archivo Black";
-	text-transform: uppercase;
+  font-family: "Archivo Black";
+  text-transform: uppercase;
 }
 
 .projects-container {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-							/* RoadMap */
-
+/* RoadMap */
 
 .roadmap {
-	position: relative;
-	width: 100%;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .roadmap h2 {
-	margin: 1rem 0 5rem;
+  margin: 1rem 0 5rem;
 }
 
 .roadmap-cards-container {
-	margin: 1rem 2rem;
-	width: 100%;
-	display: flex;
-	justify-content:center;
-	max-width: 1000px;
+  margin: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
 }
 
 .roadmap-group {
-	margin: 0 1rem;
-	width: 30%;
-	min-width: 15rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin: 0 1rem;
+  width: 30%;
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .roadmap-group h3 {
-	margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .roadmap-group p {
-	color: white;
-	font-family: 'Ubuntu',sans-serif;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .roadmap-item {
-	background-color: #202020;
-	border: #6A6A6A .25rem solid;
-	box-shadow: rgb(17, 17, 17) 0 .5rem .5rem;
-	border-radius: 1.55rem;
-	padding: .25rem .25rem;
-	width: 100%;
-	margin-top: .75rem;
+  background-color: #202020;
+  border: #6a6a6a 0.25rem solid;
+  box-shadow: rgb(17, 17, 17) 0 0.5rem 0.5rem;
+  border-radius: 1.55rem;
+  padding: 0.25rem 0.25rem;
+  width: 100%;
+  margin-top: 0.75rem;
 }
 
-
 .item-header {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .item-header p {
-	color: #FFCE00;
-	font-size: 1.1rem;
-	margin: 0 0 0 0.5rem;
+  color: #ffce00;
+  font-size: 1.1rem;
+  margin: 0 0 0 0.5rem;
 }
 
-.item-header:hover{
-	cursor: pointer;
+.item-header:hover {
+  cursor: pointer;
 }
 
 .item-icon {
-	width: 2.25rem;
+  width: 2.25rem;
 }
 .item-goal {
-	font-weight: bold;
-	text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .item-content {
-	max-height: 0;
-  	overflow: hidden;
-  	transition: all .25s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease;
 }
 
-.item-description{
-	margin: .5rem 1rem .5rem .5rem;
+.item-description {
+  margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-
-							/* Contribute */
-
+/* Contribute */
 
 .contribute {
-	position: relative;
-	width: 100%;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	/* temporary */
-	min-height: 70vh;
+  /* temporary */
+  min-height: 70vh;
 }
 
-
-							/* SkillTree Lead Team */
+/* SkillTree Lead Team */
 
 .skilltree-contributor {
-	position: relative;
-	width: 100%;
-	margin: 5rem 0;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
+  position: relative;
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .skilltree-contributor h2 span {
-	text-transform: uppercase;
-
+  text-transform: uppercase;
 }
 
 /* Overseer*/
 .contributor-overseer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
 }
 
 .contributor-overseer p b {
-	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
-	font-size: 1.25rem;
-	color: #FFCE00;
+  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  color: #ffce00;
 }
 
-.contributor-overseer .image,p {
-	margin: .25rem;
+.contributor-overseer .image,
+p {
+  margin: 0.25rem;
 }
 
-.contributor-overseer .image{
-	position: relative;
-	width: 7.5rem;
-	height: 7.5rem;
-	border-radius: 50%;
-	border: purple .25rem solid;
-	overflow: hidden;
+.contributor-overseer .image {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: purple 0.25rem solid;
+  overflow: hidden;
 }
 
 .contributor-overseer img {
-	position: relative;
-	background-position: center;
-	max-width: 100%;
-  	height: auto;
+  position: relative;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
 }
 
 /*  other people under onverseer*/
 .contributor-container {
-	display: flex;
+  display: flex;
 }
 
-.contributor-card .image,p {
-	margin-top: .25rem;
+.contributor-card .image,
+p {
+  margin-top: 0.25rem;
 }
 
 .contributor-card p b {
-	font-family: 'Akira Expanded','Archivo Black','Ubuntu',sans-serif;
-	color: greenyellow;
+  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+  color: greenyellow;
 }
 
 .contributor-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
 }
 
-.contributor-card .image{
-	position: relative;
-	width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-	border: purple .25rem solid;
-	overflow: hidden;
+.contributor-card .image {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: purple 0.25rem solid;
+  overflow: hidden;
 }
 
 .contributor-card img {
-	position: relative;
-	background-position: center;
-	max-width: 100%;
-  	height: auto;
+  position: relative;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Footer */
 
 footer {
-	position: relative;
-	width: 100%;
-	height: 10rem;
-	margin-top: 5rem;
-	background-color: #151515;
-}
-
-/*Media Rules*/
-@media only screen and (min-width: 2000px) {
-
-	/* Header */
-	.logo {
-		margin: 14% 0% 0% 15%;
-	}
-	
-	.User-Interface {
-		margin: 18% 15% 0% 0%;
-	}
-
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin-top: 5rem;
+  background-color: #151515;
 }
 
 @media only screen and (max-width: 800px) {
+  /* RoadMap */
 
-/* RoadMap */
+  .roadmap-cards-container {
+    flex-wrap: wrap;
+  }
 
-.roadmap-cards-container {
-	flex-wrap: wrap;
+  .roadmap-group {
+    margin: 0 0 5rem 2rem;
+  }
 }
-
-.roadmap-group {
-	margin: 0 0 5rem 2rem;
-}
-
-
-}
-
