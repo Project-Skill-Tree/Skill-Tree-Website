@@ -50,18 +50,17 @@ h3 {
 }
 
 /* Page Header */
-.Header-Wapper {
+.Header-Wrapper{
   display: grid;
   margin: 0 auto;
   width: 900px;
-
-  /*Height Changes with Users screen resolution*/
-  height: 650px;
+  height: 100vh;
 }
 
 .Header-Container {
   justify-self: center;
   align-self: center;
+  margin-bottom: 33px;
 }
 
 .Header-Grid {
@@ -72,7 +71,7 @@ h3 {
 }
 
 .logo {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "akira expanded", sans-serif;
   margin-right: 10%;
   text-align: center;
 }
@@ -90,20 +89,21 @@ h3 {
 .Text-Logo {
   color: white;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
 }
 
 .Header-Text {
-  text-shadow: 1px 6px 0px #423604;
+  text-shadow: 0px 6px 0px #000000;
   text-transform: uppercase;
   font-weight: 800;
   color: #ffce00;
 }
 
 #Header-Text-Title {
-  font-size: 50.5px;
-  height: 49px;
+  font-family: "akira expanded", sans-serif;
+  font-size: 41px;
+  height: 40px;
 }
 
 #Header-Text-Subtitle {
@@ -113,6 +113,7 @@ h3 {
 .Header-Invite-Button {
   padding-top: 20px;
 }
+
 #Invite_button {
   color: white;
   text-align: center;
