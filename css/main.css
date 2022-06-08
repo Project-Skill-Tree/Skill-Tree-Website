@@ -458,6 +458,12 @@ p {
 /*  other people under onverseer*/
 .contributor-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-group {
+  display: flex;
 }
 
 .contributor-card .image,
