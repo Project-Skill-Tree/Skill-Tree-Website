@@ -414,6 +414,9 @@ h3 {
   align-items: center;
   color: white;
 }
+.skilltree-contributor h2 {
+  text-align: center;
+}
 
 .skilltree-contributor h2 span {
   text-transform: uppercase;
@@ -460,7 +463,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
+
+
 
 .card-group {
   display: flex;
@@ -525,6 +531,15 @@ footer {
 	margin: 0 1rem 5rem 1rem;
 }
 
+
+}
+
+@media only screen and (max-width: 400px) {
+  /* RoadMap */
+
+   h2 {
+    font-size: 1.9rem;
+  }
 
 }
 
