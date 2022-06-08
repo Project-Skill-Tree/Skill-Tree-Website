@@ -299,6 +299,7 @@ p {
   flex-wrap: wrap;
   gap: 48px;
   height: 400px;
+  max-width: 70%;	
   padding: 0 48px 0 48px;
   margin-top: 32px;
 }
@@ -306,7 +307,7 @@ p {
 .project {
   display: flex;
   flex-direction: column;
-  width: 29%;
+  max-width: 300px;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
