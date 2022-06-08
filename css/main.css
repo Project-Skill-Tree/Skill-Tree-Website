@@ -72,38 +72,33 @@ h3 {
 }
 
 .logo {
-	text-align: center;
-	margin: 13% 0% 0% 8%;
-	overflow-x: hidden;
-	/* position: fixed; delete this and replace it with position: absolute*/
-	position: absolute;
-	width: 50%;
-	z-index: 1;
-	left: 0;
- }
-.User-Interface {
-	text-align: center;
-	margin: 17% 8% 0% 0%;
-	overflow-x: hidden;
-	/* position: fixed; delete this and replace it with position: absolute*/
-	position: absolute;
-	width: 50%;
-	z-index: 1;
-	right: 0;
-}
-.Text-Logo {
-	color: white;
-	text-transform: uppercase;
-	font-family: 'Akira Expanded', sans-serif;
-	font-weight: 600;
-	font-size: 50px;
+  font-family: "Archivo Black", sans-serif;
+  margin-right: 10%;
+  text-align: center;
 }
 
-.Header-Text { 
-	color: #FFCE00;
-	text-transform: uppercase;
-	font-weight: 800;
-	font-family: 'Akira Expanded', sans-serif;
+.User-Interface {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+}
+
+#Purple-Logo {
+  width: 300px;
+  height: 300px;
+}
+
+.Text-Logo {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.Header-Text {
+  text-shadow: 1px 6px 0px #423604;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffce00;
 }
 
 #Header-Text-Title {
