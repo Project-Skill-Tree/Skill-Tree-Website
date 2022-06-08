@@ -81,7 +81,7 @@ p {
 }
 
 .User-Interface {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 
@@ -111,10 +111,12 @@ p {
 }
 
 #Header-Text-Subtitle {
-  font-size: 35px;
+  font-family: "akira expanded", sans-serif;
+  font-size: 25px;
 }
 
 .Header-Invite-Button {
+  font-size: 15px;
   padding-top: 20px;
 }
 
@@ -130,9 +132,31 @@ p {
   transition: 0.5s;
 }
 
+
 #Invite_button:hover {
-  background: #4b57d2;
+  background: #3e49b3;
   transition: 0.5s;
+}
+
+#App_button {
+  color: #c4c4c4;
+  text-align: center;
+  text-decoration: none;
+  background: #5e5e5e;
+  border-radius: 5px;
+  padding: 14px 60px 14px 60px;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.5s;
+}
+.Header-Buttons {
+  display: inline-block;
+  padding: 0px;
+  width: 500px;
+}
+.Header-Buttons li {
+  display: inline-block !important;
+  height: 0;
 }
 
 .Socials {
@@ -157,14 +181,14 @@ p {
   background-size: 50px 40px;
   display: inline-block;
 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .Discord-Icon:hover {
   background: url("../Images/Social_Logos/Colored/Discord_Icon.png") no-repeat;
   background-size: 50px 40px;
   transform: scale(1.05);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* Instagram Icon */
@@ -176,14 +200,14 @@ p {
   background-size: 40px 40px;
   display: inline-block;
 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .Instagram-Icon:hover {
   background: url("../Images/Social_Logos/Colored/Instagram_Icon.png") no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* Youtube Icon */
@@ -195,14 +219,14 @@ p {
   background-size: 40px 40px;
   display: inline-block;
 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .Youtube-Icon:hover {
   background: url("../Images/Social_Logos/Colored/YouTube_Icon.png") no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* Twitter Icon */
@@ -214,13 +238,13 @@ p {
   background-size: 40px 40px;
   display: inline-block;
 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .Twitter-Icon:hover {
   background: url("../Images/Social_Logos/Colored/Twitter_Icon.png") no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* Github Icon*/
@@ -231,14 +255,14 @@ p {
     no-repeat;
   background-size: 40px 40px;
   display: inline-block;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .Github-Icon:hover {
   background: url("../Images/Social_Logos/Colored/GitHub_Icon.png") no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* Dividers */
@@ -325,21 +349,21 @@ p {
 }
 
 .project-image1{
-  background-image: url("../Images/Projects/skilltreebanner\ 1.png");
+  background-image: url("../Images/Projects/skilltreebanner1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .project-image2{
-  background-image: url("../Images/Projects/chestIcon\ 1.png");
+  background-image: url("../Images/Projects/chestIcon1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
 
 .project-image3{
-  background-image: url("../Images/Projects/app\ 1.png");
+  background-image: url("../Images/Projects/app1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -519,14 +543,14 @@ p {
 }
 
 #contribute-image1{
-background-image: url(../Images/Projects/skilltreebanner\ 1.png);
+background-image: url(../Images/Projects/skilltreebanner1.png);
 }
 #contribute-image2{
-  background-image: url(../Images/Projects/app\ 1.png);
+  background-image: url(../Images/Projects/app1.png);
 
 }
 #contribute-image3{
-  background-image: url(../Images/Projects/chestIcon\ 1.png);
+  background-image: url(../Images/Projects/chestIcon1.png);
   background-color: #000;
 
 }
