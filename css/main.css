@@ -323,6 +323,7 @@ p {
   flex-wrap: wrap;
   gap: 48px;
   height: 400px;
+  max-width: 70%;	
   padding: 0 48px 0 48px;
   margin-top: 32px;
 }
@@ -330,7 +331,7 @@ p {
 .project {
   display: flex;
   flex-direction: column;
-  width: 29%;
+  max-width: 300px;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -341,6 +342,7 @@ p {
 .project-image3{
   display: flex;
   height: 40%;
+  min-height: 85px;
   width: 100%;
   border-radius: 16px;
   border: 4px solid #FF10F0;
@@ -360,6 +362,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  background-color: black;
 }
 
 .project-image3{
