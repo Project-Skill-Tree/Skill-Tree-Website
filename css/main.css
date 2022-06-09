@@ -78,9 +78,12 @@ h5 {
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
   font-family: 'akira expanded', sans-serif;
   margin-right: 10%;
-  text-align: center;
 }
 
 .User-Interface {
