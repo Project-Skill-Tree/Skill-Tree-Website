@@ -28,15 +28,6 @@ body {
 /* Common styles */
 /* Lets have a discussion on these later */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #ffab00;
-  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
-}
-
 h1 {
   font-size: 3.5rem;
 }
@@ -53,6 +44,15 @@ p {
   font-family: 'Ubuntu',sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffab00;
+  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+}
+
 /* Page Header */
 .Header-Wrapper{
   display: grid;
@@ -64,7 +64,7 @@ p {
 .Header-Container {
   justify-self: center;
   align-self: center;
-  margin-bottom: 33px;
+  margin-bottom: 10px;
 }
 
 .Header-Grid {
@@ -115,9 +115,18 @@ p {
   font-size: 25px;
 }
 
-.Header-Invite-Button {
+.Header-Button {
   font-size: 15px;
   padding-top: 20px;
+}
+
+.Header-Buttons-Section {
+  display: inline-block;
+  width: 500px;
+}
+
+.Header-Buttons-Section li {
+  display: inline-block !important;
 }
 
 #Invite_button {
@@ -131,7 +140,6 @@ p {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: 0.5s;
 }
-
 
 #Invite_button:hover {
   background: #3e49b3;
@@ -147,16 +155,7 @@ p {
   padding: 14px 60px 14px 60px;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  transition: 0.5s;
-}
-.Header-Buttons {
-  display: inline-block;
-  padding: 0px;
-  width: 500px;
-}
-.Header-Buttons li {
-  display: inline-block !important;
-  height: 0;
+  pointer-events: none
 }
 
 .Socials {
@@ -169,6 +168,7 @@ p {
 
 .Socials a {
   text-decoration: none;
+  display: inline-block;
   margin-left: 10px;
 }
 
@@ -176,10 +176,8 @@ p {
 .Discord-Icon {
   width: 50px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png")
-    no-repeat;
+  background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png") no-repeat;
   background-size: 50px 40px;
-  display: inline-block;
 
   transition: 0.2s;
 }
@@ -195,10 +193,8 @@ p {
 .Instagram-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png")
-    no-repeat;
+  background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png") no-repeat;
   background-size: 40px 40px;
-  display: inline-block;
 
   transition: 0.2s;
 }
@@ -214,10 +210,8 @@ p {
 .Youtube-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png")
-    no-repeat;
+  background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png") no-repeat;
   background-size: 40px 40px;
-  display: inline-block;
 
   transition: 0.2s;
 }
@@ -233,8 +227,7 @@ p {
 .Twitter-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png")
-    no-repeat;
+  background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png") no-repeat;
   background-size: 40px 40px;
   display: inline-block;
 
@@ -251,10 +244,10 @@ p {
 .Github-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png")
-    no-repeat;
+  background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png") no-repeat;
   background-size: 40px 40px;
   display: inline-block;
+
   transition: 0.2s;
 }
 
@@ -268,11 +261,7 @@ p {
 /* Dividers */
 
 .divider {
-  position: relative;
-  height: 3rem;
-  width: 100vw;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0 2rem;
   margin: 5rem 0 3rem 0;
@@ -280,7 +269,6 @@ p {
 
 .divider img {
   height: 3rem;
-  position: relative;
   margin: 0 2rem;
 }
 
