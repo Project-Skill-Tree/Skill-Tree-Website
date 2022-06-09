@@ -41,7 +41,9 @@ h3 {
 }
 
 p {
+  font-size: 1.1rem;
   font-family: 'Ubuntu',sans-serif;
+  line-height: 1.25rem;
 }
 
 h1,
@@ -485,7 +487,7 @@ h5 {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-/* Contribute */
+                      /* Contribute */
 
 .contribute {
   position: relative;
@@ -525,8 +527,9 @@ h5 {
   position: relative;
   overflow: hidden;
   /* background-color: #000; */
-  background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
   border-radius: 2rem;
   border: .25rem solid #fa00ba;
   display: grid;
@@ -694,12 +697,10 @@ footer {
     flex-direction: column;
     align-items: center;
     height: auto;
-    text-align: center;
-    margin: 2rem 0 0 0;
   }
 
   .contribute-content h3 {
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
   }
 
   .contribute-content:nth-child(2){
@@ -707,16 +708,18 @@ footer {
   }
 
   .contribute-image {
-    height: 25vh;
-    width: 50%;
+    height: 22.5vh;
+    min-width: 15rem;
+    max-width: 20rem;
+    width: 100%;
   }
 
   .contribute-text {
-    height: 40vh;
-    width: 50%;
+    min-width: 15rem;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 
 }
