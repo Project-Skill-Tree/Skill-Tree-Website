@@ -9,7 +9,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
 
 * {
   padding: 0;
@@ -41,7 +41,9 @@ h3 {
 }
 
 p {
+  font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif;
+  line-height: 1.25rem;
 }
 
 h1,
