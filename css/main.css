@@ -7,9 +7,9 @@
 */
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-@import url("http://fonts.cdnfonts.com/css/akira-expanded");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
 
 * {
   padding: 0;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url("../Images/Background/Logo_Background.png");
+  background-image: url('../Images/Background/Logo_Background.png');
 }
 
 /* Common styles */
@@ -41,9 +41,7 @@ h3 {
 }
 
 p {
-  font-size: 1.1rem;
-  font-family: 'Ubuntu',sans-serif;
-  line-height: 1.25rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1,
@@ -52,11 +50,11 @@ h3,
 h4,
 h5 {
   color: #ffab00;
-  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
 }
 
 /* Page Header */
-.Header-Wrapper{
+.Header-Wrapper {
   display: grid;
   margin: 0 auto;
   width: 900px;
@@ -74,22 +72,23 @@ h5 {
   grid-template-columns: 1fr 1fr;
   justify-self: center;
   align-items: center;
+  column-gap: 62px;
 }
 
 .logo {
-  font-family: "akira expanded", sans-serif;
+  font-family: 'akira expanded', sans-serif;
   margin-right: 10%;
   text-align: center;
 }
 
 .User-Interface {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
 #Purple-Logo {
-  width: 300px;
-  height: 300px;
+  width: 345px;
+  height: 345px;
 }
 
 .Text-Logo {
@@ -104,27 +103,35 @@ h5 {
   text-transform: uppercase;
   font-weight: 800;
   color: #ffce00;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 
 #Header-Text-Title {
-  font-family: "akira expanded", sans-serif;
-  font-size: 41px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'akira expanded', sans-serif;
+  font-size: 51px;
   height: 40px;
 }
 
 #Header-Text-Subtitle {
-  font-family: "akira expanded", sans-serif;
-  font-size: 25px;
+  font-family: 'akira expanded', sans-serif;
+  font-size: 34px;
+  width: 100%;
 }
 
 .Header-Button {
   font-size: 15px;
-  padding-top: 20px;
 }
 
 .Header-Buttons-Section {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   width: 500px;
+  padding: 32px 0 8px;
 }
 
 .Header-Buttons-Section li {
@@ -157,7 +164,7 @@ h5 {
   padding: 14px 60px 14px 60px;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .Socials {
@@ -178,14 +185,14 @@ h5 {
 .Discord-Icon {
   width: 50px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Discord_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Non-Colored/Discord_Icon.png')
+    no-repeat;
   background-size: 50px 40px;
-
   transition: 0.2s;
 }
 
 .Discord-Icon:hover {
-  background: url("../Images/Social_Logos/Colored/Discord_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
   background-size: 50px 40px;
   transform: scale(1.05);
   transition: 0.2s;
@@ -195,14 +202,14 @@ h5 {
 .Instagram-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Instagram_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Non-Colored/Instagram_Icon.png')
+    no-repeat;
   background-size: 40px 40px;
-
   transition: 0.2s;
 }
 
 .Instagram-Icon:hover {
-  background: url("../Images/Social_Logos/Colored/Instagram_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Colored/Instagram_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
   transition: 0.2s;
@@ -212,14 +219,15 @@ h5 {
 .Youtube-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/YouTube_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Non-Colored/YouTube_Icon.png')
+    no-repeat;
   background-size: 40px 40px;
 
   transition: 0.2s;
 }
 
 .Youtube-Icon:hover {
-  background: url("../Images/Social_Logos/Colored/YouTube_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Colored/YouTube_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
   transition: 0.2s;
@@ -229,14 +237,15 @@ h5 {
 .Twitter-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/Twitter_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Non-Colored/Twitter_Icon.png')
+    no-repeat;
   background-size: 40px 40px;
   display: inline-block;
 
   transition: 0.2s;
 }
 .Twitter-Icon:hover {
-  background: url("../Images/Social_Logos/Colored/Twitter_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Colored/Twitter_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
   transition: 0.2s;
@@ -246,7 +255,8 @@ h5 {
 .Github-Icon {
   width: 40px;
   height: 40px;
-  background: url("../Images/Social_Logos/Non-Colored/GitHub_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Non-Colored/GitHub_Icon.png')
+    no-repeat;
   background-size: 40px 40px;
   display: inline-block;
 
@@ -254,11 +264,11 @@ h5 {
 }
 
 .Github-Icon:hover {
-  background: url("../Images/Social_Logos/Colored/GitHub_Icon.png") no-repeat;
+  background: url('../Images/Social_Logos/Colored/GitHub_Icon.png') no-repeat;
   filter: brightness(135%);
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.2s;
+  transition: all 0.3s;
 }
 
 /* Dividers */
@@ -291,20 +301,20 @@ h5 {
   align-items: center;
 }
 
-.vision h2{
+.vision h2 {
   margin-bottom: 20px;
 }
 
 .vision p {
   color: #fff;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   max-width: 900px;
   text-align: center;
   margin: 10px 0;
 }
 
 .projects-title {
-  font-family: "Archivo Black";
+  font-family: 'Archivo Black';
   text-transform: uppercase;
   margin-top: 82px;
 }
@@ -314,7 +324,7 @@ h5 {
   flex-wrap: wrap;
   gap: 48px;
   height: 400px;
-  max-width: 70%;	
+  max-width: 70%;
   padding: 0 48px 0 48px;
   margin-top: 32px;
 }
@@ -330,40 +340,40 @@ h5 {
 
 .project-image1,
 .project-image2,
-.project-image3{
+.project-image3 {
   display: flex;
   height: 40%;
   min-height: 85px;
   width: 100%;
   border-radius: 16px;
-  border: 4px solid #FF10F0;
+  border: 4px solid #ff10f0;
   background-color: rgb(41, 36, 36);
   box-shadow: -2px 8px 20px 12px black;
 }
 
-.project-image1{
-  background-image: url("../Images/Projects/skilltreebanner1.png");
+.project-image1 {
+  background-image: url('../Images/Projects/skilltreebanner1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
 
-.project-image2{
-  background-image: url("../Images/Projects/chestIcon1.png");
+.project-image2 {
+  background-image: url('../Images/Projects/chestIcon1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   background-color: black;
 }
 
-.project-image3{
-  background-image: url("../Images/Projects/app1.png");
+.project-image3 {
+  background-image: url('../Images/Projects/app1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
 
-.project-paragraph{
+.project-paragraph {
   display: flex;
   flex-direction: column;
   height: 60%;
@@ -371,20 +381,20 @@ h5 {
   width: 97%;
 }
 
-.project span{
+.project span {
   align-self: center;
   margin-top: 32px;
   font-size: 24px;
   font-weight: 1000;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
 }
 
-.project p{
+.project p {
   text-align: left;
   color: #fff;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
 }
 
 /* RoadMap */
@@ -403,20 +413,20 @@ h5 {
 }
 
 .roadmap-cards-container {
-	margin: 1rem 2rem;
-	width: 100%;
-	display: flex;
-	justify-content:space-around;
-	max-width: 1000px;
-	flex-wrap: wrap;
+  margin: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  flex-wrap: wrap;
 }
 
 .roadmap-group {
-	width: 30%;
-	min-width: 17rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 30%;
+  min-width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .roadmap-group h3 {
@@ -425,7 +435,7 @@ h5 {
 
 .roadmap-group p {
   color: white;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .roadmap-item {
@@ -439,16 +449,16 @@ h5 {
 }
 
 .item-header {
-	position:relative;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .item-header span {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .item-header p {
@@ -458,15 +468,15 @@ h5 {
 }
 
 .item-date {
-	position: relative;
-	color: #FFCE00;
-	font-size: .75rem	!important;
-	right: .5rem;
-	font-style: italic;
+  position: relative;
+  color: #ffce00;
+  font-size: 0.75rem !important;
+  right: 0.5rem;
+  font-style: italic;
 }
 
-.item-header:hover{
-	cursor: pointer;
+.item-header:hover {
+  cursor: pointer;
 }
 
 .item-icon {
@@ -487,7 +497,7 @@ h5 {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-                      /* Contribute */
+/* Contribute */
 
 .contribute {
   position: relative;
@@ -495,7 +505,6 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .contribute a {
@@ -506,14 +515,12 @@ h5 {
   margin-bottom: 5rem;
 }
 
-
 .contribute-container {
   position: relative;
   max-width: 1000px;
   width: 90%;
   color: white;
 }
-
 
 .contribute-content {
   position: relative;
@@ -527,27 +534,24 @@ h5 {
   position: relative;
   overflow: hidden;
   /* background-color: #000; */
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-size: 100% 100%;
   border-radius: 2rem;
-  border: .25rem solid #fa00ba;
+  border: 0.25rem solid #fa00ba;
   display: grid;
   place-items: center;
   margin: 0 1rem 0 0;
 }
 
-#contribute-image1{
-background-image: url(../Images/Projects/skilltreebanner1.png);
+#contribute-image1 {
+  background-image: url(../Images/Projects/skilltreebanner1.png);
 }
-#contribute-image2{
+#contribute-image2 {
   background-image: url(../Images/Projects/app1.png);
-
 }
-#contribute-image3{
+#contribute-image3 {
   background-image: url(../Images/Projects/chestIcon1.png);
   background-color: #000;
-
 }
 
 .contribute-text {
@@ -558,13 +562,6 @@ background-image: url(../Images/Projects/skilltreebanner1.png);
 .contribute-content:nth-child(2) {
   flex-direction: row-reverse;
 }
-
-
-
-
-
-
-
 
 /* SkillTree Lead Team */
 
@@ -596,7 +593,7 @@ background-image: url(../Images/Projects/skilltreebanner1.png);
 }
 
 .contributor-overseer p b {
-  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
   font-size: 1.25rem;
   color: #ffce00;
 }
@@ -630,8 +627,6 @@ p {
   align-items: center;
 }
 
-
-
 .card-group {
   display: flex;
 }
@@ -642,7 +637,7 @@ p {
 }
 
 .contributor-card p b {
-  font-family: "Akira Expanded", "Archivo Black", "Ubuntu", sans-serif;
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
   color: greenyellow;
 }
 
@@ -689,7 +684,7 @@ footer {
   }
 
   .roadmap-group {
-  	margin: 0 1rem 5rem 1rem;
+    margin: 0 1rem 5rem 1rem;
   }
 
   /* Contribute section */
@@ -697,38 +692,34 @@ footer {
     flex-direction: column;
     align-items: center;
     height: auto;
+    text-align: center;
+    margin: 2rem 0 0 0;
   }
 
   .contribute-content h3 {
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
   }
 
-  .contribute-content:nth-child(2){
+  .contribute-content:nth-child(2) {
     flex-flow: column;
   }
 
   .contribute-image {
-    height: 22.5vh;
-    min-width: 15rem;
-    max-width: 20rem;
-    width: 100%;
+    height: 25vh;
+    width: 50%;
   }
 
   .contribute-text {
-    min-width: 15rem;
-    max-width: 20rem;
+    height: 40vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
+    margin-top: 2rem;
   }
-
 }
 
 @media only screen and (max-width: 400px) {
-
-   h2 {
+  h2 {
     font-size: 1.9rem;
   }
-
 }
-
