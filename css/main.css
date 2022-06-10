@@ -330,7 +330,7 @@ h5 {
   flex-wrap: wrap;
   gap: 48px;
   height: auto;
-  max-width: 80%;
+  max-width: 100%;
   padding: 0 48px 0 48px;
   margin-top: 0;
   margin-bottom: 32px
@@ -339,7 +339,7 @@ h5 {
 .project {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 250px;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -351,7 +351,7 @@ h5 {
 .project-image2,
 .project-image3 {
   display: flex;
-  height: 40%;
+  height: 36%;
   min-height: 150px;
   max-height: 80vh; /*Keeps images from getting too stretchy when zooming in*/
   width: 100%;
