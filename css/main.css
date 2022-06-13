@@ -53,6 +53,7 @@ h4,
 h5 {
   color: #ffab00;
   font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+  margin: 0 1rem;
 }
 
 /* Page Header */
@@ -328,6 +329,7 @@ h5 {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
   height: auto;
   max-width: 100%;
@@ -528,28 +530,26 @@ h5 {
 .contribute-container {
   position: relative;
   max-width: 1000px;
-  width: 90%;
+  margin: 0 2rem;
   color: white;
 }
 
 .contribute-content {
   position: relative;
   display: flex;
-  height: 25vh;
   margin: 0 0 5rem 0;
 }
 
 .contribute-image {
-  width: 30%;
-  position: relative;
+  width: 15rem;
+  height: 10rem;
+  flex-grow: 0;
+  flex-shrink: 0;
   overflow: hidden;
-  /* background-color: #000; */
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
   border: 0.25rem solid #fa00ba;
-  display: grid;
-  place-items: center;
   margin: 0 1rem 0 0;
 }
 
@@ -565,8 +565,12 @@ h5 {
 }
 
 .contribute-text {
-  width: 70%;
   margin: 0 1rem 0 0;
+  width: 100%;
+}
+
+.contribute-text p {
+  margin: 1rem 0;
 }
 
 .contribute-content:nth-child(2) {
@@ -701,9 +705,13 @@ footer {
   .contribute-content {
     flex-direction: column;
     align-items: center;
-    height: auto;
     text-align: center;
-    margin: 2rem 0 0 0;
+    margin: 5rem 0 0 0;
+    max-width: 19rem;
+  }
+
+  .contribute-content *{
+    margin-right: 0;
   }
 
   .contribute-content h3 {
@@ -715,16 +723,25 @@ footer {
   }
 
   .contribute-image {
+    width: 19rem;
     height: 25vh;
-    width: 50%;
   }
 
   .contribute-text {
-    height: 40vh;
-    width: 50%;
     display: flex;
+    text-align: center;
     flex-direction: column;
     margin-top: 2rem;
+  }
+
+  .contribute-text p {
+    text-align: justify;
+  }
+
+  .contribute-text p::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
   }
 }
 
@@ -732,4 +749,6 @@ footer {
   h2 {
     font-size: 1.9rem;
   }
+
+  
 }
