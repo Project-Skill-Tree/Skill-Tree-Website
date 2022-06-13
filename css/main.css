@@ -701,6 +701,24 @@ footer {
     margin: 0 1rem 5rem 1rem;
   }
 
+  /* Vision & Project section */
+
+  .project-image1,
+  .project-image2,
+  .project-image3 {
+    min-width: 19rem;
+    min-height: 20vh;
+  }
+
+  .project-paragraph {
+    min-width: 19rem;
+  }
+
+  .project-paragraph p {
+    text-align: justify;
+
+  }
+
   /* Contribute section */
   .contribute-content {
     flex-direction: column;
@@ -724,7 +742,7 @@ footer {
 
   .contribute-image {
     width: 19rem;
-    height: 25vh;
+    height: 20vh;
   }
 
   .contribute-text {
