@@ -335,7 +335,7 @@ h5 {
   max-width: 100%;
   padding: 0 48px 0 48px;
   margin-top: 0;
-  margin-bottom: 32px
+  margin-bottom: 32px;
 }
 
 .project {
@@ -509,175 +509,6 @@ h5 {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-/* Contribute */
-
-.contribute {
-  position: relative;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contribute a {
-  color: #4b57d2;
-}
-
-.contribute h2 {
-  margin-bottom: 5rem;
-}
-
-.contribute-container {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 2rem;
-  color: white;
-}
-
-.contribute-content {
-  position: relative;
-  display: flex;
-  margin: 0 0 5rem 0;
-}
-
-.contribute-image {
-  width: 15rem;
-  height: 10rem;
-  flex-grow: 0;
-  flex-shrink: 0;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  border-radius: 2rem;
-  border: 0.25rem solid #fa00ba;
-  margin: 0 1rem 0 0;
-}
-
-#contribute-image1 {
-  background-image: url(../Images/Projects/skilltreebanner1.png);
-}
-#contribute-image2 {
-  background-image: url(../Images/Projects/app1.png);
-}
-#contribute-image3 {
-  background-image: url(../Images/Projects/chestIcon1.png);
-  background-color: #000;
-}
-
-.contribute-text {
-  margin: 0 1rem 0 0;
-  width: 100%;
-}
-
-.contribute-text p {
-  margin: 1rem 0;
-}
-
-.contribute-content:nth-child(2) {
-  flex-direction: row-reverse;
-}
-
-/* SkillTree Lead Team */
-
-.skilltree-contributor {
-  position: relative;
-  width: 100%;
-  margin: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.skilltree-contributor h2 {
-  text-align: center;
-}
-
-.skilltree-contributor h2 span {
-  text-transform: uppercase;
-}
-
-/* Overseer*/
-.contributor-overseer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 3rem;
-}
-
-.contributor-overseer p b {
-  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
-  font-size: 1.25rem;
-  color: #ffce00;
-}
-
-.contributor-overseer .image,
-p {
-  margin: 0.25rem;
-}
-
-.contributor-overseer .image {
-  position: relative;
-  width: 7.5rem;
-  height: 7.5rem;
-  border-radius: 50%;
-  border: purple 0.25rem solid;
-  overflow: hidden;
-}
-
-.contributor-overseer img {
-  position: relative;
-  background-position: center;
-  max-width: 100%;
-  height: auto;
-}
-
-/*  other people under onverseer*/
-.contributor-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-group {
-  display: flex;
-}
-
-.contributor-card .image,
-p {
-  margin-top: 0.25rem;
-}
-
-.contributor-card p b {
-  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
-  color: greenyellow;
-}
-
-.contributor-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0.5rem;
-}
-
-.contributor-card .image {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  border: purple 0.25rem solid;
-  overflow: hidden;
-}
-
-.contributor-card img {
-  position: relative;
-  background-position: center;
-  max-width: 100%;
-  height: auto;
-}
 
 /* Footer */
 
@@ -705,7 +536,7 @@ footer {
     max-width: 19rem;
   }
 
-  .contribute-content *{
+  .contribute-content * {
     margin-right: 0;
   }
 
@@ -733,8 +564,8 @@ footer {
     text-align: justify;
   }
 
-  .contribute-text p::after{
-    content: "";
+  .contribute-text p::after {
+    content: '';
     display: inline-block;
     width: 100%;
   }
@@ -744,6 +575,4 @@ footer {
   h2 {
     font-size: 1.9rem;
   }
-
-  
 }

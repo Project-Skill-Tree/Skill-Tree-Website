@@ -1,578 +1,340 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Meta Data-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gamify your self-improvement" />
 
-    <title>Skill Tree</title>
+<head>
+  <!--Meta Data-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gamify your self-improvement" />
 
-    <!-- Links -->
-    <link rel="icon" href="images/Logos/Favicon.png" type="image/png" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="icon" href="Images/Logos/Favicon.png" type="image/png" />
-  </head>
+  <title>Skill Tree</title>
 
-  <!-- Main Code -->
-  <body>
-    <header>
-      <div class="Header-Wrapper">
-        <div class="Header-Container">
-          <div class="Header-Grid">
-            <div class="logo">
-              <img
-                src="Images/Logos/Final_Logo.png"
-                alt="Purple gold logo"
-                id="Purple-Logo"
-              />
-              <p class="Text-Logo">SkillTree</p>
+  <!-- Links -->
+  <link rel="icon" href="images/Logos/Favicon.png" type="image/png" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="icon" href="Images/Logos/Favicon.png" type="image/png" />
+</head>
+
+<!-- Main Code -->
+
+<body>
+  <header>
+    <div class="Header-Wrapper">
+      <div class="Header-Container">
+        <div class="Header-Grid">
+          <div class="logo">
+            <img src="Images/Logos/Final_Logo.png" alt="Purple gold logo" id="Purple-Logo" />
+            <p class="Text-Logo">SkillTree</p>
+          </div>
+
+          <div class="User-Interface">
+            <div class="Header-Text">
+              <p id="Header-Text-Title">
+                Gamify <span style="color: White">your</span>
+              </p>
+              <p id="Header-Text-Subtitle">self-improvement</p>
             </div>
 
-            <div class="User-Interface">
-              <div class="Header-Text">
-                <p id="Header-Text-Title">
-                  Gamify <span style="color: White">your</span>
-                </p>
-                <p id="Header-Text-Subtitle">self-improvement</p>
-              </div>
-		    
-	      <div class="Header-Buttons-Section">
-            	<li>
-             	 	<div class="Header-Button">
-               		 	<a href="https://discord.com/api/oauth2/authorize?client_id=955373017062572042&permissions=137439276096&scope=bot%20applications.commands"
-                  		target="_blank" id="Invite_button" type="submit"><b>Add Discord Bot</b></a>
-              		</div>
-            	</li>
-		      
-            	<li>
-              		<div class="Header-Button">
-                		<a target="_blank" id="App_button"><b>App Coming Soon</b></a>
-              		</div>
-            	</li>
-              </div>
+            <div class="Header-Buttons-Section">
+              <li>
+                <div class="Header-Button">
+                  <a href="https://discord.com/api/oauth2/authorize?client_id=955373017062572042&permissions=137439276096&scope=bot%20applications.commands"
+                    target="_blank" id="Invite_button" type="submit"><b>Add Discord Bot</b></a>
+                </div>
+              </li>
 
-              <!--Social Media Icons-->
-              <div class="Socials">
-                <li>
-                  <a
-                    rel="external"
-                    target="_blank"
-                    href="https://discord.gg/skilltree"
-                  >
-                    <div class="Discord-Icon"></div>
-                  </a>
-                </li>
+              <li>
+                <div class="Header-Button">
+                  <a target="_blank" id="App_button"><b>App Coming Soon</b></a>
+                </div>
+              </li>
+            </div>
 
-                <li>
-                  <a
-                    rel="external"
-                    target="_blank"
-                    href="https://www.instagram.com/project_skilltree/"
-                  >
-                    <div class="Instagram-Icon"></div>
-                  </a>
-                </li>
+            <!--Social Media Icons-->
+            <div class="Socials">
+              <li>
+                <a rel="external" target="_blank" href="https://discord.gg/skilltree">
+                  <div class="Discord-Icon"></div>
+                </a>
+              </li>
 
-                <li>
-                  <a
-                    rel="external"
-                    target="_blank"
-                    href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA"
-                  >
-                    <div class="Youtube-Icon"></div>
-                  </a>
-                </li>
+              <li>
+                <a rel="external" target="_blank" href="https://www.instagram.com/project_skilltree/">
+                  <div class="Instagram-Icon"></div>
+                </a>
+              </li>
 
-                <li>
-                  <a
-                    rel="external"
-                    target="_blank"
-                    href="https://twitter.com/SkillTree_"
-                  >
-                    <div class="Twitter-Icon"></div>
-                  </a>
-                </li>
+              <li>
+                <a rel="external" target="_blank" href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA">
+                  <div class="Youtube-Icon"></div>
+                </a>
+              </li>
 
-                <li>
-                  <a
-                    rel="external"
-                    target="_blank"
-                    href="https://github.com/Project-Skill-Tree"
-                  >
-                    <div class="Github-Icon"></div>
-                  </a>
-                </li>
-              </div>
+              <li>
+                <a rel="external" target="_blank" href="https://twitter.com/SkillTree_">
+                  <div class="Twitter-Icon"></div>
+                </a>
+              </li>
+
+              <li>
+                <a rel="external" target="_blank" href="https://github.com/Project-Skill-Tree">
+                  <div class="Github-Icon"></div>
+                </a>
+              </li>
             </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
     </div>
-    <!-- Vision/Projects -->
+  </header>
 
-<!-- Vision/Projects -->
+  <div class="divider">
+    <span></span>
+    <img src="Images/Logos/Gold-Logo.png" alt="" />
+    <span></span>
+  </div>
+  <!-- Vision/Projects -->
 
-    <section class="vision">
-      <h2>Vision</h2>
-      <p>
-        We're developing a video game skill tree for real life to gamefy your
-        self improvement Journey.
-      </p>
-      <p>
-        With skills, items, challenges,levels, XP, badge and more, the skill
-        tree makes achieving yours goals effortless, and aims to improve mental
-        and physical health worldwide.
-      </p>
-      <h2 class="projects-title">Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <div class="project-image1"></div>
-          <div class = "project-paragraph">
-            <span>Poster</span>
-            <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate the visual form of a document or a
-              typeface without relying on meaningful content. Lorem ipsum may be
-              used as a placeholder before final copy is available.
-            </p>
-          </div>
-        </div>
-        
-        <div class="project">
-          <div class="project-image2"></div>
-          <div class = "project-paragraph">
-            <span>Poster</span>
-            <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate the visual form of a document or a
-              typeface without relying on meaningful content. Lorem ipsum may be
-              used as a placeholder before final copy is available.
-            </p>
-          </div>
-        </div>
+  <!-- Vision/Projects -->
 
-        <div class="project">
-          <div class="project-image3"></div>
-          <div class = "project-paragraph">
-            <span>Poster</span>
-            <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate the visual form of a document or a
-              typeface without relying on meaningful content. Lorem ipsum may be
-              used as a placeholder before final copy is available.
-            </p>
-          </div>
+  <section class="vision">
+    <h2>Vision</h2>
+    <p>
+      We're working on a real-life version of a video game skill tree to make
+      your self-improvement journey easier.
+    </p>
+    <p>
+      The skill tree makes achieving your goals easy with skills, items,
+      challenges, levels, XP, badges, and more, and it strives to enhance
+      mental and physical health worldwide.
+    </p>
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <div class="project-image1"></div>
+        <div class="project-paragraph">
+          <span>Poster</span>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder
+            text commonly used to demonstrate the visual form of a document or
+            a typeface without relying on meaningful content. Lorem ipsum may
+            be used as a placeholder before final copy is available.
+          </p>
         </div>
       </div>
-    </section>
 
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
+      <div class="project">
+        <div class="project-image2"></div>
+        <div class="project-paragraph">
+          <span>Poster</span>
+          <pk In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+            visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available. </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image3"></div>
+        <div class="project-paragraph">
+          <span>Poster</span>
+          <p>
+            In publishing and graphic design, Lorem ipsum is a placeholder
+            text commonly used to demonstrate the visual form of a document or
+            a typeface without relying on meaningful content. Lorem ipsum may
+            be used as a placeholder before final copy is available.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- RoadMap -->
+  <div class="divider">
+    <span></span>
+    <img src="Images/Logos/Gold-Logo.png" alt="" />
+    <span></span>
+  </div>
 
-    <section class="roadmap">
-      <h2>Roadmap</h2>
+  <!-- RoadMap -->
 
-      <div class="roadmap-cards-container">
-        <!-- Done/Finished Group -->
-        <div class="roadmap-group">
-          <h3>Done</h3>
+  <section class="roadmap">
+    <h2>Roadmap</h2>
 
-			<!-- Item 1 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="./Images/Icons/TICK.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-						<p class="item-date">13/03/22</p>
-				</div>
+    <div class="roadmap-cards-container">
+      <!-- Done/Finished Group -->
+      <div class="roadmap-group">
+        <h3>Done</h3>
 
+        <!-- Item 1 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
 
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-			
-
-			<!-- Item 2 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="./Images/Icons/TICK.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-						<p class="item-date">13/03/22</p>
-				</div>
-
-
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-
-
-			<!-- Item 3 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="./Images/Icons/TICK.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-						<p class="item-date">13/03/22</p>
-				</div>
-
-
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-			<!-- Item 4 -->
-
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="./Images/Icons/TICK.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-						<p class="item-date">13/03/22</p>
-				</div>
-
-
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-
-			<!-- Item 5 -->
-
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="./Images/Icons/TICK.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-						<p class="item-date">13/03/22</p>
-				</div>
-
-
-					<div class="item-content">
-					<p class="item-description">
-						Project starts on lucidchart
-					</p>
-					</div>
-				</div>
-			</div>
-	
-			<!-- In progress Group -->
-			<div class="roadmap-group">
-			<h3>In Progress</h3>
-
-			<!-- Item 1 -->
-			<div class="roadmap-item">
-					<div class="item-header">
-						<span>
-							<img class="item-icon" src="Images/Icons/DOING.svg" alt="">
-							<p class="item-goal">Project Start</p>
-						</span>
-						<p class="item-date">13/03/22</p>
-					</div>
-
-
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-			
-			<!-- Item 2 -->
-			<div class="roadmap-item">
-					<div class="item-header">
-						<span>
-							<img class="item-icon" src="Images/Icons/DOING.svg" alt="">
-							<p class="item-goal">Project Start</p>
-						</span>
-						<p class="item-date">13/03/22</p>
-					</div>
-
-
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-          
-
-
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
         </div>
-        <!-- Coming Group -->
-        <div class="roadmap-group">
-          <h3>Coming</h3>
 
-			<!-- Item 1 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="Images/Icons/NEXT.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-					<p class="item-date">13/03/22</p>
-				</div>
+        <!-- Item 2 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
 
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
 
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-			
+        <!-- Item 3 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
 
-			<!-- Item 2 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="Images/Icons/NEXT.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-					<p class="item-date">13/03/22</p>
-				</div>
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
 
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
 
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-			
-			<!-- Item 3 -->
-			<div class="roadmap-item">
-				<div class="item-header">
-					<span>
-						<img class="item-icon" src="Images/Icons/NEXT.svg" alt="">
-						<p class="item-goal">Project Start</p>
-					</span>
-					<p class="item-date">13/03/22</p>
-				</div>
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
 
+        <!-- Item 5 -->
 
-				<div class="item-content">
-				<p class="item-description">
-					Project starts on lucidchart
-				</p>
-				</div>
-			</div>
-          
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
 
-
-  
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
+      <!-- In progress Group -->
+      <div class="roadmap-group">
+        <h3>In Progress</h3>
+
+        <!-- Item 1 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="Images/Icons/DOING.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
+
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="Images/Icons/DOING.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
+
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+      </div>
+      <!-- Coming Group -->
+      <div class="roadmap-group">
+        <h3>Coming</h3>
+
+        <!-- Item 1 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="Images/Icons/NEXT.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
+
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="Images/Icons/NEXT.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
+
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="roadmap-item">
+          <div class="item-header">
+            <span>
+              <img class="item-icon" src="Images/Icons/NEXT.svg" alt="" />
+              <p class="item-goal">Project Start</p>
+            </span>
+            <p class="item-date">13/03/22</p>
+          </div>
+
+          <div class="item-content">
+            <p class="item-description">Project starts on lucidchart</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-                                <!-- Contribute -->
-
-    <section class="contribute">
-      <h2>Contribute</h2>
-      <div class="contribute-container">
-
-        <div class="contribute-content">
-          <div id="contribute-image1" class="contribute-image">
-          </div>
-          <div class="contribute-text">
-            <h3>Designing</h3>
-            <p>
-              We need talented designers to help make visually stunning and beautiful products. 
-              We need help with UI design for our website (including this one!), our app, and any 
-              upcoming projects we need help with. There are also tasks such as asset design and 
-              character design which are great for newcomers to the project.
-            </p>
-          </div>
-        </div>
+  </section>
 
 
-        <div class="contribute-content">
-          <div id="contribute-image2" class="contribute-image">
-          </div>
-          <div class="contribute-text">
-            <h3>Developing</h3>
-            <p>
-              Development is crucial for making our products reliable, intuitive, and easy to
-              maintain across collaborators. Our development teams are currently working on the
-              discord bot itself, a mobile app, our own custom API to let the bot and mobile app
-              interface with the same database, our own website, and a specialised in-house tool
-              for admins to edit the tree quickly and view changes visually.
-            </p>
-          </div>
-        </div>
+  <!-- Footer -->
 
+  <footer></footer>
 
-        <div class="contribute-content">
-          <div id="contribute-image3" class="contribute-image">
-          </div>
-          <div class="contribute-text">
-            <h3>Other</h3>
-            <p>
-              We need your help to give us feedback about how we can improve the bot, how we can 
-              make it fit your needs, or other features and products which you’d like to see. You 
-              can give us feedback on the bot <a href=" https://forms.gle/kbvYcNMVtmRy59PW6 ">here</a> We’re also looking for marketers, managers, 
-              editors, translators and more, please join our discord group if you’d like to help 
-              out, we’re always looking out for people who are passionate about the project. 
-            </p>
-          </div>
-        </div>
+  <!--JavaScript Imports-->
+  <script type="text/javascript" src="javascript/script.js"></script>
+</body>
 
-      </div>
-    </section>
-
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
-    </div>
-
-                                <!-- SkillTree contributor -->
-
-    <!-- Overseer -->
-
-
-    <section class="skilltree-contributor">
-      <h2><span>SkillTree</span> contributors</h2>
-
-      <div class="contributor-overseer">
-        <div class="image">
-          <img src="./Images/Logos/Gold-Logo.png" alt="" />
-        </div>
-        <p><b>SeanJHardy</b></p>
-        <p>Project Overseer</p>
-        <p><i>"Yes, jeseus was the first JOJO"</i></p>
-      </div>
-
-
-      <!-- The rest of contributers -->
-
-      <div class="contributor-container">
-        <div class="card-group">
-          <div class="contributor-card">
-            <div class="image">
-              <img src="./Images/Logos/Gold-Logo.png" alt="" />
-            </div>
-            <p><b>Aban</b></p>
-            <p>Admin</p>
-            <p><i>"Yes, jeseus was the first JOJO"</i></p>
-          </div>
-          <div class="contributor-card">
-            <div class="image">
-              <img src="./Images/Logos/Gold-Logo.png" alt="" />
-            </div>
-            <p><b>Akumo</b></p>
-            <p>Design Lead</p>
-            <p><i>"Yes, jeseus was the first JOJO"</i></p>
-          </div>
-        </div>
-
-
-
-          <div class="card-group">
-            <div class="contributor-card">
-              <div class="image">
-                <img src="./Images/Logos/Gold-Logo.png" alt="" />
-              </div>
-              <p><b>Tonys & Ian</b></p>
-              <p>charachter team Lead</p>
-              <p><i>"Yes, jeseus was the first JOJO"</i></p>
-            </div>
-            <div class="contributor-card">
-              <div class="image">
-                <img src="./Images/Logos/Gold-Logo.png" alt="" />
-              </div>
-              <p><b>xzavier</b></p>
-              <p>Manager</p>
-              <p><i>"Yes, jeseus was the first JOJO"</i></p>
-            </div>
-          </div>
-
-      </div>
-
-      <div class="contributor-container">
-        <div class="card-group">
-          <div class="contributor-card">
-            <div class="image">
-              <img src="./Images/Logos/Gold-Logo.png" alt="" />
-            </div>
-            <p><b>Aban</b></p>
-            <p>Admin</p>
-            <p><i>"Yes, jeseus was the first JOJO"</i></p>
-          </div>
-          <div class="contributor-card">
-            <div class="image">
-              <img src="./Images/Logos/Gold-Logo.png" alt="" />
-            </div>
-            <p><b>Akumo</b></p>
-            <p>Design Lead</p>
-            <p><i>"Yes, jeseus was the first JOJO"</i></p>
-          </div>
-        </div>
-
-
-
-          <div class="card-group">
-            <div class="contributor-card">
-              <div class="image">
-                <img src="./Images/Logos/Gold-Logo.png" alt="" />
-              </div>
-              <p><b>Tonys & Ian</b></p>
-              <p>charachter team Lead</p>
-              <p><i>"Yes, jeseus was the first JOJO"</i></p>
-            </div>
-            <div class="contributor-card">
-              <div class="image">
-                <img src="./Images/Logos/Gold-Logo.png" alt="" />
-              </div>
-              <p><b>xzavier</b></p>
-              <p>Manager</p>
-              <p><i>"Yes, jeseus was the first JOJO"</i></p>
-            </div>
-          </div>
-          
-      </div>
-      
-    </section>
-
-    <!-- Footer -->
-
-    <footer></footer>
-
-    <!--JavaScript Imports-->
-    <script type="text/javascript" src="javascript/script.js"></script>
-  </body>
 </html>
