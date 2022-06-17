@@ -301,11 +301,11 @@ h5 {
 .vision {
   position: relative;
   width: 100%;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
 }
 
 .vision h2 {
@@ -321,7 +321,7 @@ h5 {
 }
 
 .projects-title {
-  font-family: 'Archivo Black';
+  font-family: 'Akira Expanded';
   text-transform: uppercase;
   margin-top: 82px;
 }
@@ -345,7 +345,7 @@ h5 {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  margin:2rem 1rem ;
   height: auto;
 }
 
@@ -357,6 +357,7 @@ h5 {
   min-height: 150px;
   max-height: 80vh; /*Keeps images from getting too stretchy when zooming in*/
   width: 100%;
+  min-width: 16rem;
   border-radius: 16px;
   border: 4px solid #ff10f0;
   background-color: rgb(41, 36, 36);
@@ -389,18 +390,17 @@ h5 {
   display: flex;
   flex-direction: column;
   height: 60%;
-  padding-left: 4px;
-  width: 97%;
 }
 
 .project span {
-  align-self: center;
+  align-self: left;
+  text-align: left;
   margin-top: 32px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 1000;
-  color: #fff;
+  color: #ffce00;
   text-transform: uppercase;
-  font-family: 'Ubuntu';
+  font-family: 'Akira Expanded','Ubuntu';
 }
 
 .project p {
@@ -408,6 +408,7 @@ h5 {
   color: #fff;
   font-family: 'Ubuntu';
 }
+
 
 /* RoadMap */
 
@@ -571,6 +572,7 @@ h5 {
 
 .contribute-text p {
   margin: 1rem 0;
+  text-align: left;
 }
 
 .contribute-content:nth-child(2) {
@@ -600,7 +602,7 @@ footer {
     align-items: center;
     text-align: center;
     margin: 5rem 0 0 0;
-    max-width: 19rem;
+    max-width: 16rem;
   }
 
   .contribute-content * {
@@ -608,7 +610,8 @@ footer {
   }
 
   .contribute-content h3 {
-    margin-bottom: 2rem;
+    margin: 0;
+    text-align: left;
   }
 
   .contribute-content:nth-child(2) {
@@ -616,8 +619,9 @@ footer {
   }
 
   .contribute-image {
-    width: 19rem;
+    width: 16rem;
     height: 20vh;
+    min-height: 10rem;
   }
 
   .contribute-text {
@@ -628,14 +632,9 @@ footer {
   }
 
   .contribute-text p {
-    text-align: justify;
+    text-align: left;
   }
 
-  .contribute-text p::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 400px) {
