@@ -509,6 +509,73 @@ h5 {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
+/* Contribute */
+
+.contribute {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contribute a {
+  color: #4b57d2;
+}
+
+.contribute h2 {
+  margin-bottom: 5rem;
+}
+
+.contribute-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 2rem;
+  color: white;
+}
+
+.contribute-content {
+  position: relative;
+  display: flex;
+  margin: 0 0 5rem 0;
+}
+
+.contribute-image {
+  width: 15rem;
+  height: 10rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  border: 0.25rem solid #fa00ba;
+  margin: 0 1rem 0 0;
+}
+
+#contribute-image1 {
+  background-image: url(../Images/Projects/skilltreebanner1.png);
+}
+#contribute-image2 {
+  background-image: url(../Images/Projects/app1.png);
+}
+#contribute-image3 {
+  background-image: url(../Images/Projects/chestIcon1.png);
+  background-color: #000;
+}
+
+.contribute-text {
+  margin: 0 1rem 0 0;
+  width: 100%;
+}
+
+.contribute-text p {
+  margin: 1rem 0;
+}
+
+.contribute-content:nth-child(2) {
+  flex-direction: row-reverse;
+}
 
 /* Footer */
 
