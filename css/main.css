@@ -17,12 +17,32 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
 
 body {
-  background-image: url('../Images/Background/Logo_Background.png');
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.bg-img {
+  background-image: url('../Images/Background/drawing.svg');
+  background-color: #0f0f0f;
+  height: 1000rem;
+  width: 1000rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+  position: absolute;
+  z-index: -1000;
 }
 
 /* Common styles */
