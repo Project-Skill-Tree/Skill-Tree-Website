@@ -562,14 +562,14 @@ h5 {
 }
 
 .contribute-image {
-  width: 15rem;
+  width: 16rem;
   height: 10rem;
   flex-grow: 0;
   flex-shrink: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 0.25rem solid #fa00ba;
   margin: 0 1rem 0 0;
 }
@@ -588,6 +588,10 @@ h5 {
 .contribute-text {
   margin: 0 1rem 0 0;
   width: 100%;
+}
+
+.contribute-text h3 {
+  margin: 0;
 }
 
 .contribute-text p {
@@ -631,7 +635,7 @@ footer {
 
   .contribute-content h3 {
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .contribute-content:nth-child(2) {
@@ -652,7 +656,13 @@ footer {
   }
 
   .contribute-text p {
-    text-align: left;
+    text-align: center;
+  }
+
+  /* Project */
+
+  .project p {
+    text-align: center;
   }
 
 }
