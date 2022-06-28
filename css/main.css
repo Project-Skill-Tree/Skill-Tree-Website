@@ -78,33 +78,35 @@ h5 {
 
 /* Page Header */
 .Header-Wrapper {
-  display: grid;
-  margin: 0 auto;
-  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
 }
 
 .Header-Container {
-  justify-self: center;
-  align-self: center;
-  margin-bottom: 10px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 2rem;
+
 }
 
 .Header-Grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-self: center;
+  width: 100%;
+  display: flex;
   align-items: center;
-  column-gap: 62px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 3rem;
   align-items: center;
   font-family: 'akira expanded', sans-serif;
-  margin-right: 10%;
 }
 
 .User-Interface {
@@ -114,7 +116,6 @@ h5 {
 
 #Purple-Logo {
   width: 345px;
-  height: 345px;
 }
 
 .Text-Logo {
@@ -122,6 +123,8 @@ h5 {
   font-weight: 600;
   font-size: 36px;
   text-transform: uppercase;
+  font-family: "akira expanded";
+
 }
 
 .Header-Text {
@@ -130,9 +133,7 @@ h5 {
   font-weight: 800;
   color: #ffce00;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
+  display: inline-block;
 }
 
 #Header-Text-Title {
@@ -146,31 +147,34 @@ h5 {
 #Header-Text-Subtitle {
   font-family: 'akira expanded', sans-serif;
   font-size: 34px;
-  width: 100%;
 }
 
 .Header-Button {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .Header-Buttons-Section {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 100%;
   padding: 32px 0 8px;
+  gap: 1rem;
 }
 
-.Header-Buttons-Section li {
-  display: inline-block !important;
+
+
+.Header-Buttons-Section a {
+
+  padding: 14px 60px 14px 60px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #Invite_button {
   color: white;
-  text-align: center;
-  text-decoration: none;
+  
   background: #5c68ee;
   border-radius: 5px;
-  padding: 14px 60px 14px 60px;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: 0.5s;
@@ -187,7 +191,6 @@ h5 {
   text-decoration: none;
   background: #5e5e5e;
   border-radius: 5px;
-  padding: 14px 60px 14px 60px;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   pointer-events: none;
@@ -667,8 +670,115 @@ footer {
 
 }
 
+@media only screen and (max-width: 600px) {
+  #Purple-Logo {
+    width: 15rem;
+  }
+
+  #Header-Text-Title {
+    font-size: 2.25rem;
+  }
+
+  #Header-Text-Subtitle {
+    font-size: 1.5rem;
+  }
+
+  .Header-Buttons-Section {
+    width: 100%;
+    gap: .5rem;
+  }
+
+  .Header-Buttons-Section a {
+    padding: .75rem 1.5rem;
+    
+  }
+
+  .Socials li {
+    margin: .5rem;
+  }
+
+
+}
+
+
+
 @media only screen and (max-width: 400px) {
   h2 {
     font-size: 1.9rem;
+  }
+
+  .Header-Grid {
+    padding: 0 1rem;
+  }
+
+  #Purple-Logo {
+    width: 12.5rem;
+  }
+
+  #Header-Text-Title {
+    font-size: 1.9rem;
+  }
+
+  #Header-Text-Subtitle {
+    font-size: 1.25rem;
+  }
+
+  .Header-Buttons-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .Header-Buttons-Section li {
+    width: 100%;
+  }
+
+  .Header-Button {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Header-Button a{
+    padding: .75rem;
+  }
+
+  #Invite_button{
+    width: 100%;
+  }
+
+  #App_button{
+
+    width: 100%;
+
+  }
+
+
+  .Socials {
+    display: flex;
+    padding: 0;
+  }
+
+  .Socials a {
+    margin: 0;
+  }
+
+  .Socials li div{
+    width: 2.25rem;
+    height: 2rem;
+    margin: .25rem;
+    background-size:2.25rem 2rem;
+  }
+
+  .Socials li div:hover {
+    transform: scale(1.05);
+    background-size: cover;
+
   }
 }
