@@ -17,7 +17,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   overflow-x: hidden;
   position: relative;
@@ -89,7 +88,6 @@ h5 {
   max-width: 1000px;
   width: 100%;
   margin: 2rem;
-
 }
 
 .Header-Grid {
@@ -123,8 +121,7 @@ h5 {
   font-weight: 600;
   font-size: 36px;
   text-transform: uppercase;
-  font-family: "akira expanded";
-
+  font-family: 'akira expanded';
 }
 
 .Header-Text {
@@ -161,10 +158,7 @@ h5 {
   gap: 1rem;
 }
 
-
-
 .Header-Buttons-Section a {
-
   padding: 14px 60px 14px 60px;
   text-align: center;
   text-decoration: none;
@@ -172,7 +166,7 @@ h5 {
 
 #Invite_button {
   color: white;
-  
+
   background: #5c68ee;
   border-radius: 5px;
 
@@ -300,6 +294,25 @@ h5 {
   transition: all 0.3s;
 }
 
+/* Patreon Icon*/
+.Patreon-Icon {
+  width: 40px;
+  height: 40px;
+  background: url('../Images/Social_Logos/Non-Colored/Patreon_Icon.png')
+    no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+
+  transition: 0.2s;
+}
+
+.Patreon-Icon:hover {
+  background: url('../Images/Social_Logos/Colored/Patreon_Icon.png') no-repeat;
+  background-size: 40px 40px;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
 /* Dividers */
 
 .divider {
@@ -368,7 +381,7 @@ h5 {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  margin:2rem 1rem ;
+  margin: 2rem 1rem;
   height: auto;
 }
 
@@ -423,7 +436,7 @@ h5 {
   font-weight: 1000;
   color: #ffce00;
   text-transform: uppercase;
-  font-family: 'Akira Expanded','Ubuntu';
+  font-family: 'Akira Expanded', 'Ubuntu';
 }
 
 .project p {
@@ -431,7 +444,6 @@ h5 {
   color: #fff;
   font-family: 'Ubuntu';
 }
-
 
 /* RoadMap */
 
@@ -667,7 +679,6 @@ footer {
   .project p {
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -685,22 +696,17 @@ footer {
 
   .Header-Buttons-Section {
     width: 100%;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .Header-Buttons-Section a {
-    padding: .75rem 1.5rem;
-    
+    padding: 0.75rem 1.5rem;
   }
 
   .Socials li {
-    margin: .5rem;
+    margin: 0.5rem;
   }
-
-
 }
-
-
 
 @media only screen and (max-width: 400px) {
   h2 {
@@ -745,20 +751,17 @@ footer {
     justify-content: center;
   }
 
-  .Header-Button a{
-    padding: .75rem;
+  .Header-Button a {
+    padding: 0.75rem;
   }
 
-  #Invite_button{
+  #Invite_button {
     width: 100%;
   }
 
-  #App_button{
-
+  #App_button {
     width: 100%;
-
   }
-
 
   .Socials {
     display: flex;
@@ -769,16 +772,15 @@ footer {
     margin: 0;
   }
 
-  .Socials li div{
+  .Socials li div {
     width: 2.25rem;
     height: 2rem;
-    margin: .25rem;
-    background-size:2.25rem 2rem;
+    margin: 0.25rem;
+    background-size: 2.25rem 2rem;
   }
 
   .Socials li div:hover {
     transform: scale(1.05);
     background-size: cover;
-
   }
 }
