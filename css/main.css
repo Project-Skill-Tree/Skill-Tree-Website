@@ -211,14 +211,13 @@ h5 {
   background: url('../Images/Social_Logos/Non-Colored/Discord_Icon.png')
     no-repeat;
   background-size: 50px 40px;
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Discord-Icon:hover {
   background: url('../Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
   background-size: 50px 40px;
   transform: scale(1.05);
-  transition: 0.2s;
 }
 
 /* Instagram Icon */
@@ -228,14 +227,13 @@ h5 {
   background: url('../Images/Social_Logos/Non-Colored/Instagram_Icon.png')
     no-repeat;
   background-size: 40px 40px;
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Instagram-Icon:hover {
   background: url('../Images/Social_Logos/Colored/Instagram_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.2s;
 }
 
 /* Youtube Icon */
@@ -245,15 +243,13 @@ h5 {
   background: url('../Images/Social_Logos/Non-Colored/YouTube_Icon.png')
     no-repeat;
   background-size: 40px 40px;
-
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Youtube-Icon:hover {
   background: url('../Images/Social_Logos/Colored/YouTube_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.2s;
 }
 
 /* Twitter Icon */
@@ -264,14 +260,13 @@ h5 {
     no-repeat;
   background-size: 40px 40px;
   display: inline-block;
-
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
+
 .Twitter-Icon:hover {
   background: url('../Images/Social_Logos/Colored/Twitter_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: 0.2s;
 }
 
 /* Github Icon*/
@@ -282,8 +277,7 @@ h5 {
     no-repeat;
   background-size: 40px 40px;
   display: inline-block;
-
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Github-Icon:hover {
@@ -291,7 +285,6 @@ h5 {
   filter: brightness(135%);
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: all 0.3s;
 }
 
 /* Patreon Icon*/
@@ -302,15 +295,13 @@ h5 {
     no-repeat;
   background-size: 40px 40px;
   display: inline-block;
-
-  transition: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .Patreon-Icon:hover {
   background: url('../Images/Social_Logos/Colored/Patreon_Icon.png') no-repeat;
   background-size: 40px 40px;
   transform: scale(1.1);
-  transition: all 0.3s;
 }
 
 /* Dividers */
