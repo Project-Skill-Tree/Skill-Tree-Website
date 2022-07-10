@@ -636,6 +636,7 @@ footer {
 }
 
 .footer-text p {
+  padding-top: .75rem;
   color: #FFF;
   position: center;
   text-align: center;
