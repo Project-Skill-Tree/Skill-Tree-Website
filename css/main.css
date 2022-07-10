@@ -23,7 +23,6 @@ body {
 }
 
 
-
 .bg {
   height: 100%;
   width: 100%;
@@ -76,6 +75,27 @@ h5 {
   font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
   margin: 0 1rem;
 }
+
+/* Scroll Bar - Feel free to change this - faderz :) */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #131313;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(46, 46, 46);  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 71, 71); 
+  }
 
 /* Page Header */
 .Header-Wrapper {
