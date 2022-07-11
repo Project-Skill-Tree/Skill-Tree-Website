@@ -648,7 +648,7 @@ footer {
 }
 
 .footer-socials li {
-  margin: 0.2rem;
+  margin: 0.1rem;
   justify-content: center;
   align-items: center;
   position: center;
@@ -743,6 +743,51 @@ footer {
   .Socials li {
     margin: 0.5rem;
   }
+
+  /* Footer Icons */
+  
+.footer-socials .Discord-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Instagram-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Youtube-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Twitter-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Github-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Patreon-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+.footer-socials li {
+  margin: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  position: center;
+  display: inline-block;
+}
 }
 
 @media only screen and (max-width: 400px) {
