@@ -600,6 +600,8 @@ h5 {
   border-radius: 1rem;
   border: 0.25rem solid #fa00ba;
   margin: 0 1rem 0 0;
+    
+  box-shadow: -2px 8px 20px 12px black;
 }
 
 #contribute-image1 {
