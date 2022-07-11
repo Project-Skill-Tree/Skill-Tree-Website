@@ -5,7 +5,7 @@ accordionBtns.forEach((accordion) => {
     this.classList.toggle("active");
 
     let content = this.nextElementSibling;
-    console.log(content);
+    // console.log(content); test
 
     if (content.style.maxHeight) {
       //this is if the accordion is open
@@ -13,7 +13,7 @@ accordionBtns.forEach((accordion) => {
     } else {
       //if the accordion is currently closed
       content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
+      // console.log(content.style.maxHeight); test
     }
   };
 });
