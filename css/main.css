@@ -665,6 +665,42 @@ footer {
   justify-content: center
 }
 
+.footer-socials .Discord-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Instagram-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Youtube-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Twitter-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Github-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Patreon-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
 @media only screen and (max-width: 800px) {
   /* RoadMap section */
 
