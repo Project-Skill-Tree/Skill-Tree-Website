@@ -600,6 +600,8 @@ h5 {
   border-radius: 1rem;
   border: 0.25rem solid #fa00ba;
   margin: 0 1rem 0 0;
+    
+  box-shadow: -2px 8px 20px 12px black;
 }
 
 #contribute-image1 {
@@ -648,7 +650,7 @@ footer {
 }
 
 .footer-socials li {
-  margin: 0.2rem;
+  margin: 0.1rem;
   justify-content: center;
   align-items: center;
   position: center;
@@ -663,6 +665,42 @@ footer {
   width: 100%;
   display: inline-block;
   justify-content: center
+}
+
+.footer-socials .Discord-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Instagram-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Youtube-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Twitter-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Github-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+
+.footer-socials .Patreon-Icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -743,6 +781,51 @@ footer {
   .Socials li {
     margin: 0.5rem;
   }
+
+  /* Footer Icons */
+  
+.footer-socials .Discord-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Instagram-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Youtube-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Twitter-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Github-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.footer-socials .Patreon-Icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+.footer-socials li {
+  margin: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  position: center;
+  display: inline-block;
+}
 }
 
 @media only screen and (max-width: 400px) {
