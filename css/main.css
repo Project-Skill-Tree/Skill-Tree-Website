@@ -228,17 +228,17 @@ h5 {
 
 /* Discord Icon */
 .Discord-Icon {
-  width: 50px;
+  width: 40px;
   height: 40px;
   background: url('../Images/Social_Logos/Non-Colored/Discord_Icon.png')
     no-repeat;
-  background-size: 50px 40px;
+  background-size: 40px 40px;
   transition: all 0.3s ease-in-out;
 }
 
 .Discord-Icon:hover {
   background: url('../Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
-  background-size: 50px 40px;
+  background-size: 40px 40px;
   transform: scale(1.05);
 }
 
