@@ -1,19 +1,21 @@
-const accordionBtns = document.querySelectorAll(".item-header");
+/**
+ * @param {String} url - address for the HTML to fetch
+ * @return {String} the resulting HTML string fragment
+ */
+async function fetchHtmlAsText(url) {
+  return await (await fetch(url)).text();
+}
 
-accordionBtns.forEach((accordion) => {
-  accordion.onclick = function () {
-    this.classList.toggle("active");
-
-    let content = this.nextElementSibling;
-    // console.log(content); test
-
-    if (content.style.maxHeight) {
-      //this is if the accordion is open
-      content.style.maxHeight = null;
+function burgerMenu() {
+  var burgerNav = document.getElementById("burger-nav");
+  if (burgerNav) {
+    if (burgerNav.style.display === "block") {
+      burgerNav.style.display = "none";
     } else {
-      //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      // console.log(content.style.maxHeight); test
+      burgerNav.style.display = "block";
     }
-  };
-});
+  }
+}
+
+// Call the function to load common HTML partials
+document.addEventListener('DOMContentLoaded', loadCommonPartials);

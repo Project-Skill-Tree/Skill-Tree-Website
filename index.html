@@ -1,518 +1,225 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Meta Data-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gamify your self-improvement" />
+<html><head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gamify your self-improvement">
 
-    <title>Skill Tree</title>
+  <title>SkillTree</title>
 
-    <!-- Links -->
-    <link rel="icon" href="images/Logos/Favicon.png" type="image/png" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="icon" href="Images/Logos/Favicon.png" type="image/png" />
-  </head>
+  <!-- Links -->
+  <link rel="icon" href="Images/Logos/logo-small.png" type="image/png">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
+  <link rel="icon" href="Images/Logos/logo-small.png" type="image/png">
+</head>
+<body id="body">
+<header>
+  <a href="../index.html"><div class="header_logo"></div></a>
+  <nav class="top-nav">
+    <ul class="navlist">
+      <li class="navitem"><a href="../index.html">Home</a></li>
+      <li class="navitem"><a href="../about.html">About Us</a></li>
+      <li class="navitem"><a href="../terms.html">Terms and Conditions</a></li>
+    </ul>
+  </nav>
+  <a href="javascript:void(0);" class="burger-menu" onclick="burgerMenu()">
+    <img src="../Images/Icons/burger.png">
+  </a>
+  <div class="Socials Header-Socials">
+    <li>
+      <a rel="external" target="_blank" href="https://discord.gg/CKKshDe8rx">
+        <div class="Discord-Icon"></div>
+      </a>
+    </li>
 
-  <!-- Main Code -->
+    <li>
+      <a rel="external" target="_blank" href="https://www.instagram.com/project_skilltree/">
+        <div class="Instagram-Icon"></div>
+      </a>
+    </li>
 
-  <body>
-    <div class="bg">
-      <div class="bg-img"></div>
+    <li>
+      <a rel="external" target="_blank" href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA">
+        <div class="Youtube-Icon"></div>
+      </a>
+    </li>
+
+    <li>
+      <a rel="external" target="_blank" href="https://twitter.com/SkillTree_">
+        <div class="Twitter-Icon"></div>
+      </a>
+    </li>
+
+    <li>
+      <a rel="external" target="_blank" href="https://github.com/Project-Skill-Tree">
+        <div class="Github-Icon"></div>
+      </a>
+    </li>
+    <li>
+      <a rel="external" target="_blank" href="https://www.patreon.com/project_skilltree">
+        <div class="Patreon-Icon"></div>
+      </a>
+    </li>
+  </div>
+</header>
+<div class="burger-dropdown" id="burger-nav">
+  <ul class="burger-nav">
+    <li class="navitem burgeritem"><a href="../index.html">Home</a></li>
+    <li class="navitem burgeritem"><a href="../about.html">About Us</a></li>
+    <li class="navitem burgeritem"><a href="../terms.html">Terms and Conditions</a></li>
+  </ul>
+</div>
+
+<div class="home-container">
+  <div class="bg">
+    <div class="bg-img"></div>
+  </div>
+  <div class="Header-Wrapper">
+    <div class="Header-Container">
+      <div class="Header-Grid">
+        <img src="Images/Icons/chestOpenHighlighted.png" class="chest">
+        <div class="logo">
+          <img src="Images/Logos/logo.png" alt="Purple gold logo" id="Purple-Logo">
+        </div>
+
+        <div class="User-Interface">
+          <div class="Header-Text">
+            <p id="Header-Text-Title">
+              Gamify <span style="color: White">your</span>
+            </p>
+            <p id="Header-Text-Subtitle">self-improvement</p>
+          </div>
+
+          <div class="Header-Buttons-Section">
+            <div class="Header-Button">
+              <a target="_blank" type="submit"><img src="Images/Icons/appstore.png" style="filter: grayscale(100%) brightness(0.5);"></a>
+              <span style="position: absolute;color: rgb(200,200,200); rotate: -10deg; translate: 40px 20px">
+                  COMING SOON
+                </span>
+            </div>
+            <div class="Header-Button">
+              <a type="disabled" target="_blank">
+                <img src="Images/Icons/googleplay.png" style="filter: grayscale(100%) brightness(0.5);"></a>
+
+              <span style="position: absolute;color: rgb(200,200,200); text-shadow: 0 0 10px 10px black; rotate: -10deg; translate: 40px 20px">
+                  COMING SOON
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <header>
-      <div class="Header-Wrapper">
-        <div class="Header-Container">
-          <div class="Header-Grid">
-            <div class="logo">
-              <img
-                src="Images/Logos/Final_Logo.png"
-                alt="Purple gold logo"
-                id="Purple-Logo"
-              />
-              <p class="Text-Logo">SkillTree</p>
-            </div>
-
-            <div class="User-Interface">
-              <div class="Header-Text">
-                <p id="Header-Text-Title">
-                  Gamify <span style="color: White">your</span>
-                </p>
-                <p id="Header-Text-Subtitle">self-improvement</p>
-              </div>
-
-              <div class="Header-Buttons-Section">
-                <div class="Header-Button">
-                  <a
-                    href="https://discord.com/api/oauth2/authorize?client_id=955373017062572042&permissions=137439266816&scope=applications.commands%20bot"
-                    target="_blank"
-                    id="Invite_button"
-                    type="submit"
-                    ><b>Add Discord Bot</b></a
-                  >
-                </div>
-
-                <div class="Header-Button">
-                  <a target="_blank" id="App_button"><b>App Coming Soon</b></a>
-                </div>
-              </div>
-
-              <!--Social Media Icons-->
-              <div class="Socials">
-                <ul>
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://discord.gg/CKKshDe8rx"
-                    >
-                      <div class="Discord-Icon"></div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://www.instagram.com/project_skilltree/"
-                    >
-                      <div class="Instagram-Icon"></div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA"
-                    >
-                      <div class="Youtube-Icon"></div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://twitter.com/SkillTree_"
-                    >
-                      <div class="Twitter-Icon"></div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://github.com/Project-Skill-Tree"
-                    >
-                      <div class="Github-Icon"></div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      rel="external"
-                      target="_blank"
-                      href="https://www.patreon.com/project_skilltree"
-                    >
-                      <div class="Patreon-Icon"></div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    <div class="startBlock" style="height: 100%;">
+      <div class="start-img"></div>
+      <!--<div class="startContainer" style="position: absolute">
+        <button class="startButton" style="filter: grayscale(60%) brightness(0.8);">
+          COMING SOON
+        </button>
+        <div style="display: flex;flex-direction: column; align-self: center;">
+          <div class="level">
+            <b class="positive">+</b>
+            <span class="skill-title">BETTER MENTAL HEALTH</span>
+          </div>
+          <div class="level">
+            <b class="positive">+</b>
+            <span class="skill-title">FULFILLING RELATIONSHIPS</span>
+          </div>
+          <div class="level">
+            <b class="positive">+</b>
+            <span class="skill-title">IMPROVED FITNESS</span>
+          </div>
+          <div class="level">
+            <b class="positive">+</b>
+            <span class="skill-title">FOCUS AND PURPOSE</span>
+          </div>
+          <div class="level">
+            <b class="negative">-</b>
+            <span class="skill-title">BAD HABITS</span>
           </div>
         </div>
-      </div>
-    </header>
-
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
+      </div>-->
     </div>
+  </div>
 
-    <!-- Vision/Projects -->
-
-    <section class="vision">
-      <h2>Vision</h2>
-      <p>
-        We're developing a real-life video game skill tree to gamify your
-        self-improvement journey.
-      </p>
-      <p>
-        With skills, items, challenges, levels, XP, badges, and more, the skill
-        tree makes achieving your goals effortless and aims to improve mental
-        and physical health worldwide.
-      </p>
-      <h2 class="projects-title">Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <div class="project-image1"></div>
-          <div class="project-paragraph">
-            <span>Skills tree</span>
-            <p>
-              We’ve released a huge 6000x1000px poster for you to download with
-              every skill, item, and challenge in the skill tree completely
-              free. We’re working on a version you can print effortlessly to
-              mark off your skills and track your progress with a physical copy
-              of the tree.
-            </p>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-image2"></div>
-          <div class="project-paragraph">
-            <span>Discord bot</span>
-            <p>
-              The skill tree is most easily accessible through our discord bot.
-              You can add it to your own server in seconds and update your
-              tasks, start, skip, and cancel skills, view your items, view your
-              profile and XP, and get weekly reports to assess your progress and
-              keep you on the right track.
-            </p>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-image3"></div>
-          <div class="project-paragraph">
-            <span>Mobile App</span>
-            <p>
-              Currently, in development, our mobile app allows you to easily
-              access the skill tree from anywhere with seamless tracking, a
-              beautiful interface, and social features to help kickstart your
-              self-improvement journey. The app is set to be released by 2023.
-            </p>
-          </div>
-        </div>
+  <div class="benefits">
+    <div class="benefits-images">
+      <div class="benefit-container">
+        <img src="Images/Icons/challenge.png" class="benefit">
+        <b class="benefit-text">CHALLENGE YOURSELF</b>
       </div>
-    </section>
-
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
+      <div class="benefit-container">
+        <img src="Images/Icons/habits.png" class="benefit">
+        <b class="benefit-text">BUILD HABITS</b>
+      </div>
+      <div class="benefit-container">
+        <img src="Images/Icons/level.png" class="benefit">
+        <b class="benefit-text">LEVEL UP IRL</b>
+      </div>
     </div>
-
-    <!-- RoadMap -->
-    <section class="roadmap">
-      <h2>Roadmap</h2>
-
-      <div class="roadmap-cards-container">
-        <!-- Done/Finished Group -->
-        <div class="roadmap-group">
-          <h3>Done</h3>
-
-          <!-- Item 1 -->
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Project Start</p>
-              </span>
-              <p class="item-date">13/03/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">Project starts on lucidchart</p>
-            </div>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Engagement</p>
-              </span>
-              <p class="item-date">14/03/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                The project reaches 100 unique viewers and contributers
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Foundation</p>
-              </span>
-              <p class="item-date">16/03/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                Skill tree has 96 unique skills and 16 challenges
-              </p>
-            </div>
-          </div>
-          <!-- Item 4 -->
-
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Server Made</p>
-              </span>
-              <p class="item-date">17/03/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                1,500 new members + roles + discussions + designs + hype
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 5 -->
-
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Organisation</p>
-              </span>
-              <p class="item-date">17-21/03/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                Roadmap + Tech Stack + Project setup + tools announced .
-                Applications for management open.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 6 -->
-
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Discord Bot</p>
-              </span>
-              <p class="item-date">06/07/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                Team Lead assigned. BOT development begins, sprint planning +
-                requirements drawn up. Buisness plan written.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 7 -->
-
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="./Images/Icons/TICK.svg" alt="" />
-                <p class="item-goal">Design/Org</p>
-              </span>
-              <p class="item-date">10?/04/22</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                App UI mockups designed, developers and managers assigned
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- In progress Group -->
-        <div class="roadmap-group">
-          <h3>In Progress</h3>
-
-          <!-- Item 1 -->
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="Images/Icons/DOING.svg" alt="" />
-                <p class="item-goal">Mobile App</p>
-              </span>
-              <p class="item-date">Unknown</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                App development initiated. MVP for database and leveling. Hamza
-                promotes project and bot to 500,000 people.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Coming Group -->
-        <div class="roadmap-group">
-          <h3>Coming</h3>
-
-          <!-- Item 1 -->
-          <div class="roadmap-item">
-            <div class="item-header">
-              <span>
-                <img class="item-icon" src="Images/Icons/NEXT.svg" alt="" />
-                <p class="item-goal">FIRST RELEASE!</p>
-              </span>
-              <p class="item-date">God knows :D</p>
-            </div>
-
-            <div class="item-content">
-              <p class="item-description">
-                App published, 10k downloads in the first month!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider">
-      <span></span>
-      <img src="Images/Logos/Gold-Logo.png" alt="" />
-      <span></span>
+  </div>
+  <div class="rewards-container">
+    <div class="rewards-text-container">
+      <b class="rewards-text">HIGH QUALITY GUIDES, REWARDS, CHALLENGES, AND MORE</b>
     </div>
+    <div style="flex: 1; max-width: 50%; align-items: center; display: flex; justify-content: center">
+      <img src="Images/Icons/rewards.png" class="rewards">
+    </div>
+  </div>
+</div>
 
-    <!-- Contribute -->
+<div id="footer"><footer class="footer">
+  <div class="footer-socials">
+    <ul>
+      <li>
+        <a rel="external" target="_blank" href="https://discord.gg/CKKshDe8rx">
+          <div class="Discord-Icon"></div>
+        </a>
+      </li>
 
-    <section class="contribute">
-      <h2>Contribute</h2>
-      <div class="contribute-container">
-        <div class="contribute-content">
-          <div id="contribute-image1" class="contribute-image"></div>
-          <div class="contribute-text">
-            <h3>Designing</h3>
-            <p>
-              We need talented designers to help make visually stunning and
-              beautiful products. We need help with UI design for our website
-              (including this one!), our app, and any upcoming projects we need
-              help with. There are also tasks such as asset design and character
-              design which are great for newcomers to the project.
-            </p>
-          </div>
-        </div>
+      <li>
+        <a rel="external" target="_blank" href="https://www.instagram.com/project_skilltree/">
+          <div class="Instagram-Icon"></div>
+        </a>
+      </li>
 
-        <div class="contribute-content">
-          <div id="contribute-image2" class="contribute-image"></div>
-          <div class="contribute-text">
-            <h3>Developing</h3>
-            <p>
-              Development is crucial for making our products reliable,
-              intuitive, and easy to maintain across collaborators. Our
-              development teams are currently working on the discord bot itself,
-              a mobile app, our own custom API to let the bot and mobile app
-              interface with the same database, our own website, and a
-              specialised in-house tool for admins to edit the tree quickly and
-              view changes visually.
-            </p>
-          </div>
-        </div>
+      <li>
+        <a rel="external" target="_blank" href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA">
+          <div class="Youtube-Icon"></div>
+        </a>
+      </li>
 
-        <div class="contribute-content">
-          <div id="contribute-image3" class="contribute-image"></div>
-          <div class="contribute-text">
-            <h3>Other</h3>
-            <p>
-              We need your help to give us feedback about how we can improve the
-              bot, how we can make it fit your needs, or other features and
-              products which you’d like to see. You can give us feedback on the
-              bot <a href=" https://forms.gle/kbvYcNMVtmRy59PW6 ">here</a> We’re
-              also looking for marketers, managers, editors, translators and
-              more, please join our discord group if you’d like to help out,
-              we’re always looking out for people who are passionate about the
-              project.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <li>
+        <a rel="external" target="_blank" href="https://twitter.com/SkillTree_">
+          <div class="Twitter-Icon"></div>
+        </a>
+      </li>
 
-    <!-- Footer -->
+      <li>
+        <a rel="external" target="_blank" href="https://github.com/Project-Skill-Tree">
+          <div class="Github-Icon"></div>
+        </a>
+      </li>
+      <li>
+        <a rel="external" target="_blank" href="https://www.patreon.com/project_skilltree">
+          <div class="Patreon-Icon"></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-text">
+    <p>
+      PROJECT SKILL TREE LTD | 2023
+    </p>
+  </div>
+</footer></div>
 
-    <footer class="footer-bg" >
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-socials">
-            <ul>
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://discord.gg/CKKshDe8rx"
-                >
-                  <div class="Discord-Icon"></div>
-                </a>
-              </li>
+<!--JavaScript Imports-->
+<script type="text/javascript" src="javascript/script.js"></script>
 
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://www.instagram.com/project_skilltree/"
-                >
-                  <div class="Instagram-Icon"></div>
-                </a>
-              </li>
+<div class="preloadedImages" style="background-image: url('Images/Icons/button.png')"></div>
+<div class="preloadedImages" style="background-image: url('Images/Icons/button-clicked.png')"></div>
+<div class="preloadedImages" style="background-image: url('Images/Icons/button-hover.png')"></div>
 
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA"
-                >
-                  <div class="Youtube-Icon"></div>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://twitter.com/SkillTree_"
-                >
-                  <div class="Twitter-Icon"></div>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://github.com/Project-Skill-Tree"
-                >
-                  <div class="Github-Icon"></div>
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="external"
-                  target="_blank"
-                  href="https://www.patreon.com/project_skilltree"
-                >
-                  <div class="Patreon-Icon"></div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-text">
-            <p>
-              PROJECT SKILL TREE LTD | 2023
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!--JavaScript Imports-->
-    <script type="text/javascript" src="javascript/script.js"></script>
-  </body>
-</html>
+</body></html>
