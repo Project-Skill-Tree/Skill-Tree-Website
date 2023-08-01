@@ -41,7 +41,7 @@ body {
 }
 
 .bg-img {
-  background-image: url('../Images/Background/background.png');
+  background-image: url('../Images/Background/Background.png');
   background-position-y: -300px;
   background-size: 100%;
   background-color: #0f0f0f;
