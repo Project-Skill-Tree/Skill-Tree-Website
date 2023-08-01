@@ -1,0 +1,39 @@
+.title {
+    color: white;
+    font-family: RussoOne;
+    font-size: 30px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.about-container {
+    align-self: center;
+    height: 100%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.about-us {
+    color: rgb(230, 230, 230);
+    font-family: Caecilla, sans-serif;
+    overflow-wrap: break-word;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 70%;
+    margin-top: 30px;
+}
