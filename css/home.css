@@ -18,7 +18,7 @@
 .start-img {
     position: absolute;
     left: 50%;
-    background-image: url('../Images/Background/phones.png');
+    background-image: url('../Images/Background/phones.webp');
     pointer-events: none;
     background-position: center center;
     background-repeat: no-repeat;
