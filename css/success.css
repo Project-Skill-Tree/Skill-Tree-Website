@@ -30,6 +30,8 @@
   }
   
   .card .card-title {
+    font-family: 'RussoOne', 'sans-serif';
+    color: #FFCE00;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -41,7 +43,7 @@
   }
   
   .card .btn-primary {
-    color: #2d0451;
+    color: black;
     font-family: 'RussoOne', sans-serif;
     background-color: #ffce00;
     border-color: #2d0451;

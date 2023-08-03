@@ -18,14 +18,18 @@
 <body id="body">
 
   <!-- there was no need for the complicated calculations for css :sob: -->
-<div class="bg" style="height: 100%;"> 
-  <div class="bg-img" style="background-image: url('../Images/Background/Logo_Background-Darker.png');"></div>
-</div>
+  <div class="bg" style="height: 100%">
+    <div class="bg-img"></div>
+    <div class="bg-dim"></div>
+    <div class="bg-shadow-flipped" style="top: 100%; height: 100%"></div>
+    <div class="bg-shadow" style="top: -1050px; height: calc(100% + 1050px)"></div>
+    <div class="bg-gradient"></div>
+  </div>
 
 <div class="d-flex justify-content-center align-items-center h-100">
   <div class="card text-center">
     <div class="card-body">
-      <h5 class="card-title">Success</h5>
+      <h5 class="card-title">SUCCESS</h5>
       <p class="card-text">You have successfully authenticated.</p>
       <p class="card-subtitle">If you aren't automatically redirected to the app, click the return button.</p>
       <a class="btn btn-primary" onClick="redirectApp()">RETURN</a>
