@@ -50,11 +50,12 @@
     border-radius: 5px;
     text-decoration: none;
     text-decoration-color: #ffce00;
+    transition: ease-in-out 0.3s;
   }
   
   .card .btn-primary:hover {
     background-color: #b99400;
-    transition: ease-in-out 0.3s;
+    cursor: pointer;
   }
   
   .card .card-subtitle {
