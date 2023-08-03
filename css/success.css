@@ -1,20 +1,20 @@
 .d-flex {
-  display: flex;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.h-100 {
-  height: 100vh;
-}
-
-.card {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .h-100 {
+    height: 100vh;
+  }
+  
+  .card {
     background-color: #1a1a1a;
     color: #fff;
     border: none;
@@ -56,7 +56,7 @@
     background-color: #b99400;
     transition: ease-in-out 0.3s;
   }
-
+  
   .card .card-subtitle {
     color: #929292;
     font-size: 0.7rem;

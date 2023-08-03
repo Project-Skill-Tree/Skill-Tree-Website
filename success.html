@@ -34,10 +34,11 @@
 </div>
 
 <script>
-  // Check if dev=true in URL query
+  // Get query string for redirect from /success?redirect=appURI
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const appURI = urlParams.get('redirect');
+
   // Redirect to app after 5 seconds
   setTimeout(function() {
     window.location.href = appURI;
