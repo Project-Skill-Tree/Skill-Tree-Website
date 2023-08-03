@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gamify your self-improvement">
+  <meta name="google-site-verification" content="Of745Ts_laOfoDCPg1Wc3TDyvl06z_Sg7EgDJ_l4hR8" />
+
+  <title>SkillTree</title>
+
+  <!-- Links -->
+  <link rel="icon" href="Images/Logos/logo-small.png" type="image/png">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/success.css" type="text/css">
+  <link rel="icon" href="Images/Logos/logo-small.png" type="image/png">
+</head>
+<body id="body">
+
+  <!-- there was no need for the complicated calculations for css :sob: -->
+<div class="bg" style="height: 100%;"> 
+  <div class="bg-img"></div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center h-100">
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Success</h5>
+      <p class="card-text">You have successfully authenticated.</p>
+      <p class="card-subtitle">If you aren't automatically redirected to the app, click the return button.</p>
+      <a class="btn btn-primary" onClick="redirectApp()">RETURN</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Check if dev=true in URL query
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const appURI = urlParams.get('redirect');
+  // Redirect to app after 5 seconds
+  setTimeout(function() {
+    window.location.href = appURI;
+  }, 5000);
+
+  // Redirect to app on button click
+  function redirectApp() {
+    window.location.href = appURI;
+  }
+</script>
+
+<!--JavaScript Imports-->
+<script type="text/javascript" src="javascript/script.js"></script>
+
+<div class="preloadedImages" style="background-image: url('Images/Icons/button.png')"></div>
+<div class="preloadedImages" style="background-image: url('Images/Icons/button-clicked.png')"></div>
+<div class="preloadedImages" style="background-image: url('Images/Icons/button-hover.png')"></div>
+
+</body></html>
