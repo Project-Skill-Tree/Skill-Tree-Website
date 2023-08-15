@@ -1,0 +1,132 @@
+/* Footer */
+
+footer {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #151515;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-socials {
+    position: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-socials li {
+    margin: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    display: inline-block;
+}
+
+.footer-text p {
+    padding-top: .75rem;
+    color: #FFF;
+    position: center;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    justify-content: center
+}
+
+.footer-socials .Discord-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-socials .Instagram-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-socials .Youtube-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-socials .Twitter-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-socials .Github-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-socials .Patreon-Icon {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer-links {
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.footer-link {
+    color: rgba(200,200,200);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: RussoOne, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-socials .Discord-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .footer-socials .Instagram-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .footer-socials .Youtube-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .footer-socials .Twitter-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .footer-socials .Github-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .footer-socials .Patreon-Icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+    .footer-socials li {
+        margin: 0.2rem;
+        justify-content: center;
+        align-items: center;
+        position: center;
+        display: inline-block;
+    }
+}

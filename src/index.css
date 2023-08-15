@@ -1,17 +1,9 @@
-/*Color pallete
-    #FEDC222 - Light yellow
-    #FFCE00  - Yellow
-    #FFBA00  - Darker yellow
-    #610DA9  - Purple
-    #2D0352  - Dark purple
-*/
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.cdnfonts.com/css/akira-expanded');
-@font-face { font-family: RussoOne; src: url('../fonts/russoone-regular.ttf'); }
-@font-face { font-family: Caecilla; src: url('../fonts/Caecilia-Roman.otf'); }
+@font-face { font-family: RussoOne; src: url('./fonts/russoone-regular.ttf'); }
+@font-face { font-family: Caecilla; src: url('./fonts/Caecilia-Roman.otf'); }
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +36,7 @@ body {
 .bg-img {
   position: absolute;
   overflow: hidden;
-  background-image: url('../Images/Background/background-highlight-outline.png');
+  background-image: url('./Images/Background/background-highlight-outline.png');
   background-position: center center;
   background-size: 300px;
   transform-origin: center center;
@@ -162,14 +154,14 @@ h5 {
 .Discord-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/Discord_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/Discord_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Discord-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.05);
 }
@@ -178,14 +170,14 @@ h5 {
 .Instagram-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/Instagram_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/Instagram_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Instagram-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/Instagram_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/Instagram_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -194,14 +186,14 @@ h5 {
 .Youtube-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/YouTube_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/YouTube_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Youtube-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/YouTube_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/YouTube_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -210,7 +202,7 @@ h5 {
 .Twitter-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/Twitter_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/Twitter_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -218,7 +210,7 @@ h5 {
 }
 
 .Twitter-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/Twitter_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/Twitter_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -227,7 +219,7 @@ h5 {
 .Github-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/GitHub_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/GitHub_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -235,7 +227,7 @@ h5 {
 }
 
 .Github-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/GitHub_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/GitHub_Icon.png') no-repeat;
   filter: brightness(135%);
   background-size: 30px 30px;
   transform: scale(1.1);
@@ -245,7 +237,7 @@ h5 {
 .Patreon-Icon {
   width: 30px;
   height: 30px;
-  background: url('../Images/Social_Logos/Non-Colored/Patreon_Icon.png')
+  background: url('./Images/Social_Logos/Non-Colored/Patreon_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -253,7 +245,7 @@ h5 {
 }
 
 .Patreon-Icon:hover {
-  background: url('../Images/Social_Logos/Colored/Patreon_Icon.png') no-repeat;
+  background: url('./Images/Social_Logos/Colored/Patreon_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -274,81 +266,8 @@ h5 {
   text-decoration: none;
 }
 
-/* Footer */
-
-footer {
-  width: 100%;
-  display:flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #151515;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer-socials {
-  position: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-socials li {
-  margin: 0.1rem;
-  justify-content: center;
-  align-items: center;
-  position: center;
-  display: inline-block;
-}
-
-.footer-text p {
-  padding-top: .75rem;
-  color: #FFF;
-  position: center;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  justify-content: center
-}
-
-.footer-socials .Discord-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.footer-socials .Instagram-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.footer-socials .Youtube-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.footer-socials .Twitter-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.footer-socials .Github-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.footer-socials .Patreon-Icon {
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
 .header_logo {
-  background-image: url('../Images/Logos/logo-small.png');
+  background-image: url('./Images/Logos/logo-small.png');
   background-size: 50px;
   height: 50px;
   width: 50px;
@@ -459,53 +378,18 @@ nav {
   background-color: #4E1496;
 }
 
+@media only screen and (max-width: 1000px) {
+  .Header-Socials {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .burger-menu {
     display: flex;
   }
   .top-nav {
     display: none;
-  }
-  .footer-socials .Discord-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-
-  .footer-socials .Instagram-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-
-  .footer-socials .Youtube-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-
-  .footer-socials .Twitter-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-
-  .footer-socials .Github-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-
-  .footer-socials .Patreon-Icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-  .footer-socials li {
-    margin: 0.2rem;
-    justify-content: center;
-    align-items: center;
-    position: center;
-    display: inline-block;
   }
 }
