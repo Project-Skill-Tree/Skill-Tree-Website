@@ -1,0 +1,27 @@
+{
+  "name": "SkillTree - Gamify your Self-Improvement",
+  "short_name": "SkillTree",
+  "description": "Turn your life into a game with Skilltree! Build habits, compete with friends, and learn new skills. Download Skilltree and start levelling up!",
+  "keywords": ["Skill Tree", "Project Skilltree", "skilltree",
+    "self-improvement", "personal-development", "gamify", "level-up",
+    "habits", "todo", "list", "meditation", "habit tracker", "hamza", "app",
+    "mobile", "skills", "productivity", "online games",
+    "boredom", "mental health", "anxiety", "depression", "weak", "lonely", "unhappy", "sad"],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#151515",
+  "theme_color": "#009688",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web"
+    }
+  ]
+}
+
