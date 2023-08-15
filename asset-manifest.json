@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.567b0f3a.css",
-    "main.js": "/static/js/main.d0e8da66.js",
+    "main.css": "/static/css/main.b969ad6a.css",
+    "main.js": "/static/js/main.e0c37d7a.js",
     "static/js/787.8aa8a015.chunk.js": "/static/js/787.8aa8a015.chunk.js",
     "static/media/phones.webp": "/static/media/phones.97146c202bf0096a7b57.webp",
     "static/media/rewards.webp": "/static/media/rewards.d1d3a68d0cfb89f0cc22.webp",
@@ -20,12 +20,12 @@
     "static/media/GitHub_Icon.png": "/static/media/GitHub_Icon.d5c528c6c29a8d97d71f.png",
     "static/media/Discord_Icon.png": "/static/media/Discord_Icon.80df9463925ede846ba2.png",
     "index.html": "/index.html",
-    "main.567b0f3a.css.map": "/static/css/main.567b0f3a.css.map",
-    "main.d0e8da66.js.map": "/static/js/main.d0e8da66.js.map",
+    "main.b969ad6a.css.map": "/static/css/main.b969ad6a.css.map",
+    "main.e0c37d7a.js.map": "/static/js/main.e0c37d7a.js.map",
     "787.8aa8a015.chunk.js.map": "/static/js/787.8aa8a015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.567b0f3a.css",
-    "static/js/main.d0e8da66.js"
+    "static/css/main.b969ad6a.css",
+    "static/js/main.e0c37d7a.js"
   ]
 }
