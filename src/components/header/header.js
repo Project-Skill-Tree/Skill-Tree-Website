@@ -20,9 +20,9 @@ export const Header = () => {
         <nav className="top-nav">
           <ul className="navlist">
             <li className="navitem">
-              <a href={`${process.env.PUBLIC_URL}/index.html`}>Home</a>
+              <a href={`./index.html`}>Home</a>
             </li>
-            <li className="navitem"><a href="./about">About Us</a></li>
+            <li className="navitem"><a href="./#/about">About Us</a></li>
           </ul>
         </nav>
         <a className="burger-menu" onClick={burgerMenu}>
@@ -70,10 +70,9 @@ export const Header = () => {
         <div className="burger-dropdown" id="burger-nav">
           <ul className="burger-nav">
             <li className="navitem burgeritem">
-              <a href="../">Home</a>
+              <a href="./">Home</a>
             </li>
-            {/*<li className="navitem burgeritem"><a href="../about">About Us</a></li>*/}
-            {/*<li className="navitem burgeritem"><a href="../terms">Terms and Conditions</a></li>*/}
+            <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
           </ul>
         </div>
     </>
