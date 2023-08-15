@@ -66,7 +66,7 @@ export const TermsPage = ({}) => {
           <span className="terms">If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect. By using the Skilltree App, you acknowledge that you have read, understood, and agreed to these Terms of Service. </span>
           <span className="term-subheading">Contact Us</span>
           <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at <a
-            href="mailto:support@projectskilltree.com<">support@projectskilltree.com</a></span>
+            href="mailto:support@projectskilltree.com">support@projectskilltree.com</a></span>
         </div>
       </div>
     </div>
