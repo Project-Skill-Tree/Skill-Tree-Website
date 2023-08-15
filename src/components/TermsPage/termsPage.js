@@ -4,7 +4,7 @@ import "../HomePage/home.css"
 export const TermsPage = ({}) => {
   return (
     <div className="home-container">
-      <div style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
+      <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
         <div className="term-container">
           <span className="term-title">Terms of Service - Skilltree</span>
           <span className="terms" style={{fontWeight: "bold"}}>Last Updated: 15/08/23</span>
@@ -65,10 +65,10 @@ export const TermsPage = ({}) => {
           <span className="term-subheading">Severability</span>
           <span className="terms">If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect. By using the Skilltree App, you acknowledge that you have read, understood, and agreed to these Terms of Service. </span>
           <span className="term-subheading">Contact Us</span>
-          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at
-        <a href="mailto:support@projectskilltree.com<">support@projectskilltree.com</a></span>
+          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at <a
+            href="mailto:support@projectskilltree.com<">support@projectskilltree.com</a></span>
         </div>
       </div>
     </div>
-)
+  )
 }

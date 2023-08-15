@@ -20,7 +20,7 @@ export const Header = () => {
         <nav className="top-nav">
           <ul className="navlist">
             <li className="navitem">
-              <a href={`./index.html`}>Home</a>
+              <a href={`./`}>Home</a>
             </li>
             <li className="navitem"><a href="./#/about">About Us</a></li>
           </ul>

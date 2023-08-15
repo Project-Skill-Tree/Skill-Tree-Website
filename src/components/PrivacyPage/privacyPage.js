@@ -69,12 +69,12 @@ export const PrivacyPage = ({}) => {
             </li>
           </ul>
           </span>
-          <span className="terms-subheading">Data Breach Notification</span>
+          <span className="term-subheading">Data Breach Notification</span>
           <span className="terms">
             In the event of a data breach that poses a significant risk to your rights and freedoms, we are committed to notifying you and any applicable supervisory authorities without undue delay. We will take all necessary measures to assess, contain, and mitigate the impact of the breach and will keep you informed about the steps we take to address the incident.
             <br/><br/>Please note that exercising your data subject rights may be subject to certain legal conditions and requirements. If you wish to exercise any of these rights or have questions about them, please contact us using the details provided in the "Contact Us" section of this Privacy Policy.
           </span>
-          <span className="-term-subheading">Security Measures</span>
+          <span className="term-subheading">Security Measures</span>
           <span className="terms">
             We take the security of your data seriously. All user-generated data is stored in a secure, encrypted database accessible only with an access token, ensuring that your information remains protected. We also implement industry-standard measures to prevent unauthorized access or disclosure of your personal information. Passwords are also protected using a set of password strength requirements.
           </span>
@@ -84,8 +84,7 @@ export const PrivacyPage = ({}) => {
           If the Company is involved in a merger, acquisition or asset sale, your personal data may be transferred. We will provide notice before your personal data is transferred and becomes subject to a different Privacy Policy
 </span>
           <span className="term-subheading">Contact Us</span>
-          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at
-        <a href="mailto:support@projectskilltree.com<">support@projectskilltree.com</a></span>
+          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at <a href="mailto:support@projectskilltree.com<">support@projectskilltree.com</a></span>
         </div>
       </div>
     </div>
