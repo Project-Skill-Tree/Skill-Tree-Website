@@ -1,0 +1,129 @@
+.header_logo {
+    background-image: url("../../Images/Logos/logo-small.png");
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Basic styling for header */
+header {
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-right: 20px;
+    border-bottom-color: #FFCE00;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-style: solid;
+}
+
+/* Styling for navigation tabs */
+.burger-nav {
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #151515;
+    height: 100%;
+}
+.burger-dropdown {
+    display: none;
+    border-width: 0; border-bottom-width: 2px; border-style: solid; border-color: #FFCE00
+}
+.top-nav {
+    display: block;
+}
+.nav-bar-skeleton {
+    background-color: #151515;
+    min-height: 60px;
+    border-width: 0;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: #FFCE00;
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.navlist{
+    list-style: none;
+    flex-direction: row;
+    height: 100%;
+    gap: 0px;
+}
+.navitem{
+    float: left;
+    padding: 0;
+    height: 100%;
+}
+.burgeritem {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.navitem a{
+    text-decoration: none;
+    color: white;
+    font-family: RussoOne;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.navitem a:hover {
+    background-color: #4E1496;
+}
+
+/* Style for tab content */
+.tab-content .tab-item {
+    display: none;
+}
+.tab-content .tab-item.active {
+    display: block;
+}
+
+.burger-menu {
+    position: absolute;
+    right: 0;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    display: none;
+}
+.burger-menu img{
+    width: 30px;
+    height: 30px
+}
+
+.burger-menu:hover{
+    background-color: #4E1496;
+}
+
+@media only screen and (max-width: 1000px) {
+    .Header-Socials {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .top-nav {
+        display: none;
+    }
+}

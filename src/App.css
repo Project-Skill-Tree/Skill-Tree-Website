@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .Socials li {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Socials a {
+    margin: 0;
+  }
+
+  .Socials li div {
+    width: 2.25rem;
+    height: 2rem;
+    margin: 0.25rem;
+    background-size: 2.25rem 2rem;
+  }
+
+  .Socials li div:hover {
+    transform: scale(1.05);
+    background-size: cover;
+  }
+}
+
