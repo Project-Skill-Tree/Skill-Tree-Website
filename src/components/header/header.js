@@ -23,6 +23,7 @@ export const Header = () => {
               <a href={`./`}>Home</a>
             </li>
             <li className="navitem"><a href="./#/about">About Us</a></li>
+            <li className="navitem"><a href="./#/contact-us">Contact Us</a></li>
           </ul>
         </nav>
         <a className="burger-menu" onClick={burgerMenu}>
@@ -73,6 +74,7 @@ export const Header = () => {
               <a href="./">Home</a>
             </li>
             <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
+            <li className="navitem burgeritem"><a href="./#/contact-us">About Us</a></li>
           </ul>
         </div>
     </>

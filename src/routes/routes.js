@@ -5,6 +5,7 @@ import {AboutPage} from '../components/AboutPage/aboutPage';
 import {TermsPage} from '../components/TermsPage/termsPage';
 import {PrivacyPage} from '../components/PrivacyPage/privacyPage';
 import {Success} from "../components/success/success";
+import {ContactPage} from "../components/ContactPage/contactPage"
 
 const RouteManager = () => {
   return (
@@ -16,6 +17,7 @@ const RouteManager = () => {
         <Route path="/terms" element={<TermsPage/>} />
         <Route path="/privacy" element={<PrivacyPage/>} />
         <Route path="/success" element={<Success/>} />
+        <Route path="/contact-us" element={<ContactPage/>} />
       </Routes>
     </Router>
   );

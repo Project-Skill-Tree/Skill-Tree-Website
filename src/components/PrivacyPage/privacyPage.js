@@ -84,8 +84,8 @@ export const PrivacyPage = ({}) => {
           If the Company is involved in a merger, acquisition or asset sale, your personal data may be transferred. We will provide notice before your personal data is transferred and becomes subject to a different Privacy Policy
 </span>
           <span className="term-subheading">Contact Us</span>
-          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at
-            <a href="mailto:support@projectskilltree.com">support@projectskilltree.com</a></span>
+          <span className="terms">If you have any questions or concerns regarding these Terms, please contact us at <a
+            href="mailto:support@projectskilltree.com">support@projectskilltree.com</a></span>
         </div>
       </div>
     </div>

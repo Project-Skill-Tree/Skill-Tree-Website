@@ -186,7 +186,7 @@
     gap: 16px;
     margin: 1rem;
     align-items: center;
-    font-family: 'akira expanded', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 .User-Interface {
@@ -203,11 +203,11 @@
     font-weight: 600;
     font-size: 36px;
     text-transform: uppercase;
-    font-family: 'akira expanded';
+    font-family: 'Russo One';
 }
 
 .Landing-Text {
-    text-shadow: 0px 6px 0px #000000;
+    text-shadow: 0px 5px 5px #000000;
     text-transform: uppercase;
     font-weight: 800;
     color: #ffce00;
@@ -218,13 +218,13 @@
 #Landing-Text-Title {
     display: flex;
     justify-content: space-between;
-    font-family: 'akira expanded', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 51px;
     height: 40px;
 }
 
 #Landing-Text-Subtitle {
-    font-family: 'akira expanded', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 34px;
 }
 
