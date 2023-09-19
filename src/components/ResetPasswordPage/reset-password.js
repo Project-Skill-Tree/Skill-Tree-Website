@@ -1,7 +1,6 @@
 import {useSearchParams} from "react-router-dom";
-import {useEffect} from "react";
+import {useState} from "react";
 import "./reset-password.css"
-import {useState} from "react"
 
 export const ResetPasswordPage = ({}) => {
   const [errorText, setErrorText] = useState("")
@@ -9,6 +8,7 @@ export const ResetPasswordPage = ({}) => {
   const token = urlParams.get('token');
   const [password, setPassword] = useState(undefined)
   const [confirmPassword, setConfirmPassword] = useState("undefined")
+  const [passwordStrength, setPasswordStrength] = useState(0)
 
   // Redirect to app on button click
   function submit() {
@@ -23,11 +23,45 @@ export const ResetPasswordPage = ({}) => {
     // POST request using fetch inside useEffect React hook
     const requestOptions = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title: 'React Hooks POST Request Example' })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({title: 'React Hooks POST Request Example'})
     };
     fetch('https://reqres.in/api/posts', requestOptions)
   }
+
+  const checkPasswordStrength = (password) => {
+    const minLength = 6;
+    const maxStrength = 4;
+    let strength = 1;
+
+    if (password.length >= minLength) {
+      const hasLowerCase = /[a-z]/.test(password);
+      const hasUpperCase = /[A-Z]/.test(password);
+      const hasNumber = /\d/.test(password);
+      const hasSpecialChar = /[!@#$%^&*?_~\-()]/.test(password);
+
+      const conditions = [hasLowerCase, hasUpperCase, hasNumber, hasSpecialChar];
+      const trueConditions = conditions.filter((condition) => condition);
+
+      strength = Math.min(maxStrength, trueConditions.length);
+
+      if (!hasLowerCase) {
+        setErrorText("Password must contain one lowercase character");
+      } else if (!hasUpperCase) {
+        setErrorText("Password must contain one uppercase character");
+      } else if (!hasSpecialChar) {
+        setErrorText("Password must contain one special character");
+      } else if (!hasNumber) {
+        setErrorText("Password must contain one number");
+      } else {
+        setErrorText("");
+      }
+    } else {
+      setErrorText("Password must be >5 characters");
+    }
+
+    setPasswordStrength(strength);
+  };
 
   return (
     <div className="home-container">
@@ -43,17 +77,49 @@ export const ResetPasswordPage = ({}) => {
           <div className="card-body">
             <h5 className="card-title">ENTER NEW PASSWORD</h5>
             <p className={"error-text"}>{errorText}</p>
-            <div style={{display: "flex",flexDirection: "row", width: "100%", marginBottom: 15}}>
-              <div style={{display: "flex",flexDirection: "column", alignItems: "flex-end", marginRight: 10}}>
-                <p className={"card-text"}>PASSWORD:</p>
-                <p className={"card-text"}>CONFIRM PASSWORD:</p>
-              </div>
-              <div style={{display: "flex",flex: 1, flexDirection: "column", alignItems: "flex-end", marginRight: 10}}>
-                <input className={"password-input"} type="password" name="password"
-                       onInput={e => setPassword(e.target.value)}></input>
-                <input className={"password-input"} type="password" name="confirm-password"
-                       onInput={e => setConfirmPassword(e.target.value)}></input>
-              </div>
+            <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
+              <input className={"password-input"} type="password" name="password"
+                     placeholder={"Password"}
+                     onInput={(e) => {
+                       checkPasswordStrength(e.target.value)
+                       setPassword(e.target.value)
+                     }}></input>
+              {passwordStrength != 0 && (
+                <div style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: "100%",
+                  marginBottom: 15,
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}>
+                  <p style={{fontSize: 15, marginRight: 15}}>Password Strength:</p>
+                  <div
+                    style={{
+                      borderRadius: 30,
+                      flex: 1,
+                      height: 20,
+                      overflow: "hidden",
+                      backgroundColor: "black",
+                    }}
+                  >
+                    <div
+                      style={{
+                        flex: 1,
+                        height: 20,
+                        width: ["0%", "25%", "50%", "75%", "100%"][passwordStrength],
+                        backgroundColor:
+                          passwordStrength >= 0
+                            ? ["transparent", "red", "orange", "yellow", "green"][passwordStrength]
+                            : "transparent"
+                      }}
+                    ></div>
+                  </div>
+                </div>
+              )}
+              <input className={"password-input"} type="password" name="confirm-password"
+                     placeholder={"Confirm Password"}
+                     onInput={e => setConfirmPassword(e.target.value)}></input>
             </div>
             <a className="btn-primary" id="button-redirect" onClick={submit}>RESET</a>
           </div>
