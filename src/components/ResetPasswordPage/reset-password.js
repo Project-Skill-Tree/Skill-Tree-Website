@@ -15,14 +15,17 @@ export const ResetPasswordPage = ({}) => {
   function submit() {
     if (!password || !confirmPassword) {
       setErrorText("Please enter a valid password and confirmation password")
-      return
+      return;
     }
     if (password != confirmPassword) {
       setErrorText("Passwords do not match")
-      return
+      return;
+    }
+    if(passwordStrength < 3) {
+      setErrorText("Password is too weak");
+      return;
     }
 
-    
     // POST request using fetch inside useEffect React hook
     const requestOptions = {
       method: 'POST',
@@ -52,13 +55,13 @@ export const ResetPasswordPage = ({}) => {
       strength = Math.min(maxStrength, trueConditions.length);
 
       if (!hasLowerCase) {
-        setErrorText("Password must contain at least one lowercase character");
+        setErrorText("Password should contain at least one lowercase character");
       } else if (!hasUpperCase) {
-        setErrorText("Password must contain at least one uppercase character");
+        setErrorText("Password should contain at least one uppercase character");
       } else if (!hasSpecialChar) {
-        setErrorText("Password must contain at least one special character");
+        setErrorText("Password should contain at least one special character");
       } else if (!hasNumber) {
-        setErrorText("Password must contain at least one number");
+        setErrorText("Password should contain at least one number");
       } else {
         setErrorText("");
       }
