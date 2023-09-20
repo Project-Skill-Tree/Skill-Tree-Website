@@ -9,6 +9,7 @@ export const ResetPasswordPage = ({}) => {
   const [password, setPassword] = useState(undefined)
   const [confirmPassword, setConfirmPassword] = useState("undefined")
   const [passwordStrength, setPasswordStrength] = useState(0)
+  const API_URL = "https://dev-api.projectskilltree.com"
 
   // Redirect to app on button click
   function submit() {
@@ -20,13 +21,18 @@ export const ResetPasswordPage = ({}) => {
       setErrorText("Passwords do not match")
       return
     }
+
+    
     // POST request using fetch inside useEffect React hook
     const requestOptions = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({title: 'React Hooks POST Request Example'})
+      body: JSON.stringify({
+        token,
+        password
+      })
     };
-    fetch('https://reqres.in/api/posts', requestOptions)
+    fetch(`${API_URL}/password-reset`, requestOptions)
   }
 
   const checkPasswordStrength = (password) => {
@@ -38,7 +44,7 @@ export const ResetPasswordPage = ({}) => {
       const hasLowerCase = /[a-z]/.test(password);
       const hasUpperCase = /[A-Z]/.test(password);
       const hasNumber = /\d/.test(password);
-      const hasSpecialChar = /[!@#$%^&*?_~\-()]/.test(password);
+      const hasSpecialChar = /[!@#$%^&*?_~\-().,]/.test(password);
 
       const conditions = [hasLowerCase, hasUpperCase, hasNumber, hasSpecialChar];
       const trueConditions = conditions.filter((condition) => condition);
@@ -46,13 +52,13 @@ export const ResetPasswordPage = ({}) => {
       strength = Math.min(maxStrength, trueConditions.length);
 
       if (!hasLowerCase) {
-        setErrorText("Password must contain one lowercase character");
+        setErrorText("Password must contain at least one lowercase character");
       } else if (!hasUpperCase) {
-        setErrorText("Password must contain one uppercase character");
+        setErrorText("Password must contain at least one uppercase character");
       } else if (!hasSpecialChar) {
-        setErrorText("Password must contain one special character");
+        setErrorText("Password must contain at least one special character");
       } else if (!hasNumber) {
-        setErrorText("Password must contain one number");
+        setErrorText("Password must contain at least one number");
       } else {
         setErrorText("");
       }
