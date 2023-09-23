@@ -17,7 +17,7 @@ export const ResetPasswordPage = ({}) => {
       setErrorText("Please enter a valid password and confirmation password")
       return;
     }
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       setErrorText("Passwords do not match")
       return;
     }
@@ -35,7 +35,14 @@ export const ResetPasswordPage = ({}) => {
         password
       })
     };
-    fetch(`${API_URL}/password-reset`, requestOptions)
+    fetch(`${API_URL}/password-reset`, requestOptions).then(result => {
+      if(result.ok) {
+        window.location.href = `${window.location.origin}/#/success?purpose=password-changed`
+      }
+      else {
+        setErrorText("Unexpected error when updating password")
+      }
+    })
   }
 
   const checkPasswordStrength = (password) => {
@@ -93,7 +100,7 @@ export const ResetPasswordPage = ({}) => {
                        checkPasswordStrength(e.target.value)
                        setPassword(e.target.value)
                      }}></input>
-              {passwordStrength != 0 && (
+              {passwordStrength !== 0 && (
                 <div style={{
                   display: "flex",
                   flexDirection: "row",
