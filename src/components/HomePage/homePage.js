@@ -28,20 +28,14 @@ export const HomePage = ({}) => {
 
               <div className="Landing-Buttons-Section">
                 <div className="Landing-Button">
-                  <a target="_blank" type="submit">
-                    <img src={require('../../Images/Icons/appstore.png')} style={{ filter: 'grayscale(100%) brightness(0.5)' }} />
+                  <a target="_blank" href="https://apps.apple.com/us/app/skilltree/id6459107901">
+                    <img src={require('../../Images/Icons/appstore.png')} />
                   </a>
-                  <span style={{ position: 'absolute', color: 'rgb(200,200,200)', alignSelf: 'center', width: '200px', backgroundColor: 'rgba(0,0,0,0.5)', padding: '10px 0' }}>
-                    COMING SOON
-                  </span>
                 </div>
                 <div className="Landing-Button">
-                  <a type="disabled" target="_blank">
-                    <img src={require('../../Images/Icons/googleplay.webp')} style={{ filter: 'grayscale(100%) brightness(0.5)' }} />
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.projectskilltree.skilltree">
+                    <img src={require('../../Images/Icons/googleplay.webp')} />
                   </a>
-                  <span style={{ position: 'absolute', color: 'rgb(200,200,200)', alignSelf: 'center', width: '200px', backgroundColor: 'rgba(0,0,0,0.5)', padding: '10px 0' }}>
-                    COMING SOON
-                  </span>
                 </div>
               </div>
             </div>
