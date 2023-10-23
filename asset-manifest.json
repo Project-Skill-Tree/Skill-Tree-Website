@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbf3a62a.css",
-    "main.js": "/static/js/main.50746e9c.js",
+    "main.css": "/static/css/main.4fcded36.css",
+    "main.js": "/static/js/main.c39324f9.js",
     "static/js/787.8aa8a015.chunk.js": "/static/js/787.8aa8a015.chunk.js",
-    "static/media/phones.webp": "/static/media/phones.b30b02d1ba9df5e33a87.webp",
+    "static/media/Roadmap1.png": "/static/media/Roadmap1.06639ea0d3bafeb811d1.png",
+    "static/media/Roadmap2.png": "/static/media/Roadmap2.b672bf5e91a52c59397a.png",
+    "static/media/phones.webp": "/static/media/phones.97146c202bf0096a7b57.webp",
     "static/media/rewards.webp": "/static/media/rewards.d1d3a68d0cfb89f0cc22.webp",
     "static/media/challenge.webp": "/static/media/challenge.784731d84e383daefe90.webp",
     "static/media/habits.webp": "/static/media/habits.6a7c8788245586998128.webp",
@@ -20,12 +22,12 @@
     "static/media/GitHub_Icon.png": "/static/media/GitHub_Icon.d5c528c6c29a8d97d71f.png",
     "static/media/Discord_Icon.png": "/static/media/Discord_Icon.80df9463925ede846ba2.png",
     "index.html": "/index.html",
-    "main.fbf3a62a.css.map": "/static/css/main.fbf3a62a.css.map",
-    "main.50746e9c.js.map": "/static/js/main.50746e9c.js.map",
+    "main.4fcded36.css.map": "/static/css/main.4fcded36.css.map",
+    "main.c39324f9.js.map": "/static/js/main.c39324f9.js.map",
     "787.8aa8a015.chunk.js.map": "/static/js/787.8aa8a015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbf3a62a.css",
-    "static/js/main.50746e9c.js"
+    "static/css/main.4fcded36.css",
+    "static/js/main.c39324f9.js"
   ]
 }
