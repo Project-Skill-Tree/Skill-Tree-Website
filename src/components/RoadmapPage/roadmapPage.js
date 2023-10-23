@@ -21,7 +21,7 @@ function mobileRoadmap() {
     <div style={{justifyContent: "center"}}>
       <span className="title">ROADMAP</span>
       <img src={require("../../Images/Projects/Roadmap2.png")} width={"90%"}></img>
-      <span className="text">This roadmap is not final and subject to change at any time in the development phase</span>
+      <span className="roadmap-disclaimer">This roadmap is not final and subject to change at any time in the development phase</span>
     </div>
   )
 }
