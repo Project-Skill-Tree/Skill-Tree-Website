@@ -7,6 +7,7 @@ import {PrivacyPage} from '../components/PrivacyPage/privacyPage';
 import {Success} from "../components/success/success";
 import {ContactPage} from "../components/ContactPage/contactPage"
 import {ResetPasswordPage} from "../components/ResetPasswordPage/reset-password"
+import {RoadmapPage} from "../components/RoadmapPage/roadmapPage"
 
 const RouteManager = () => {
   return (
@@ -20,6 +21,7 @@ const RouteManager = () => {
         <Route path="/success" element={<Success/>} />
         <Route path="/contact-us" element={<ContactPage/>} />
         <Route path="/reset-password" element={<ResetPasswordPage/>} />
+        <Route path="/roadmap" element={<RoadmapPage/>} />
       </Routes>
     </Router>
   );

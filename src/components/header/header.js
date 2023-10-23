@@ -24,6 +24,7 @@ export const Header = () => {
             </li>
             <li className="navitem"><a href="./#/about">About Us</a></li>
             <li className="navitem"><a href="./#/contact-us">Contact Us</a></li>
+            <li className="navitem"><a href="./#/roadmap">Roadmap</a></li>
           </ul>
         </nav>
         <a className="burger-menu" onClick={burgerMenu}>
