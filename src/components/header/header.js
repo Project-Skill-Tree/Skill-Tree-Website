@@ -76,6 +76,7 @@ export const Header = () => {
             </li>
             <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
             <li className="navitem burgeritem"><a href="./#/contact-us">Contact Us</a></li>
+            <li className="navitem burgeritem"><a href="./#/roadmap">Roadmap</a></li>
           </ul>
         </div>
     </>
