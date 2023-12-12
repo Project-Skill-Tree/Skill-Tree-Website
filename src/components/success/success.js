@@ -16,6 +16,10 @@ export const Success = ({}) => {
     "password-changed": {
       "body": "You have successfully changed your password.",
       "subtitle": "You have been logged out of all your devices, please log back in."
+    },
+    "email-change": {
+      "body": "You have successfully changed your email.",
+      "subtitle": "You can now return to the app."
     }
   }
   const [urlParams] = useSearchParams()
