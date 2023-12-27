@@ -69,17 +69,16 @@ export const Header = () => {
           </ul>
         </div>
       </header>
-        <div className="burger-dropdown" id="burger-nav">
-          <ul className="burger-nav">
-            <li className="navitem burgeritem">
-              <a href="./">Home</a>
-            </li>
-            <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
-            <li className="navitem burgeritem"><a href="./#/contact-us">Contact Us</a></li>
-            <li className="navitem burgeritem"><a href="./#/roadmap">Roadmap</a></li>
-          </ul>
-        </div>
-
+      <div className="burger-dropdown" id="burger-nav">
+        <ul className="burger-nav">
+          <li className="navitem burgeritem">
+            <a href="./">Home</a>
+          </li>
+          <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
+          <li className="navitem burgeritem"><a href="./#/contact-us">Contact Us</a></li>
+          <li className="navitem burgeritem"><a href="./#/roadmap">Roadmap</a></li>
+        </ul>
+      </div>
     </>
   );
 }

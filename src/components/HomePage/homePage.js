@@ -11,7 +11,7 @@ export const HomePage = ({}) => {
       previous,
       current,
       rounding,
-      ease: isMobile ? 1 : 0.05,
+      ease: isMobile ? 1 : 0.1,
     })
   }, [])
 

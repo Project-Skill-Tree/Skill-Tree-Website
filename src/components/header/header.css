@@ -32,18 +32,27 @@ header {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: #151515;
     height: 100%;
+    background-color: #00000000;
 }
 .burger-dropdown {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
     display: none;
-    border-width: 0; border-bottom-width: 2px; border-style: solid; border-color: #FFCE00
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #FFCE00;
+    background-color: #151515A0;
+
 }
 .top-nav {
     display: block;
 }
 .nav-bar-skeleton {
-    background-color: #151515;
     min-height: 60px;
     border-width: 0;
     border-bottom: 2px;
@@ -86,7 +95,7 @@ nav {
 }
 
 .navitem a:hover {
-    background-color: #4E1496;
+    background-color: #913afcA0;
 }
 
 /* Style for tab content */
@@ -112,7 +121,7 @@ nav {
 }
 
 .burger-menu:hover{
-    background-color: #4E1496;
+    background-color: #913afcA0;
 }
 
 @media only screen and (max-width: 1000px) {
