@@ -1,8 +1,20 @@
 import {useEffect, useState} from "react";
+import {useScrollContext} from "../SmoothScroll/scroll-context";
 
 
 export const RoadmapPage = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  const { updateScrollData, previous, current, rounding } = useScrollContext();
+
+  useEffect(() => {
+    updateScrollData({
+      previous,
+      current,
+      rounding,
+      ease: 1,
+    })
+  }, [])
 
   useEffect(() => {
     setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 720)
@@ -32,7 +44,7 @@ export const RoadmapPage = () => {
 }
 function mobileRoadmap() {
   return (
-    <div style={{justifyContent: "center"}}>
+    <div style={{justifyContent: "center", marginTop: 100}}>
       <span className="title">ROADMAP</span>
       <img src={require("../../Images/Projects/Roadmap2.png")} width={"90%"}></img>
       <span className="roadmap-disclaimer">This roadmap is not final and subject to change at any time in the development phase</span>
@@ -41,7 +53,8 @@ function mobileRoadmap() {
 }
 function desktopRoadmap() {
   return (
-      <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", marginTop: 20}}>
+      <div style={{display: "flex", alignItems: "center", justifyContent: "center",
+        flexDirection: "column", marginTop: 100}}>
       <img src={require("../../Images/Projects/Roadmap1.png")} width={"80%"}></img>
       </div>
   )

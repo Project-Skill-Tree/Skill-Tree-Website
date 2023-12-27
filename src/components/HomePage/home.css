@@ -2,7 +2,39 @@
     flex-direction: column;
     display: flex;
     overflow:hidden;
-    padding-bottom: 200px;
+}
+
+.home-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    overflow: hidden;
+    background-color: #200548;
+}
+
+.home-background-image {
+    position: absolute;
+    top: -5vh;
+    left: calc(50vw - 700px);
+    width: 1400px;
+    background: #200548 url('../../Images/Background/forest.webp');
+    background-size: contain;
+    aspect-ratio: 1;
+}
+
+.start-img {
+    position: absolute;
+    left: 50%;
+    background-image: url('../../Images/Background/phones.png');
+    pointer-events: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    width: 50%;
+    max-width: 750px;
+    max-height: calc(100vh - 60);
 }
 
 .startBlock {
@@ -15,34 +47,7 @@
     justify-content: center;
     overflow: visible;
 }
-.start-img {
-    position: absolute;
-    left: 50%;
-    background-image: url('../../Images/Background/phones.webp');
-    pointer-events: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    aspect-ratio: 1;
-    width: 50%;
-    max-width: 750px;
-    max-height: calc(100vh - 60);
-}
 
-.level {
-    display: flex;
-    flex-direction: row;
-}
-.positive {
-    color: greenyellow;
-    font-family: RussoOne;
-    margin-right: 10px;
-}
-.negative {
-    color: orangered;
-    font-family: RussoOne;
-    margin-right: 10px;
-}
 .skill-title {
     color: white;
     font-family: RussoOne;
@@ -86,12 +91,11 @@
     z-index: -999;
 }
 
-
 .benefits {
     min-height: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.8);
     border-color: #FFCE00;
     border-style: solid;
     border-left-width: 0;
@@ -131,6 +135,7 @@
 .rewards-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: -50px;
 }
 .rewards-text-container {
     max-width: 50%;
@@ -150,8 +155,8 @@
     flex-wrap: wrap;
 }
 .rewards {
-    max-height: 400px;
-    max-width: 400px;
+    height: 100%;
+    width: auto;
 }
 
 .Landing-Wrapper {
@@ -161,6 +166,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 60px;
     min-height: calc(100vh - 60px);
 }
 
@@ -216,11 +222,11 @@
 }
 
 #Landing-Text-Title {
-    display: flex;
     justify-content: space-between;
     font-family: 'Russo One', sans-serif;
     font-size: 51px;
     height: 40px;
+    text-align: center;
 }
 
 #Landing-Text-Subtitle {
@@ -286,14 +292,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    #Landing-Text-Title {
-        font-size: 2.25rem;
-    }
-
-    #Landing-Text-Subtitle {
-        font-size: 1.5rem;
-    }
-
     .Landing-Buttons-Section {
         width: 100%;
         gap: 0.2rem;
@@ -314,10 +312,12 @@
 
 
     #Landing-Text-Title {
+        font-family: 'Russo One', sans-serif;
         font-size: 1.9rem;
     }
 
     #Landing-Text-Subtitle {
+        font-family: 'Russo One', sans-serif;
         font-size: 1.25rem;
     }
 

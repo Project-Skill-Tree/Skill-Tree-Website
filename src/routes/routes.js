@@ -8,13 +8,14 @@ import {Success} from "../components/success/success";
 import {ContactPage} from "../components/ContactPage/contactPage"
 import {ResetPasswordPage} from "../components/ResetPasswordPage/reset-password"
 import {RoadmapPage} from "../components/RoadmapPage/roadmapPage"
+import SmoothScroll from "../components/SmoothScroll/smooth-scroll";
 
 const RouteManager = () => {
   return (
     <Router basename='/'>
       <Routes>
         <Route path="index.html" element={<Navigate to={"/"}/>} />
-        <Route path="" element={<HomePage/>} />
+        <Route path="" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/terms" element={<TermsPage/>} />
         <Route path="/privacy" element={<PrivacyPage/>} />

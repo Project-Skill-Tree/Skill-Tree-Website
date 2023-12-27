@@ -4,7 +4,7 @@ import "../HomePage/home.css"
 export const TermsPage = ({}) => {
   return (
     <div className="home-container">
-      <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <div style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: 100}}>
         <div className="term-container">
           <span className="term-title">Terms of Service - Skilltree</span>
           <span className="terms" style={{fontWeight: "bold"}}>Last Updated: 15/08/23</span>

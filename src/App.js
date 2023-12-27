@@ -3,13 +3,16 @@ import {Header} from "./components/header/header";
 import "./index.css"
 import {Footer} from "./components/footer/footer";
 import RouteManager from "./routes/routes";
+import SmoothScroll from "./components/SmoothScroll/smooth-scroll";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <RouteManager/>
-      <Footer/>
+      <SmoothScroll>
+        <Header/>
+        <RouteManager/>
+        <Footer/>
+      </SmoothScroll>
     </div>
   );
 }

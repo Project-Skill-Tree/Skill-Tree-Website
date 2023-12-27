@@ -88,7 +88,7 @@ export const ResetPasswordPage = ({}) => {
         <div className="bg-shadow" style={{top: '-1050px', height: 'calc(100% + 1050px)'}}/>
         <div className="bg-gradient"/>
       </div>
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="d-flex justify-content-center align-items-center" style={{marginTop: 100}}>
         <div className="card text-center">
           <div className="card-body">
             <h5 className="card-title">ENTER NEW PASSWORD</h5>

@@ -1,8 +1,21 @@
 
 import "./about.css"
 import "../HomePage/home.css"
+import {useScrollContext} from "../SmoothScroll/scroll-context";
+import {useEffect} from "react";
 
 export const AboutPage = () => {
+  const { updateScrollData, previous, current, rounding } = useScrollContext();
+
+  useEffect(() => {
+    updateScrollData({
+      previous,
+      current,
+      rounding,
+      ease: 1,
+    })
+  }, [])
+
 return (
   <div className="home-container">
     <div className="bg">
@@ -12,7 +25,7 @@ return (
       <div className="bg-shadow" style={{ top: '-1050px', height: 'calc(100% + 1050px)' }} />
       <div className="bg-gradient" />
     </div>
-    <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: 100}}>
       <div className="text-container">
         <span className="title">ABOUT US</span>
         <b className="text">Millions of young people around the world are struggling with their mental and physical
