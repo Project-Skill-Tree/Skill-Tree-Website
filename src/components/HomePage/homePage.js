@@ -1,15 +1,17 @@
 import "./home.css"
 import {useEffect, useState} from "react";
 import {useScrollContext} from "../SmoothScroll/scroll-context";
+import {isMobile} from 'react-device-detect';
 
 export const HomePage = ({}) => {
   const { updateScrollData, previous, current, rounding } = useScrollContext();
+
   useEffect(() => {
     updateScrollData({
       previous,
       current,
       rounding,
-      ease: 0.05,
+      ease: isMobile ? 1 : 0.05,
     })
   }, [])
 
