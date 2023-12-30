@@ -54,7 +54,7 @@ export const ResetPasswordPage = ({}) => {
       const hasLowerCase = /[a-z]/.test(password);
       const hasUpperCase = /[A-Z]/.test(password);
       const hasNumber = /\d/.test(password);
-      const hasSpecialChar = /[!@#$%^&*?_~\-().,]/.test(password);
+      const hasSpecialChar = /[!@#$%^&*?_~\-().,/]/.test(password);
 
       const conditions = [hasLowerCase, hasUpperCase, hasNumber, hasSpecialChar];
       const trueConditions = conditions.filter((condition) => condition);
