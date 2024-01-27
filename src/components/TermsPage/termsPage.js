@@ -1,13 +1,26 @@
 import "./terms.css"
 import "../HomePage/home.css"
+import {useScrollContext} from "../SmoothScroll/scroll-context";
+import {useEffect} from "react";
 
 export const TermsPage = ({}) => {
+  const { updateScrollData, previous, current, rounding } = useScrollContext();
+
+  useEffect(() => {
+    updateScrollData({
+      previous,
+      current,
+      rounding,
+      ease: 1,
+    })
+  }, [])
+
   return (
     <div className="home-container">
       <div style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: 100}}>
         <div className="term-container">
           <span className="term-title">Terms of Service - Skilltree</span>
-          <span className="terms" style={{fontWeight: "bold"}}>Last Updated: 15/08/23</span>
+          <span className="terms" style={{fontWeight: "bold"}}>Last Updated: 27/01/24</span>
           <span className="terms">Welcome to Skilltree, the self-improvement app designed to help you track your habits and enhance your mental and physical well-being. This service is provided by Project Skill Tree LTD (“We”, “Our”, “Us”). By accessing, registering an account with, or using the Skilltree mobile application ("App"), you agree to abide by these Terms of service ("Terms"), as well as our Privacy Policy (collectively, the “Agreement”). If you do not agree to (or cannot comply with) the Agreement, you are not permitted to access or use the Service. Please read these Terms carefully before using the App.</span>
           <span className="term-subheading">Updates to Terms</span>
           <span className="terms">The App may update these Terms from time to time with or without notice to you. Updated Terms will be available on this webpage, marked with the latest date given above. Your continued use of the App after the posting of the updated Terms constitutes your acceptance of the changes. It is your responsibility to check back to this Terms of Service on a regular basis.</span>
@@ -28,9 +41,9 @@ export const TermsPage = ({}) => {
           <span className="terms">You may create an account on the App by providing accurate and complete information. You are responsible for maintaining the confidentiality of your account credentials. You are solely responsible for all activities that occur under your account.</span>
           <span className="term-subheading">Intellectual Property</span>
           <span className="terms">All content, code, design, and assets of the App are protected by various intellectual property laws, including copyright and trademark regulations. Any unauthorized reproduction, modification, distribution, or dissemination of App assets, whether digitally or physically, without obtaining explicit and written consent, is strictly prohibited. Engaging in such activities may subject the infringing party to legal action, potentially resulting in civil remedies and criminal penalties.
-      <br/><br/>You are granted the right to freely share screenshots, videos, and app-related content in commercial contexts such as YouTube videos and other media content intended for public consumption. This permission extends to showcasing the app's features and functionality. However, this allowance does not encompass the direct reproduction of the core functionality of the app or the creation of derivative works using assets protected under intellectual property laws.
-      <br/><br/>Derivative works refer to works that adapt, modify, or incorporate elements from the original app assets. Replicating fundamental functionalities pertains to duplicating key interactive or operational aspects of the app that define its primary user experience.
-      <br/><br/>These restrictions apply to all assets protected under intellectual property laws, including but not limited to images, designs, logos, and textual content.</span>
+          <br/><br/>You are granted the right to freely share screenshots, videos, and app-related content in commercial contexts such as YouTube videos and other media content intended for public consumption. This permission extends to showcasing the app's features and functionality. However, this allowance does not encompass the direct reproduction of the core functionality of the app or the creation of derivative works using assets protected under intellectual property laws.
+          <br/><br/>Derivative works refer to works that adapt, modify, or incorporate elements from the original app assets. Replicating fundamental functionalities pertains to duplicating key interactive or operational aspects of the app that define its primary user experience.
+          <br/><br/>These restrictions apply to all assets protected under intellectual property laws, including but not limited to images, designs, logos, and textual content.</span>
           <span className="term-subheading">Account Termination</span>
           <span className="terms">Users may terminate their accounts at any time using the App's functionality. Account termination will lead to the deletion of user data in accordance with the Privacy Policy. Project Skill Tree LTD retains the right, at its sole discretion, to introduce, modify, or remove functionalities or features from the Service, and to enhance, alter, or update the Service as needed. We also maintain the authority to temporarily suspend or permanently terminate the Service, with or without prior notice to you.
         <br/><br/>You have the option to discontinue your use of our Service whenever you choose. Furthermore, we hold the right to suspend or discontinue providing the Service to you under various circumstances, including but not limited to:
@@ -42,11 +55,18 @@ export const TermsPage = ({}) => {
       </span>
           <span className="term-subheading">Governing Law and Jurisdiction</span>
           <span className="terms">Any disputes arising from or related to these Terms shall be subject to arbitration or mediation as a preliminary step before pursuing litigation. The prevailing party in any dispute shall be entitled to recover reasonable attorney's fees and costs. These Terms are governed by and construed in accordance with the laws of the United Kingdom.</span>
-          <span className="term-subheading">Digital and Physical Goods</span>
-          <span className="terms">The App offers both a free and paid subscription service (“Premium”) with additional features and in-app purchases of physical and digital goods. In-app purchases are non-refundable. Subscriptions can be cancelled at any time through the App's store page. Cancelling your subscription may lead to the loss of premium features. Physical goods are provided through third-party services. Skilltree shall not be held responsible for third-party products. Any claims related to physical goods should be directed to the respective third-party vendors.
-      <br/><br/>All prices shown on the App are inclusive of any applicable sales taxes, levies, value-added taxes, or duties imposed by taxing authorities, and you are responsible for payment of all such taxes, levies, or duties. We may revise the pricing at any time and may, from time to time, modify, amend, or supplement our fees and fee-billing methods. Such changes shall be effective upon posting on the store page or elsewhere in the Service. If there is a dispute regarding payment of fees to us, we reserve the right to terminate or suspend your account at our sole discretion.
+          <span className="term-subheading">In-app Purchases</span>
+          <span className="terms">The App is available to download for free, and provides in-app purchases of digital goods, as well as a paid subscription service (“Premium”) with additional features. Premium can be purchased as a monthly, biannual, or yearly subscription. First time subscribers are granted a 1 week free trial with access to the full functionality provided by Premium.
+            <br/><br/>The app utilizes the standard in-app purchase mechanisms provided by Apple and Android. Users will be billed automatically at the beginning of each billing cycle for these purchases. We do not offer refunds for subscriptions or in-app purchases. All transactions are final.
+
+          <br/><br/>All prices shown on the App are inclusive of any applicable sales taxes, levies, value-added taxes, or duties imposed by taxing authorities, and you are responsible for payment of all such taxes, levies, or duties. We may revise the pricing at any time and may, from time to time, modify, amend, or supplement our fees and fee-billing methods. Such changes shall be reflected in the app immediately after they're made available. If there is a dispute regarding payment of fees to us, we reserve the right to terminate or suspend your account at our sole discretion.
+
+            <br/><br/>Android App users will lose access to paid features if there's an issue with their subscription renewal after 7 days for both monthly and biannual billing periods, and 14 days for the yearly billing period. IOS App users will lose access to paid features if there's an issue with their renewal after 3 days for monthly, biannual and yearly billing periods.
+            Users can cancel their subscriptions at any time through the respective platforms (iOS/Android). Cancellations take effect at the end of the current billing cycle.
+
       <br/><br/>BY PURCHASING PREMIUM YOU EXPRESSLY UNDERSTAND AND AGREE TO OUR REFUND POLICY:
-      <br/><br/>WITHIN THIRTY (30) DAYS OF YOUR PREMIUM PAYMENT DATE AS SHOWN ON YOUR PAYMENT BILL, YOU CAN REQUEST A FULL REFUND BY CONTACTING US AT SUPPORT@PROJECTSKILLTREE.COM. AFTER THIRTY (30) DAYS OF YOUR PREMIUM PAYMENT DATE, ANY PAYMENT REFUND IS SOLELY SUBJECT TO OUR DISCRETION. THE REFUND SHALL BE YOUR SOLE AND EXCLUSIVE REMEDY.
+      <br/><br/>WE DO NOT OFFER REFUNDS FOR THE PURCHASE OF IN-APP GOODS OR OUR PREMIUM SUBSCRIPTION SERVICE. IF YOU BELIEVE THERE WAS AN ISSUE WITH YOUR PURCHASE YOU CAN CONTACT US AT SUPPORT@PROJECTSKILLTREE.COM. ANY PAYMENT REFUND IS SOLELY SUBJECT TO OUR DISCRETION. THE REFUND SHALL BE YOUR SOLE AND EXCLUSIVE REMEDY.
+
       <br/><br/>FOR ANY CUSTOMER WHO PURCHASED PREMIUM IN APPLE INC.'s APP STORE ("APP STORE"), PLEASE CONTACT APPLE INC.'s SUPPORT TEAM: https://reportaproblem.apple.com. APPLE'S APP STORE DOES NOT ALLOW DEVELOPERS TO ISSUE REFUND FOR APP STORE PURCHASES MADE BY CUSTOMERS.
       </span>
           <span className="term-subheading">Warranty Disclaiemer</span>

@@ -1,7 +1,20 @@
 import "./privacy.css"
 import "../HomePage/home.css"
+import {useScrollContext} from "../SmoothScroll/scroll-context";
+import {useEffect} from "react";
 
 export const PrivacyPage = ({}) => {
+  const { updateScrollData, previous, current, rounding } = useScrollContext();
+
+  useEffect(() => {
+    updateScrollData({
+      previous,
+      current,
+      rounding,
+      ease: 1,
+    })
+  }, [])
+
   return (
     <div className="home-container">
       <div style={{display: "flex", alignItems: "center", justifyContent: "center", marginTop: 100}}>
