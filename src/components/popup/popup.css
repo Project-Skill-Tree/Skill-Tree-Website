@@ -1,0 +1,31 @@
+.popup {
+    display: flex; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: var(--scroll);
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.popup-content {
+    width: 80%;
+    max-width: 400px;
+}
+
+.popup-content.active {
+    animation: 0.1s ease-out popupAnimation;
+}
+
+@keyframes popupAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

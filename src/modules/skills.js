@@ -1,0 +1,60 @@
+export const fetchSkillData = () => {
+  return [
+    {
+      title: "Meditation",
+      level: 1,
+      image: require("../images/skills/meditation.png"),
+      goal: "Meditate for 30 seconds",
+      frequency: 1,
+      interval: "day",
+      timelimit: 3,
+      xp: 50,
+      clickable: true,
+    },
+    {
+      title: "Meditation",
+      level: 2,
+      image: require("../images/skills/meditation.png"),
+      goal: "Meditate for 1 minute",
+      frequency: 1,
+      interval: "day",
+      timelimit: 7,
+      xp: 150,
+      clickable: true,
+    },
+    {
+      title: "Fitness",
+      level: 1,
+      image: require("../images/skills/fitness.png"),
+      goal: "Perform simple bodyweight exercises for 5 minutes",
+      frequency: 4,
+      interval: "week",
+      timelimit: 14,
+      xp: 125,
+      clickable: true,
+    },
+    {
+      title: "???",
+      clickable: false,
+    },
+    {
+      title: "Discipline",
+      level: 1,
+      goal: "Download Skilltree and level up IRL",
+      xp: 4200,
+      timelimit: 365,
+      interval: "day",
+      frequency: 1,
+      image: require("../images/skills/discipline.png"),
+      clickable: true,
+    },
+    {
+      title: "???",
+      clickable: false,
+    },
+    {
+      title: "???",
+      clickable: false,
+    },
+  ]
+}

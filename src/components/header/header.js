@@ -24,11 +24,10 @@ export const Header = () => {
             </li>
             <li className="navitem"><a href="./#/about">About Us</a></li>
             <li className="navitem"><a href="./#/contact-us">Contact Us</a></li>
-            <li className="navitem"><a href="./#/roadmap">Roadmap</a></li>
           </ul>
         </nav>
         <a className="burger-menu" onClick={burgerMenu}>
-          <img src={require("../../Images/Icons/burger.png")} alt="Burger Icon" />
+          <img src={require("../../images/icons/burger.png")} alt="Burger Icon" />
         </a>
         <div className="Socials Header-Socials">
           <ul>
@@ -76,7 +75,6 @@ export const Header = () => {
           </li>
           <li className="navitem burgeritem"><a href="./#/about">About Us</a></li>
           <li className="navitem burgeritem"><a href="./#/contact-us">Contact Us</a></li>
-          <li className="navitem burgeritem"><a href="./#/roadmap">Roadmap</a></li>
         </ul>
       </div>
     </>

@@ -1,0 +1,329 @@
+.home-container {
+    flex-direction: column;
+    display: flex;
+    overflow:hidden;
+}
+
+.home-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    overflow: hidden;
+    background-color: #200548;
+}
+
+.home-background-image {
+    position: absolute;
+    top: -5vh;
+    left: calc(50vw - 700px);
+    width: 1400px;
+    background: #200548 url('../../images/background/forest.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+}
+
+.start-img {
+    position: absolute;
+    left: 50%;
+    background-image: url('../../images/background/phones.png');
+    pointer-events: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    width: 50%;
+    max-width: 750px;
+    max-height: calc(100vh - 60);
+}
+
+.startBlock {
+    flex: 1;
+    display: flex;
+    min-width: 50%;
+    max-width: 50%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.skill-title {
+    color: white;
+    font-family: RussoOne;
+}
+.startContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.Start-Arrow {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    animation-duration: 2s;
+    transform-origin: bottom;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.Start-Arrow p {
+    font-size: 35px;
+    font-family: "Russo One", sans-serif;
+    text-shadow: black 0 4px 2px;
+}
+
+.Start-Arrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.tree {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.chest {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: translateY(150px);
+    align-self: center;
+    z-index: -999;
+}
+
+.rewards-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -50px;
+}
+.rewards-text-container {
+    max-width: 50%;
+    flex: 1;
+    align-self: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.rewards-text {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    font-family: RussoOne;
+    font-size: 26px;
+    flex-wrap: wrap;
+}
+.rewards {
+    height: 100%;
+    width: auto;
+}
+
+.Landing-Wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+.Landing-Container {
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 2rem;
+    margin-bottom: 200px;
+}
+
+.Landing-Grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 1rem;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.User-Interface {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#Purple-Logo {
+    width: 150px;
+}
+
+.Text-Logo {
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Russo One';
+}
+
+.Landing-Text-Container {
+    background: #000000a0;
+    padding: 20px;
+    text-shadow: 0px 2px 5px #000000;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffce00;
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#Landing-Text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.Landing-Button {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.Landing-Buttons-Section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0 10px;
+}
+
+.Landing-Button:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.Landing-Buttons-Section a {
+    min-height: 70px;
+    width: 200px;
+    transition: 0.1s;
+    align-items: center;
+    display: flex;
+}
+
+.Landing-Buttons-Section img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .Landing-Wrapper{
+        flex-direction: column;
+    }
+    .startBlock {
+        padding-bottom: 50px;
+        min-width: 80%;
+        max-width: 80%;
+    }
+    .start-img {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 200%;
+        height: 200%;
+        min-width: 200%;
+        min-height: 200%;
+        max-width: 200%;
+        max-height: 200%;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Landing-Buttons-Section {
+        width: 100%;
+        gap: 0.2rem;
+    }
+
+    .Landing-Buttons-Section a {
+        padding: 0.1rem 0.5rem;
+    }
+    .benefits-images {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Landing-Grid {
+        padding: 0 1rem;
+    }
+
+
+    #Landing-Text-Title {
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.9rem;
+    }
+
+    #Landing-Text-Subtitle {
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .Landing-Buttons-Section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Landing-Buttons-Section li {
+        width: 100%;
+    }
+
+    .Landing-Button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Landing-Socials {
+        display: none;
+        visibility: hidden;
+        background-color: red;
+    }
+}

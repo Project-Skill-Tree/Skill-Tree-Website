@@ -1,0 +1,215 @@
+:root {
+    --bg-color: rgb(255, 206, 0);
+    --card-color: rgb(23, 23, 23);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card > * {
+    z-index: 999;
+}
+
+.tree-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.tree-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: calc(var(--scroll) - 50px);
+    opacity: var(--opacity);
+    background-color: #000000;
+    width: 100%;
+    height: 200%;
+    grid-template-columns: repeat(20, 50px); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(20, 50px); /* Adjust the number of rows as needed */
+    z-index: -99;
+}
+
+.row {
+    display: flex;
+}
+
+.cube {
+    background-color: #200548;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+
+.tree-view:hover .card::before {
+    opacity: 1;
+}
+.card:hover::after {
+    opacity: 1;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.skill.active {
+    animation: 0.3s ease-in cardPopup forwards;
+}
+
+@keyframes cardPopup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.skill span {
+    color: white;
+    font-family: "Russo One";
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+    transition: all .05s ease-in-out;
+    -moz-transition: all .05s ease-in-out;
+    background-color: var(--bg-color);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-container {
+    background-color: transparent;
+    transition: all .05s ease-in-out;
+    -moz-transition: all .05s ease-in-out;
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}
+
+.card::before,
+.card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+.card::before {
+    background: radial-gradient(
+            500px circle at var(--mouse-x) var(--mouse-y),
+            rgba(165, 59, 255, 1),
+            transparent 80%
+    );
+    z-index: 1;
+}
+
+.card::after {
+    background: radial-gradient(
+            600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(97, 13, 169, 0.5),
+            transparent 60%
+    );
+    z-index: 3;
+}
+
+.card-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: inherit;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 3px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.skill-popup-body {
+    background-color: #111111;
+    border-image-slice: 1;
+    border: double 5px transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(#111111, #111111),
+    linear-gradient(to right, #792bd9 0%, #4E1496 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.skill-popup-body span {
+    color: white;
+    font-family: "Russo One", sans-serif;
+}
+
+
+.close-btn {
+    position: absolute;
+    margin: 10px;
+    transform: translateY(-60px);
+    background-color: #222222;
+    border: solid 2px #555555;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+    color: white;
+    font-size: 30px;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    transition: all .05s ease-in-out;
+    -moz-transition: all .05s ease-in-out;
+}
+
+.close-btn:hover {
+    transform: translateY(-60px) scale(1.1);
+}
+
+.xp-text {
+    font-size: 20px;
+    font-family: "RussoOne", sans-serif;
+    color: white;
+    text-shadow: #73FF79 0 0 5px;
+    stroke: #73FF79;
+    stroke-width: 3px;
+    -webkit-text-stroke: 1px #73FF79;
+}

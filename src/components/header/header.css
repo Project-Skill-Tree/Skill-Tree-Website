@@ -1,5 +1,5 @@
 .header_logo {
-    background-image: url("../../Images/Logos/logo-small.png");
+    background-image: url("../../images/logos/logo-small.png");
     background-size: 50px;
     height: 50px;
     width: 50px;
@@ -95,7 +95,7 @@ nav {
 }
 
 .navitem a:hover {
-    background-color: #913afcA0;
+    background-color: #610da9;
 }
 
 /* Style for tab content */
@@ -121,7 +121,7 @@ nav {
 }
 
 .burger-menu:hover{
-    background-color: #913afcA0;
+    background-color: #610da9;
 }
 
 @media only screen and (max-width: 1000px) {

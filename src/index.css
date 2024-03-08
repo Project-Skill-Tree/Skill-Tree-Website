@@ -37,7 +37,7 @@ body {
 .bg-img {
   position: absolute;
   overflow: hidden;
-  background-image: url('./Images/Background/background-highlight-outline.png');
+  background-image: url('./images/background/background-highlight-outline.png');
   background-position: center center;
   background-size: 300px;
   transform-origin: center center;
@@ -155,14 +155,14 @@ h5 {
 .Discord-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/Discord_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/Discord_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Discord-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/Discord_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/Discord_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.05);
 }
@@ -171,14 +171,14 @@ h5 {
 .Instagram-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/Instagram_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/Instagram_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Instagram-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/Instagram_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/Instagram_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -187,14 +187,14 @@ h5 {
 .Youtube-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/YouTube_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/YouTube_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   transition: all 0.1s ease-in-out;
 }
 
 .Youtube-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/YouTube_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/YouTube_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -203,7 +203,7 @@ h5 {
 .Twitter-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/Twitter_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/Twitter_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -211,7 +211,7 @@ h5 {
 }
 
 .Twitter-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/Twitter_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/Twitter_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -220,7 +220,7 @@ h5 {
 .Github-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/GitHub_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/GitHub_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -228,7 +228,7 @@ h5 {
 }
 
 .Github-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/GitHub_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/GitHub_Icon.png') no-repeat;
   filter: brightness(135%);
   background-size: 30px 30px;
   transform: scale(1.1);
@@ -238,7 +238,7 @@ h5 {
 .Patreon-Icon {
   width: 30px;
   height: 30px;
-  background: url('./Images/Social_Logos/Non-Colored/Patreon_Icon.png')
+  background: url('./images/socialLogos/Non-Colored/Patreon_Icon.png')
   no-repeat;
   background-size: 30px 30px;
   display: inline-block;
@@ -246,7 +246,7 @@ h5 {
 }
 
 .Patreon-Icon:hover {
-  background: url('./Images/Social_Logos/Colored/Patreon_Icon.png') no-repeat;
+  background: url('./images/socialLogos/Colored/Patreon_Icon.png') no-repeat;
   background-size: 30px 30px;
   transform: scale(1.1);
 }
@@ -268,7 +268,7 @@ h5 {
 }
 
 .header_logo {
-  background-image: url('./Images/Logos/logo-small.png');
+  background-image: url('./images/logos/logo-small.png');
   background-size: 50px;
   height: 50px;
   width: 50px;
