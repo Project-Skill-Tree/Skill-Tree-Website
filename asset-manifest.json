@@ -1,20 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.aeca55c1.css",
-    "main.js": "/static/js/main.31fb18a6.js",
+    "main.css": "/static/css/main.efd4d4c9.css",
+    "main.js": "/static/js/main.2fb453e9.js",
     "static/js/787.8aa8a015.chunk.js": "/static/js/787.8aa8a015.chunk.js",
     "static/media/phones.png": "/static/media/phones.23c1ba80fc7a5dd161ec.png",
-    "static/media/Roadmap1.png": "/static/media/Roadmap1.06639ea0d3bafeb811d1.png",
-    "static/media/Roadmap2.png": "/static/media/Roadmap2.b672bf5e91a52c59397a.png",
     "static/media/rewards.png": "/static/media/rewards.dc23e146660ae428cfb2.png",
     "static/media/forest.webp": "/static/media/forest.2aa5d36f4bac5159680c.webp",
-    "static/media/challenge.webp": "/static/media/challenge.784731d84e383daefe90.webp",
-    "static/media/habits.webp": "/static/media/habits.6a7c8788245586998128.webp",
-    "static/media/level.webp": "/static/media/level.a25b03ffb6e9e0f217ea.webp",
     "static/media/googleplay.webp": "/static/media/googleplay.516b6b37e9092487ef50.webp",
     "static/media/russoone-regular.ttf": "/static/media/russoone-regular.b2f5b287ccb8fd446eae.ttf",
     "static/media/Caecilia-Roman.otf": "/static/media/Caecilia-Roman.058338f59c06688ea234.otf",
-    "static/media/chestOpenHighlighted.png": "/static/media/chestOpenHighlighted.1a2f1279bc3ef6e1a1c7.png",
     "static/media/appstore.png": "/static/media/appstore.e04a5a5a5e87a5c0d709.png",
     "static/media/logo-small.png": "/static/media/logo-small.6f5a5ec20ce1527855aa.png",
     "static/media/Instagram_Icon.png": "/static/media/Instagram_Icon.28e382aa3f662473aea9.png",
@@ -23,12 +17,12 @@
     "static/media/GitHub_Icon.png": "/static/media/GitHub_Icon.d5c528c6c29a8d97d71f.png",
     "static/media/Discord_Icon.png": "/static/media/Discord_Icon.80df9463925ede846ba2.png",
     "index.html": "/index.html",
-    "main.aeca55c1.css.map": "/static/css/main.aeca55c1.css.map",
-    "main.31fb18a6.js.map": "/static/js/main.31fb18a6.js.map",
+    "main.efd4d4c9.css.map": "/static/css/main.efd4d4c9.css.map",
+    "main.2fb453e9.js.map": "/static/js/main.2fb453e9.js.map",
     "787.8aa8a015.chunk.js.map": "/static/js/787.8aa8a015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeca55c1.css",
-    "static/js/main.31fb18a6.js"
+    "static/css/main.efd4d4c9.css",
+    "static/js/main.2fb453e9.js"
   ]
 }
