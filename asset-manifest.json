@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.772c22ea.css",
-    "main.js": "/static/js/main.2fb453e9.js",
+    "main.css": "/static/css/main.03a6e277.css",
+    "main.js": "/static/js/main.1ed2cee5.js",
     "static/js/787.8aa8a015.chunk.js": "/static/js/787.8aa8a015.chunk.js",
     "static/media/phones.png": "/static/media/phones.23c1ba80fc7a5dd161ec.png",
+    "static/media/glow.webp": "/static/media/glow.49f643cd039ebf8ca11f.webp",
     "static/media/rewards.png": "/static/media/rewards.dc23e146660ae428cfb2.png",
     "static/media/forest.webp": "/static/media/forest.2aa5d36f4bac5159680c.webp",
+    "static/media/friends.png": "/static/media/friends.f1965535a5f2304c854f.png",
+    "static/media/quill.png": "/static/media/quill.993929e0222d43645dc8.png",
     "static/media/googleplay.webp": "/static/media/googleplay.516b6b37e9092487ef50.webp",
     "static/media/russoone-regular.ttf": "/static/media/russoone-regular.b2f5b287ccb8fd446eae.ttf",
     "static/media/Caecilia-Roman.otf": "/static/media/Caecilia-Roman.058338f59c06688ea234.otf",
@@ -17,12 +20,12 @@
     "static/media/GitHub_Icon.png": "/static/media/GitHub_Icon.d5c528c6c29a8d97d71f.png",
     "static/media/Discord_Icon.png": "/static/media/Discord_Icon.80df9463925ede846ba2.png",
     "index.html": "/index.html",
-    "main.772c22ea.css.map": "/static/css/main.772c22ea.css.map",
-    "main.2fb453e9.js.map": "/static/js/main.2fb453e9.js.map",
+    "main.03a6e277.css.map": "/static/css/main.03a6e277.css.map",
+    "main.1ed2cee5.js.map": "/static/js/main.1ed2cee5.js.map",
     "787.8aa8a015.chunk.js.map": "/static/js/787.8aa8a015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.772c22ea.css",
-    "static/js/main.2fb453e9.js"
+    "static/css/main.03a6e277.css",
+    "static/js/main.1ed2cee5.js"
   ]
 }
