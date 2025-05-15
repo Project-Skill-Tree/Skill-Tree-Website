@@ -44,7 +44,7 @@ export const Footer = () => {
         </div>
         <div className="footer-text">
           <p>
-            PROJECT SKILL TREE LTD | 2023
+            PROJECT SKILL TREE LTD | 2025
           </p>
         </div>
         <div className={"footer-links"}>
