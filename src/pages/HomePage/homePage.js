@@ -1,11 +1,11 @@
 import "./home.css"
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {useScrollContext} from "../../components/SmoothScroll/scroll-context";
 import {isMobile} from 'react-device-detect';
 import {GlitchText} from "../../components/glitch-text/glitch-text";
-import {Skill, Tree} from "../../components/tree/tree";
+import {Tree} from "../../components/tree/tree";
 
-export const HomePage = ({}) => {
+export const HomePage = () => {
   const { updateScrollData, previous, current, rounding } = useScrollContext();
 
   useEffect(() => {
@@ -20,8 +20,7 @@ export const HomePage = ({}) => {
   const [style, setStyle] = useState({});
 
   useEffect(() => {
-    const blurAmount = Math.min(previous < 200 ? 0 : (previous-200) / 200, 5); // Adjust the divisor to control the speed of the blur effect
-    const scaleAmount = 1 + previous/1000; // Adjust the divisor to control the speed of the scale effect
+    
     const translateY = `${previous/2}px`; // Adjust the divisor to control the speed of the vertical movement
 
     setStyle({
@@ -74,20 +73,20 @@ export const HomePage = ({}) => {
             </div>
             <div className="Landing-Buttons-Section">
               <div className="Landing-Button">
-                <a target="_blank" href="https://apps.apple.com/us/app/skilltree/id6459107901">
-                  <img src={require('../../images/icons/appstore.png')} />
+                <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/skilltree/id6459107901">
+                  <img src={require('../../images/icons/appstore.png')} alt="Download on App Store" />
                 </a>
               </div>
               <div className="Landing-Button">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.projectskilltree.skilltree">
-                  <img src={require('../../images/icons/googleplay.webp')} />
+                <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.projectskilltree.skilltree">
+                  <img src={require('../../images/icons/googleplay.webp')} alt="Get it on Google Play" />
                 </a>
               </div>
             </div>
           </div>
           <div className="Start-Arrow">
             <p>START YOUR JOURNEY</p>
-            <img src={require("../../images/icons/down.png")}/>
+            <img src={require("../../images/icons/down.png")} alt="Scroll down" />
           </div>
         </div>
       </div>
@@ -100,7 +99,7 @@ export const HomePage = ({}) => {
         </div>
         <div style={{ flex: 1, maxHeight: 800, maxWidth: '40%', alignItems: 'center',
           display: 'flex', justifyContent: 'center' }}>
-          <img src={require('../../images/background/rewards.png')} className="rewards"/>
+          <img src={require('../../images/background/rewards.png')} className="rewards" alt="Rewards preview" />
         </div>
       </div>
       <div style={{width: "100%", padding: 50, backgroundColor: "rgba(60, 20, 100, 0.5)", marginTop: 100, display: "flex",
@@ -108,13 +107,13 @@ export const HomePage = ({}) => {
         <span style={{fontSize: 45, color: "white", fontFamily: "Russo One"}}>Download Skilltree!</span>
         <div className="Landing-Buttons-Section">
           <div className="Landing-Button">
-            <a target="_blank" href="https://apps.apple.com/us/app/skilltree/id6459107901">
-              <img src={require('../../images/icons/appstore.png')} />
+            <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/skilltree/id6459107901">
+              <img src={require('../../images/icons/appstore.png')} alt="Download on App Store" />
             </a>
           </div>
           <div className="Landing-Button">
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.projectskilltree.skilltree">
-              <img src={require('../../images/icons/googleplay.webp')} />
+            <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.projectskilltree.skilltree">
+              <img src={require('../../images/icons/googleplay.webp')} alt="Get it on Google Play" />
             </a>
           </div>
         </div>

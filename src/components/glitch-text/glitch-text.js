@@ -29,20 +29,17 @@ export const GlitchText = ({text, style={}}) => {
       }).join("");
 
       iterations += 1 / 5;
-      console.log(newText);
+      //console.log(newText);
       setTextDisplay(newText)
       if (iterations >= text.length) {
         clearInterval(flicker)
       }
-    }, 30);
+    }, 25);
   }
 
   useEffect(() => {
     animateFlicker()
-    //const interval = setInterval(() => animateFlicker(), 6000);
-    //return () => {
-    //  clearInterval(interval)
-    //}
+
   }, [])
 
   return (

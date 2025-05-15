@@ -32,36 +32,36 @@ export const Header = () => {
         <div className="Socials Header-Socials">
           <ul>
             <li>
-              <a rel="external" target="_blank" href="https://discord.gg/CKKshDe8rx">
+              <a rel="external noreferrer" target="_blank" href="https://discord.gg/CKKshDe8rx">
                 <div className="Discord-Icon" />
               </a>
             </li>
 
             <li>
-              <a rel="external" target="_blank" href="https://www.instagram.com/project_skilltree/">
+              <a rel="external noreferrer" target="_blank" href="https://www.instagram.com/project_skilltree/">
                 <div className="Instagram-Icon" />
               </a>
             </li>
 
             <li>
-              <a rel="external" target="_blank" href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA">
+              <a rel="external noreferrer" target="_blank" href="https://www.youtube.com/channel/UCjGRx-cMBQgYxfwq0PuhomA">
                 <div className="Youtube-Icon" />
               </a>
             </li>
 
             <li>
-              <a rel="external" target="_blank" href="https://twitter.com/SkillTree_">
+              <a rel="external noreferrer" target="_blank" href="https://twitter.com/SkillTree_">
                 <div className="Twitter-Icon" />
               </a>
             </li>
 
             <li>
-              <a rel="external" target="_blank" href="https://github.com/Project-Skill-Tree">
+              <a rel="external noreferrer" target="_blank" href="https://github.com/Project-Skill-Tree">
                 <div className="Github-Icon" />
               </a>
             </li>
             <li>
-              <a rel="external" target="_blank" href="https://www.patreon.com/project_skilltree">
+              <a rel="external noreferrer" target="_blank" href="https://www.patreon.com/project_skilltree">
                 <div className="Patreon-Icon" />
               </a>
             </li>

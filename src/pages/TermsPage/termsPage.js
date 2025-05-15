@@ -3,7 +3,7 @@ import "../HomePage/home.css"
 import {useScrollContext} from "../../components/SmoothScroll/scroll-context";
 import {useEffect} from "react";
 
-export const TermsPage = ({}) => {
+export const TermsPage = () => {
   const { updateScrollData, previous, current, rounding } = useScrollContext();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export const TermsPage = ({}) => {
       rounding,
       ease: 1,
     })
-  }, [])
+  })
 
   return (
     <div className="home-container">
@@ -70,14 +70,14 @@ export const TermsPage = ({}) => {
       <br/><br/>FOR ANY CUSTOMER WHO PURCHASED PREMIUM IN APPLE INC.'s APP STORE ("APP STORE"), PLEASE CONTACT APPLE INC.'s SUPPORT TEAM: https://reportaproblem.apple.com. APPLE'S APP STORE DOES NOT ALLOW DEVELOPERS TO ISSUE REFUND FOR APP STORE PURCHASES MADE BY CUSTOMERS.
       </span>
           <span className="term-subheading">Warranty Disclaiemer</span>
-          <span className="terms">THE SERVICE AND ANY CONTENT MADE AVAILABLE BY PROJECT SKILL TREE LTD VIA THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, INCLUDING, WITHOUT LIMITATION, THAT THE SERVICE OR CONTENT WILL OPERATE ERROR-FREE OR THAT THE SERVICE OR CONTENT OR ITS SERVERS ARE FREE OF COMPUTER VIRUSES OR SIMILAR CONTAMINATION OR DESTRUCTIVE FEATURES.
-      <br/><br/>WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE, MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES' RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE AND ANY WARRANTIES ARISING FROM A COURSE OF DEALING, COURSE OF PERFORMANCE, OR USAGE OF TRADE.
+          <span className="terms">THE SERVICE AND ANY CONTENT MADE AVAILABLE BY PROJECT SKILL TREE LTD VIA THE SERVICE IS PROVIDED &quot;AS IS" AND "AS AVAILABLE&quot; WITHOUT ANY WARRANTIES OF ANY KIND, INCLUDING, WITHOUT LIMITATION, THAT THE SERVICE OR CONTENT WILL OPERATE ERROR-FREE OR THAT THE SERVICE OR CONTENT OR ITS SERVERS ARE FREE OF COMPUTER VIRUSES OR SIMILAR CONTAMINATION OR DESTRUCTIVE FEATURES.
+      <br/><br/>WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE, MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES&apos; RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE AND ANY WARRANTIES ARISING FROM A COURSE OF DEALING, COURSE OF PERFORMANCE, OR USAGE OF TRADE.
       <br/><br/>WE RESERVE THE RIGHT TO MAKE CHANGES, CORRECTIONS, AND/OR IMPROVEMENTS TO THE SERVICE OR THE CONTENT AT ANY TIME WITHOUT NOTICE.
       <br/><br/>IN CONNECTION WITH ANY WARRANTY, CONTRACT, OR COMMON LAW TORT CLAIMS: WE AND OUR LICENSORS SHALL NOT BE LIABLE FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES, LOST PROFITS, OR DAMAGES RESULTING FROM LOST DATA RESULTING FROM THE USE OR INABILITY TO ACCESS AND USE THE SERVICE OR CONTENT POSTED BY PROJECT SKILL TREE LTD, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES
       <br/><br/>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES. THEREFORE, SOME OF THE ABOVE LIMITATIONS ON WARRANTIES IN THIS SECTION MAY NOT APPLY TO YOU. NOTHING IN THIS AGREEMENT SHALL AFFECT ANY NON-WAIVABLE STATUTORY RIGHTS THAT APPLY TO YOU.
       </span>
           <span className="term-subheading">Liability Disclaimer</span>
-          <span className="terms">The App shall not be liable for any adverse health outcomes resulting from the use of the App's advice or features. Users acknowledge and assume all risks associated with using the App's advice and features. Users agree to indemnify and hold the App, its owners, and affiliates harmless from any claims, damages, or liabilities arising from the user's use of the app.</span>
+          <span className="terms">The App shall not be liable for any adverse health outcomes resulting from the use of the App's advice or features. Users acknowledge and assume all risks associated with using the App&apos;s advice and features. Users agree to indemnify and hold the App, its owners, and affiliates harmless from any claims, damages, or liabilities arising from the user&apos;s use of the app.</span>
           <span className="term-subheading">Compliance with Applicable Laws</span>
           <span className="terms">The Service is based in the United Kingdom. We make no claims concerning whether the Service or posted content may be downloaded, viewed, or be appropriate for use outside of the United Kingdom. If you access the Service or such content from outside of the United Kingdom, you do so at your own risk. Whether inside or outside of the United Kingdom, you are solely responsible for ensuring compliance with the laws of your specific jurisdiction.</span>
           <span className="term-subheading">Communication</span>

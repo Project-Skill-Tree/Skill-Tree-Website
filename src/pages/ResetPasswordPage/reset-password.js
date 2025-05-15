@@ -2,7 +2,7 @@ import {useSearchParams} from "react-router-dom";
 import {useState} from "react";
 import "./reset-password.css"
 
-export const ResetPasswordPage = ({}) => {
+export const ResetPasswordPage = () => {
   const [errorText, setErrorText] = useState("")
   const [urlParams] = useSearchParams()
   const token = urlParams.get('token');
@@ -11,7 +11,6 @@ export const ResetPasswordPage = ({}) => {
   const [passwordStrength, setPasswordStrength] = useState(0)
   const API_URL = "https://dev-api.projectskilltree.com"
 
-  // Redirect to app on button click
   function submit() {
     if (!password || !confirmPassword) {
       setErrorText("Please enter a valid password and confirmation password")
@@ -26,7 +25,6 @@ export const ResetPasswordPage = ({}) => {
       return;
     }
 
-    // POST request using fetch inside useEffect React hook
     const requestOptions = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -137,7 +135,7 @@ export const ResetPasswordPage = ({}) => {
                      placeholder={"Confirm Password"}
                      onInput={e => setConfirmPassword(e.target.value)}></input>
             </div>
-            <a className="btn-primary" id="button-redirect" onClick={submit}>RESET</a>
+            <a className="btn-primary" id="button-redirect" onClick={submit} href="_blank">RESET</a>
           </div>
         </div>
       </div>

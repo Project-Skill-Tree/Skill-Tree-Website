@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./popup.css"
 import {useScrollContext} from "../SmoothScroll/scroll-context";
 
