@@ -3,7 +3,7 @@ import "../HomePage/home.css"
 import {useScrollContext} from "../../components/SmoothScroll/scroll-context";
 import {useEffect} from "react";
 
-export const PrivacyPage = ({}) => {
+export const PrivacyPage = () => {
   const { updateScrollData, previous, current, rounding } = useScrollContext();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export const PrivacyPage = ({}) => {
       rounding,
       ease: 1,
     })
-  }, [])
+  }, [updateScrollData, previous, current, rounding])
 
   return (
     <div className="home-container">
@@ -21,8 +21,8 @@ export const PrivacyPage = ({}) => {
         <div className="term-container">
           <span className="term-title">Privacy Policy - Skilltree</span>
           <span className="terms" style={{fontWeight: "bold"}}>Last Updated: 15/08/23</span>
-          <span className="terms">We’re Project Skill Tree LTD (‘we’, ‘us’, ‘our’) and operate under the name SkillTree. This Privacy Policy explains how we collect, use, and protect your personal information when you use our mobile application SkillTree. By accessing, registering an account with, or using the Skilltree mobile application ("App"), you agree to abide by this Privacy Policy, as well as our Terms of Service ("Terms") (collectively, the “Agreement”). If you do not agree to (or cannot comply with) the Agreement, you are not permitted to access or use the Service. Please read these Terms carefully before using the App. </span>
-          <span className="terms">We’re registered with the UK data protection authority (the Information Comissioner’s Office or ICO) under number - ZB576554 </span>
+          <span className="terms">We're Project Skill Tree LTD ('we', 'us', 'our') and operate under the name SkillTree. This Privacy Policy explains how we collect, use, and protect your personal information when you use our mobile application SkillTree. By accessing, registering an account with, or using the Skilltree mobile application ("App"), you agree to abide by this Privacy Policy, as well as our Terms of Service ("Terms") (collectively, the "Agreement"). If you do not agree to (or cannot comply with) the Agreement, you are not permitted to access or use the Service. Please read these Terms carefully before using the App. </span>
+          <span className="terms">We're registered with the UK data protection authority (the Information Comissioner's Office or ICO) under number - ZB576554 </span>
           <span className="term-subheading">Information Collection</span>
           <span className="terms">User-Generated Information: When you register an account with SkillTree, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, email address and usage data.
             <br/><br/>App Usage Information: We gather certain non-identifiable information about your app usage, such as the number date you joined, your usage, and your habit tracking data. This data is used for improving the app and enhancing the user experience.

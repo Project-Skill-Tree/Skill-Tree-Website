@@ -13,7 +13,7 @@ export const Skill = ({skill, onClick}) => {
     return "perspective(100px) "
       + "   rotateX("+ calcX +"deg) "
       + "   rotateY("+ calcY +"deg)";
-  };
+  }
 
   function transformElement(el, xyEl) {
     el.style.transform  = transforms.apply(null, xyEl);
@@ -55,7 +55,7 @@ export const Skill = ({skill, onClick}) => {
         }
       }, 10);
     }
-  }, [ref.current])
+  }, [transformElement])
 
   return (
     <div className={"skill"} ref={skill.ref}>
@@ -65,7 +65,7 @@ export const Skill = ({skill, onClick}) => {
         <div className={"card"} ref={ref} style={!skill.clickable ? {backgroundColor: "#555555", cursor: "default"} : {}}>
           <div className="card-bg"/>
           {skill.clickable && (
-            <img src={skill.image} style={{objectFit: "contain"}}/>
+            <img src={skill.image} style={{objectFit: "contain"}} alt={`${skill.title} skill icon`}/>
           )}
           {!skill.clickable && (
             <span style={{color: "#555555", fontSize: 30}}>???</span>

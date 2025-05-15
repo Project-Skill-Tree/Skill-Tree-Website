@@ -1,5 +1,5 @@
 // ScrollContext.js
-import {createContext, useContext, useState} from 'react';
+import {createContext, useContext} from 'react';
 
 const ScrollContext = createContext();
 

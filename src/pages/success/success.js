@@ -2,7 +2,7 @@ import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
 import "./success.css"
 
-export const Success = ({}) => {
+export const Success = () => {
   const purposes = {
     "authenticated": {
       "body": "You have successfully authenticated.",
@@ -25,7 +25,6 @@ export const Success = ({}) => {
   const [urlParams] = useSearchParams()
   const appURI = urlParams.get('redirect');
   const purpose = urlParams.get('purpose');
-  console.log(appURI, purpose)
 
   // Get query string for redirect from /success?redirect=appURI
   useEffect(() => {
@@ -40,7 +39,7 @@ export const Success = ({}) => {
     setTimeout(function () {
       redirectApp();
     }, 10000);
-  }, [])
+  })
 
   // Redirect to app on button click
   function redirectApp() {
@@ -62,9 +61,9 @@ export const Success = ({}) => {
           <div className="success-card-body">
             <h5 className="success-card-title">SUCCESS</h5>
             <p className="success-card-text" id="text-body">You have successfully authenticated.</p>
-            <p className="success-card-subtitle" id="text-subtitle">If you aren't automatically redirected to the app, click the
+            <p className="success-card-subtitle" id="text-subtitle">If you aren&apos;t automatically redirected to the app, click the
               return button.</p>
-            <a className="btn btn-primary" id="button-redirect" onClick={redirectApp}>RETURN</a>
+            <a className="btn btn-primary" id="button-redirect" onClick={redirectApp} href="_blank">RETURN</a>
           </div>
         </div>
       </div>

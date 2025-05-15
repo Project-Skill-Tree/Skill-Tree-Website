@@ -7,7 +7,6 @@ import {Skill} from "./skill";
 import Duration from "./duration";
 import {XP} from "./XP";
 import {useScrollContext} from "../SmoothScroll/scroll-context";
-import {TreeLine} from "../../modules/GUIHelper";
 import {TreePath} from "./tree-path";
 
 export const Tree = () => {
@@ -17,11 +16,6 @@ export const Tree = () => {
   const [selectedSkill, setSelectedSkill] = useState(null)
   const [skills, setSkills] = useState([]);
   const [bounds, setBounds] = useState({width: 0, height: 0})
-
-  // Generate an array of numbers representing rows
-  const rows = Array.from({length: 20}, (_, index) => index + 1);
-  // Generate an array of numbers representing columns
-  const columns = Array.from({length: 50}, (_, index) => index + 1);
 
   const calculateBounds = () => {
     const bounds = ref.current.getBoundingClientRect();
@@ -84,17 +78,6 @@ export const Tree = () => {
     <div className={"tree-view"} ref={ref}>
       <div ref={background} className={"tree-background"}>
       </div>
-      {/*<div ref={background} className={"tree-background"}>
-        {rows.map(row => (
-          <div key={row} className="row">
-            {columns.map(column => {
-              const visible = (previous + randomSeed(row * column) * 100) > (20 - row) * 30
-              return <div key={column} className="cube"
-                   style={{opacity: visible ? 1 : 0}}/>
-            })}
-          </div>
-        ))}
-      </div>*/}
       <Popup show={selectedSkill != null} onClose={() => setSelectedSkill(null)}>
         {selectedSkill && (
           <div className={"skill-popup-body"}>

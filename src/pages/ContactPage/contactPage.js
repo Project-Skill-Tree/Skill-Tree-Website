@@ -1,9 +1,8 @@
-
 import "../HomePage/home.css"
 import {useScrollContext} from "../../components/SmoothScroll/scroll-context";
 import {useEffect} from "react";
 
-export const ContactPage = ({}) => {
+export const ContactPage = () => {
   const { updateScrollData, previous, current, rounding } = useScrollContext();
 
   useEffect(() => {

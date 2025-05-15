@@ -11,13 +11,10 @@ const SmoothScroll = ({ children }) => {
     rounded: 0,
   });
 
-  // 1.
-  const windowSize = useWindowSize();
 
-  //2.
+  const windowSize = useWindowSize();
   const scrollingContainerRef = useRef();
 
-  // 3.
   useEffect(() => {
     setBodyHeight();
   }, [data, windowSize.height]);
@@ -28,7 +25,6 @@ const SmoothScroll = ({ children }) => {
     }px`;
   };
 
-  // 5.
   useEffect(() => {
     requestAnimationFrame(() => smoothScrollingHandler());
   }, []);
@@ -67,9 +63,7 @@ const SmoothScroll = ({ children }) => {
           {children}
         </div>
       </div>
-      {/*<div style={{opacity: 0}}>
-        {children}
-      </div>*/}
+      
     </ScrollProvider>
   );
 };
